@@ -113,9 +113,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp GRAVE    &kp INT_MUHENKAN  &kp INT_HENKAN  &kp INT_KANA &trans              &kp LS(LA(N8)) &kp LS(N3)    &kp GT        &kp LT        &kp MINUS
-                &trans                     &trans             &trans             &trans &trans  &kp LS(EQUAL)  &kp LS(5)     &kp LS(RBKT)  &kp LS(NUHS)  &kp LS(LBRC)
-                &kp LANG_ZENKAKUHANKAKU    &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &trans &trans  &kp NUBS       &kp INT_YEN   &kp LS(N4)    &kp LA(N3)    &kp LS(LA(N2))
+                &kp GRAVE         &kp INT_MUHENKAN    &kp INT_HENKAN            &kp INT_KANA  &trans  &kp LS(LA(N8)) &kp LS(N3)   &kp GT       &kp LT       &kp MINUS
+                &trans                     &trans            &trans              &trans        &trans  &kp LS(EQUAL)  &kp LS(5)    &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBRC)
+                &kp LANG_ZENKAKUHANKAKU    &kp LANG_KATAKANA &kp LANG_HIRAGANA  &trans        &trans  &kp NUBS       &kp INT_YEN  &kp LS(N4)   &kp LA(N3)  &kp LS(LA(N2))
                                                      &trans     &trans          &trans         &trans
             >;
         };
@@ -123,7 +123,7 @@
         fun_layer {
             label = "Fun";
             bindings = <
-                &trans          &trans         &trans      &trans     &trans   &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
+                &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
                 &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8           
                 &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4       
                                                    &none      &none             &trans          &trans
