@@ -73,7 +73,7 @@
             label = "magic_sturdy";
             bindings = <
                 &kp X      &kp M      &kp L       &kp C          &kp P         &kp B            &kp QUOT          &kp U       &kp O      &kp Q
-                &hm LSHFT S &hm LALT T &hm LGUI R &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E &hm LALT A &hm LGUI I
+                &hm LSHFT S &hm LALT T &hm LGUI R &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E &hm RALT A &hm RSHFT I
                 &kp V      &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &kp COMMA   &kp DOT    &kp FSLH     
                                                   &lt NUM_L BKSP  &lt OTH_L SPACE &kp LSHFT   &mo NAV_L
             >;
@@ -113,10 +113,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp GRAVE         &kp INT_MUHENKAN    &kp INT_HENKAN            &kp INT_KANA  &trans  &kp LS(LA(N8)) &kp LS(N3)   &kp GT       &kp LT       &kp MINUS
-                &trans                     &trans            &trans              &trans        &trans  &kp LS(EQUAL)  &kp LS(5)    &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBRC)
-                &kp LANG_ZENKAKUHANKAKU    &kp LANG_KATAKANA &kp LANG_HIRAGANA  &trans        &trans  &kp NUBS       &kp INT_YEN  &kp LS(N4)   &kp LA(N3)  &kp LS(LA(N2))
-                                                     &trans     &trans          &trans         &trans
+                &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8)) &kp LS(N3)   &kp GT       &kp LT       &kp MINUS
+                &trans       &trans      &trans     &trans    &trans   &kp LS(EQUAL)  &kp LS(5)    &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBRC)
+                &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS       &kp INT_YEN  &kp LS(N4)   &kp LA(N3)  &kp LS(LA(N2))
+                                                     &trans   &trans   &trans         &trans
             >;
         };
 
