@@ -18,16 +18,16 @@
 // JIS
 
 #define JP_ZKHK &kp GRAVE  // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
-#define JP_1    &kp N1    // 1
-#define JP_2    &kp N2    // 2
-#define JP_3    &kp N3    // 3
-#define JP_4    &kp N4    // 4
-#define JP_5    &kp N5    // 5
-#define JP_6    &kp N6    // 6
-#define JP_7    &kp N7    // 7
-#define JP_8    &kp N8    // 8
-#define JP_9    &kp N9    // 9
-#define JP_0    &kp N0    // 0
+#define JP_N1    &kp N1    // 1
+#define JP_N2    &kp N2    // 2
+#define JP_N3    &kp N3    // 3
+#define JP_N4    &kp N4    // 4
+#define JP_N5    &kp N5    // 5
+#define JP_N6    &kp N6    // 6
+#define JP_N7    &kp N7    // 7
+#define JP_N8    &kp N8    // 8
+#define JP_N9    &kp N9    // 9
+#define JP_N0    &kp N0    // 0
 #define JP_MINUS &kp MINUS // -
 #define JP_CARET &kp EQUAL   // ^
 #define JP_YEN  &kp INT3 // ¥
@@ -54,7 +54,7 @@
 #define JP_K    &kp K    // K
 #define JP_L    &kp L    // L
 #define JP_SEMI &kp SEMI // ;
-#define JP_COLON &kp APOS // :
+#define JP_COLON &kp SQT // :
 #define JP_RBKT &kp NUHS // ]
 #define JP_Z    &kp Z    // Z
 #define JP_X    &kp X    // X
@@ -76,7 +76,7 @@
 #define JP_DLLR  LS(JP_4)    // $
 #define JP_PRCNT LS(JP_5)    // %
 #define JP_AMPS LS(JP_6)    // &
-#define JP_APOS LS(JP_7)    // '
+#define JP_SQT LS(JP_7)    // '
 #define JP_LPAR LS(JP_8)    // (
 #define JP_RPAR LS(JP_9)    // )
 #define JP_EQUAL  LS(JP_MINUS) // =
@@ -150,7 +150,7 @@
             bindings = <
                 &kp X      &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS          &kp U       &kp O      &kp Q
                 &hm LSHFT S &hm LALT T &hm LGUI R &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E &hm RALT A &hm RSHFT I
-                &kp V      &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &kp COMMA   &kp DOT    &kp MINUS     
+                &kp V      &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &kp JP_COMMA   &kp JP_DOT    &kp JP_MINUS     
                                                   &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
             >;
         };
@@ -169,9 +169,9 @@
         ext_layer {
             label = "Ext";
             bindings = <
-                &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5)) &trans         &trans       &trans       &trans
-                &trans       &trans        &trans       &trans       &trans           &trans         &trans         &trans       &trans       &trans
-                &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans         &trans         &trans       &trans       &trans
+                &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(JP_N5)) &trans         &trans       &trans       &trans
+                &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
+                &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &trans
                                                   &trans          &trans       &trans           &trans
             >;
         };
@@ -179,9 +179,9 @@
         num_layer {
             label = "Num";
             bindings = <
-                &kp QMARK  &kp LBKT  &kp RBKT   &kp COLON  &kp LC(F2)   &kp PLUS     &kp N7     &kp N8      &kp N9     &kp ASTRK
-                &kp AMPS   &kp LPAR  &kp RPAR   &kp SEMI   &kp AT       &kp MINUS    &kp N4     &kp N5      &kp N6     &kp FSLH
-                &kp DQT    &kp SQT   &kp UNDER  &kp EXCL   &kp PIPE     &kp EQUAL    &kp N1     &kp N2      &kp N3     &kp N0
+                &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)      &kp JP_PLUS     &kp JP_N7     &kp JP_N8      &kp JP_N9     &kp JP_ASTRK
+                &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT       &kp JP_MINUS    &kp JP_N4     &kp JP_N5      &kp JP_N6     &kp JP_FSLH
+                &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXCL   &kp JP_PIPE     &kp JP_EQUAL    &kp JP_N1     &kp JP_N2      &kp JP_N3     &kp JP_N0
                                                 &trans     &trans       &kp RET      &mo SYM_L  
             >;
         };
@@ -189,9 +189,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8)) &kp LS(N3)   &kp LT       &kp GT       &kp CARET
-                &trans       &trans      &trans     &trans    &trans   &kp TILDE      &kp PRCNT    &kp LBRC     &kp RBRC     &kp GRAVE
-                &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS       &kp BSLH     &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
+                &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(JP_N8)) &kp LS(JP_N3)   &kp JP_LT       &kp JP_GT       &kp JP_CARET
+                &trans       &trans      &trans     &trans    &trans   &kp JP_TILDE      &kp JP_PRCNT    &kp JP_LBRC     &kp JP_RBRC     &kp JP_GRAVE
+                &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS          &kp JP_YEN      &kp LS(JP_N4)   &kp LA(JP_N3)   &kp LS(LA(JP_N2))
                                                      &trans   &trans   &trans         &trans
             >;
         };
