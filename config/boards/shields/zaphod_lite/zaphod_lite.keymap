@@ -87,7 +87,7 @@
 #define JP_CAPS LS(JP_EISU) // Caps Lock
 #define JP_PLUS LS(JP_SEMI) // +
 #define JP_ASTRK LS(JP_COLON) // *
-#define JP_LABK LS(JP_RBKT) // }
+#define JP_RBRC LS(JP_RBKT) // }
 #define JP_LT LS(JP_COMMA) // <
 #define JP_GT LS(JP_DOT)  // >
 #define JP_QMARK LS(JP_SLASH) // ?
