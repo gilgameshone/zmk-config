@@ -70,15 +70,15 @@
 #define JP_MHEN INT5 // Muhenkan (無変換)
 #define JP_HENK INT4 // Henkan (変換)
 #define JP_KANA INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
-#define JP_EXCL LS(JP_1)    // !
-#define JP_DQT LS(JP_2)    // "
-#define JP_HASH LS(JP_3)    // #
-#define JP_DLLR  LS(JP_4)    // $
-#define JP_PRCNT LS(JP_5)    // %
-#define JP_AMPS LS(JP_6)    // &
-#define JP_SQT LS(JP_7)    // '
-#define JP_LPAR LS(JP_8)    // (
-#define JP_RPAR LS(JP_9)    // )
+#define JP_EXCL LS(JP_N1)    // !
+#define JP_DQT LS(JP_N2)    // "
+#define JP_HASH LS(JP_N3)    // #
+#define JP_DLLR  LS(JP_N4)    // $
+#define JP_PRCNT LS(JP_N5)    // %
+#define JP_AMPS LS(JP_N6)    // &
+#define JP_SQT LS(JP_N7)    // '
+#define JP_LPAR LS(JP_N8)    // (
+#define JP_RPAR LS(JP_N9)    // )
 #define JP_EQUAL  LS(JP_MINUS) // =
 #define JP_TILDE LS(JP_CARET) // ~
 #define JP_PIPE LS(JP_YEN)  // |
