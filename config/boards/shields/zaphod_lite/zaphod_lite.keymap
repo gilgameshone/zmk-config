@@ -139,6 +139,34 @@
             bindings = <&kp MINUS>, <&kp QMARK>;
             mods = <(MOD_LSFT)>;
         };
+    space_lead: cx {
+            compatible = "zmk,behavior-mod-morph";
+            label = "cx";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <RC(X)>;
+            mods = <(MOD_RCTL)>;
+        };
+space_lead: cc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "cc";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <RG(C)>;
+            mods = <(MOD_RGUI)>;
+        };
+space_lead: mx {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mx";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <RA(X)>;
+            mods = <(MOD_RALT)>;
+        };
+space_lead: cat {
+            compatible = "zmk,behavior-mod-morph";
+            label = "cat";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <RS(JP_AT)>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -151,7 +179,7 @@
                 &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
                 &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
                 &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
-                                                  &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
+                                                  &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
             >;
         };
 
