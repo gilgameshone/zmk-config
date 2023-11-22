@@ -1,56 +1,56 @@
-#define JP_ZKHK &kp GRAVE  // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
-#define JP_N1    &kp N1    // 1
-#define JP_N2    &kp N2    // 2
-#define JP_N3    &kp N3    // 3
-#define JP_N4    &kp N4    // 4
-#define JP_N5    &kp N5    // 5
-#define JP_N6    &kp N6    // 6
-#define JP_N7    &kp N7    // 7
-#define JP_N8    &kp N8    // 8
-#define JP_N9    &kp N9    // 9
-#define JP_N0    &kp N0    // 0
-#define JP_MINUS &kp MINUS // -
-#define JP_CARET &kp EQUAL   // ^
-#define JP_YEN  &kp INT3 // ¥
-#define JP_Q    &kp Q    // Q
-#define JP_W    &kp W    // W
-#define JP_E    &kp E    // E
-#define JP_R    &kp R    // R
-#define JP_T    &kp T    // T
-#define JP_Y    &kp Y    // Y
-#define JP_U    &kp U    // U
-#define JP_I    &kp I    // I
-#define JP_O    &kp O    // O
-#define JP_P    &kp P    // P
-#define JP_AT   &kp LBKT // @
-#define JP_LBKT &kp RBKT // [
-#define JP_EISU &kp CAPS // Eisū (英数)
-#define JP_A    &kp A    // A
-#define JP_S    &kp S    // S
-#define JP_D    &kp D    // D
-#define JP_F    &kp F    // F
-#define JP_G    &kp G    // G
-#define JP_H    &kp H    // H
-#define JP_J    &kp J    // J
-#define JP_K    &kp K    // K
-#define JP_L    &kp L    // L
-#define JP_SEMI &kp SEMI // ;
-#define JP_COLON &kp SQT // :
-#define JP_RBKT &kp NUHS // ]
-#define JP_Z    &kp Z    // Z
-#define JP_X    &kp X    // X
-#define JP_C    &kp C    // C
-#define JP_V    &kp V    // V
-#define JP_B    &kp B    // B
-#define JP_N    &kp N    // N
-#define JP_M    &kp M    // M
-#define JP_COMMA &kp COMMA // ,
-#define JP_DOT  &kp DOT  // .
-#define JP_SLASH &kp SLASH // /
-#define JP_BSLH &kp INT1 // (backslash)
-#define JP_MHEN &kp INT5 // Muhenkan (無変換)
-#define JP_HENK &kp INT4 // Henkan (変換)
-#define JP_KANA &kp INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
+#define JP_ZKHK GRAVE  // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
+#define JP_N1    N1    // 1
+#define JP_N2   N2    // 2
+#define JP_N3    N3    // 3
+#define JP_N4    N4    // 4
+#define JP_N5    N5    // 5
+#define JP_N6    N6    // 6
+#define JP_N7    N7    // 7
+#define JP_N8    N8    // 8
+#define JP_N9    N9    // 9
+#define JP_N0    N0    // 0
+#define JP_MINUS MINUS // -
+#define JP_CARET EQUAL   // ^
+#define JP_YEN  INT3 // ¥
+#define JP_Q     Q    // Q
+#define JP_W    W    // W
+#define JP_E    E    // E
+#define JP_R    R    // R
+#define JP_T    T    // T
+#define JP_Y    Y    // Y
+#define JP_U    U    // U
+#define JP_I    I    // I
+#define JP_O    O    // O
+#define JP_P    P    // P
+#define JP_AT   LBKT // @
+#define JP_LBKT RBKT // [
+#define JP_EISU CAPS // Eisū (英数)
+#define JP_A    A    // A
+#define JP_S    S    // S
+#define JP_D    D    // D
+#define JP_F    F    // F
+#define JP_G    G    // G
+#define JP_H    H    // H
+#define JP_J    J    // J
+#define JP_K    K    // K
+#define JP_L   L    // L
+#define JP_SEMI SEMI // ;
+#define JP_COLON SQT // :
+#define JP_RBKT NUHS // ]
+#define JP_Z    Z    // Z
+#define JP_X    X    // X
+#define JP_C    C    // C
+#define JP_V    V    // V
+#define JP_B    B    // B
+#define JP_N    N    // N
+#define JP_M    M    // M
+#define JP_COMMA COMMA // ,
+#define JP_DOT  DOT  // .
+#define JP_SLASH SLASH // /
+#define JP_BSLH INT1 // (backslash)
+#define JP_MHEN INT5 // Muhenkan (無変換)
+#define JP_HENK INT4 // Henkan (変換)
+#define JP_KANA INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
 #define JP_EXCL LS(JP_1)    // !
 #define JP_DQT LS(JP_2)    // "
 #define JP_HASH LS(JP_3)    // #
