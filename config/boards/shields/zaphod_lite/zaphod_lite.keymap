@@ -150,7 +150,7 @@
             bindings = <
                 &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
                 &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-                &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &kp JP_COMMA   &kp JP_DOT  &kp JP_MINUS     
+                &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
                                                   &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
             >;
         };
