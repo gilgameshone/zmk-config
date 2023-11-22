@@ -1,14 +1,14 @@
 #define JP_ZKHK &kp GRAVE  // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
-#define JP_1    &kp N1    // 1
-#define JP_2    &kp N2    // 2
-#define JP_3    &kp N3    // 3
-#define JP_4    &kp N4    // 4
-#define JP_5    &kp N5    // 5
-#define JP_6    &kp N6    // 6
-#define JP_7    &kp N7    // 7
-#define JP_8    &kp N8    // 8
-#define JP_9    &kp N9    // 9
-#define JP_0    &kp N0    // 0
+#define JP_N1    &kp N1    // 1
+#define JP_N2    &kp N2    // 2
+#define JP_N3    &kp N3    // 3
+#define JP_N4    &kp N4    // 4
+#define JP_N5    &kp N5    // 5
+#define JP_N6    &kp N6    // 6
+#define JP_N7    &kp N7    // 7
+#define JP_N8    &kp N8    // 8
+#define JP_N9    &kp N9    // 9
+#define JP_N0    &kp N0    // 0
 #define JP_MINUS &kp MINUS // -
 #define JP_CARET &kp EQUAL   // ^
 #define JP_YEN  &kp INT3 // ¥
@@ -35,7 +35,7 @@
 #define JP_K    &kp K    // K
 #define JP_L    &kp L    // L
 #define JP_SEMI &kp SEMI // ;
-#define JP_COLON &kp APOS // :
+#define JP_COLON &kp SQT // :
 #define JP_RBKT &kp NUHS // ]
 #define JP_Z    &kp Z    // Z
 #define JP_X    &kp X    // X
@@ -57,7 +57,7 @@
 #define JP_DLLR  LS(JP_4)    // $
 #define JP_PRCNT LS(JP_5)    // %
 #define JP_AMPS LS(JP_6)    // &
-#define JP_APOS LS(JP_7)    // '
+#define JP_SQT LS(JP_7)    // '
 #define JP_LPAR LS(JP_8)    // (
 #define JP_RPAR LS(JP_9)    // )
 #define JP_EQUAL  LS(JP_MINUS) // =
