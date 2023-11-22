@@ -139,33 +139,33 @@
             bindings = <&kp MINUS>, <&kp QMARK>;
             mods = <(MOD_LSFT)>;
         };
-    space_cx: cx {
+space_lead: space_cat {
             compatible = "zmk,behavior-mod-morph";
-            label = "cx";
+            label = "space_cat";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <RC(X)>;
-            mods = <(MOD_RCTL)>;
+            bindings = <&space_mx>, <RC(JP_AT)>;
+            mods = <(MOD_RSFT)>;
         };
-space_cc: cc {
+space_mx: space_mx {
             compatible = "zmk,behavior-mod-morph";
-            label = "cc";
-            #binding-cells = <0>;
-            bindings = <&space_cx>, <RG(C)>;
-            mods = <(MOD_RGUI)>;
-        };
-space_mx: mx {
-            compatible = "zmk,behavior-mod-morph";
-            label = "mx";
+            label = "space_mx";
             #binding-cells = <0>;
             bindings = <&space_cc>, <RA(X)>;
             mods = <(MOD_RALT)>;
         };
-space_lead: cat {
+space_cc: space_cc {
             compatible = "zmk,behavior-mod-morph";
-            label = "cat";
+            label = "space_cc";
             #binding-cells = <0>;
-            bindings = <&space_mx>, <RS(JP_AT)>;
-            mods = <(MOD_RSFT)>;
+            bindings = <&space_cx>, <RG(C)>;
+            mods = <(MOD_RGUI)>;
+        };
+    space_cx: space_cx {
+            compatible = "zmk,behavior-mod-morph";
+            label = "space_cx";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <RC(X)>;
+            mods = <(MOD_RCTL)>;
         };
     };
 
