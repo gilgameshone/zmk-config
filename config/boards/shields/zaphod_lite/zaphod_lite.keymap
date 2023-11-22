@@ -15,6 +15,10 @@
 #define SYM_L 4
 #define FUN_L 5
 
+// JIS
+
+
+
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -82,7 +86,7 @@
             bindings = <
                 &kp X      &kp M      &kp L       &kp C          &kp P         &kp B            &kp QUOT          &kp U       &kp O      &kp Q
                 &hm LSHFT S &hm LALT T &hm LGUI R &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E &hm RALT A &hm RSHFT I
-                &kp V      &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp DOT    &min_qma     
+                &kp V      &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &kp COMM   &kp DOT    &kp MINUS     
                                                   &lt NUM_L BKSP  &lt OTH_L SPACE &sk LSHIFT   &lt NAV_L RET
             >;
         };
