@@ -139,32 +139,32 @@
             bindings = <&kp MINUS>, <&kp QMARK>;
             mods = <(MOD_LSFT)>;
         };
-    space_c-x: c-x {
+    space_cx: cx {
             compatible = "zmk,behavior-mod-morph";
-            label = "c-x";
+            label = "cx";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <RC(X)>;
             mods = <(MOD_RCTL)>;
         };
-space_c-c: c-c {
+space_cc: cc {
             compatible = "zmk,behavior-mod-morph";
-            label = "c-c";
+            label = "cc";
             #binding-cells = <0>;
-            bindings = <&space_c-x>, <RG(C)>;
+            bindings = <&space_cx>, <RG(C)>;
             mods = <(MOD_RGUI)>;
         };
-space_m-x: m-x {
+space_mx: mx {
             compatible = "zmk,behavior-mod-morph";
-            label = "m-x";
+            label = "mx";
             #binding-cells = <0>;
-            bindings = <&space_c-c>, <RA(X)>;
+            bindings = <&space_cc>, <RA(X)>;
             mods = <(MOD_RALT)>;
         };
-space_lead: c-at {
+space_lead: cat {
             compatible = "zmk,behavior-mod-morph";
-            label = "c-at";
+            label = "cat";
             #binding-cells = <0>;
-            bindings = <&space_m-x>, <RS(JP_AT)>;
+            bindings = <&space_mx>, <RS(JP_AT)>;
             mods = <(MOD_RSFT)>;
         };
     };
