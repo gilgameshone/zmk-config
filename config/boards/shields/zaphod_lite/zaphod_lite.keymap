@@ -169,7 +169,7 @@
         ext_layer {
             label = "Ext";
             bindings = <
-                &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(JP_N5)) &trans         &trans       &trans       &trans
+                &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5)) &trans         &trans       &trans       &trans
                 &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
                 &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &trans
                                                   &trans          &trans       &trans           &trans
