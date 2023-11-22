@@ -8,16 +8,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <Japanese_keymap.h>
 
 #define NAV_L 1
 #define EXT_L 2
 #define NUM_L 3
 #define SYM_L 4
 #define FUN_L 5
-
-// JIS
-
-
 
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
@@ -29,14 +26,14 @@
 
         fn_mo {
 	    timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <1 31>;
             bindings = <&mo FUN_L>;
         };
         
 	/*
         caps_word_combo {
 	    timeout-ms = <50>;
-            key-positions = <13 16>;
+            key-positions = <32 33>;
             bindings = <&caps_word>;
         };
 	*/
