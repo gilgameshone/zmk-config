@@ -129,14 +129,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "comma_quot";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QUOT>;
+            bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
             mods = <(MOD_LSFT)>;
         };
     min_qma: min_qma {
             compatible = "zmk,behavior-mod-morph";
             label = "min_qma";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp QMARK>;
+            bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
             mods = <(MOD_LSFT)>;
         };
 space_lead: space_cat {
