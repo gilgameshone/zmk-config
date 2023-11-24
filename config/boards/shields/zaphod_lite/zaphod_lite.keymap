@@ -282,6 +282,44 @@
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
+      TJ_LKAGIKAKO: tron_lkagikako {
+      label = "tron_lkagikako";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        , <&macro_release &kp LSHFT>
+        ;
+    };
+      TJ_RKAGIKAKO‎: tron_rkagikako‎ {
+      label = "tron_rkagikako‎";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_MU>
+        , <&macro_release &kp LSHFT>
+        ;
+    };
+  _EISU: _eisu {
+      label = "_eisu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LANG1>
+        , <&macro_tap &mo magic_sturdy>
+        ;
+    };
+  _KANA: _kana {
+      label = "_kana";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LANG2>
+        , <&macro_tap &mo tron_base>
+        ;
+    };
   };
 
   behaviors {
@@ -369,7 +407,7 @@
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &mo magic_sturdy   &kp LANG2     &kp LANG1     &mo tron_base
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &kp _EISU   &kp LANG2     &kp LANG1     &kp _KANA
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
         &kp ESC     &kp TAB          &trans     &trans                 
