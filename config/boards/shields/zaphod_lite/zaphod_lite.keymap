@@ -387,7 +387,7 @@
       bindings = <
         &TJ_BI   &TJ_ZO   &TJ_GO  &TJ_BA    &TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
         &TJ_DA   &TJ_DO   &TJ_GA  &TJ_DE    &TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
-        &TJ_XE   &TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
+        &TJ_XE   &TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &TJ_XI   &TJ_XA         &trans     &TJ_XU
         &trans &mo TRP_L &trans &trans
         >;
     };
@@ -395,9 +395,9 @@
     tron_red_layer {
       label = "TRR";
       bindings = <
-        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
-        &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
-        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJ_XU
+        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &TJ_XYA     &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
+        &kp TJ_NU   &kp TJ_NE  &TJ_XYU         &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
+        &TJ_XE      &TJ_XO     &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJ_XU
         &trans &trans &mo TRP_L &trans
         >;
     };
