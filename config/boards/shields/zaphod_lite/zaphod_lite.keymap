@@ -16,7 +16,6 @@
 #define FUN_L 5
 
 // JIS
-
 #define JP_ZKHK GRAVE  // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_N1    N1    // 1
 #define JP_N2   N2    // 2
@@ -98,144 +97,115 @@
 &lt { quick_tap_ms = <200>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
+  combos {
+    compatible = "zmk,combos";
 
-        fn_mo {
-	    timeout-ms = <50>;
-            key-positions = <1 31>;
-            bindings = <&mo FUN_L>;
-        };
+    fn_mo {
+      timeout-ms = <50>;
+      key-positions = <1 31>;
+      bindings = <&mo FUN_L>;
+    };
         
 	
-        caps_word_combo {
-	    timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&caps_word>;
-        };
+    caps_word_combo {
+      timeout-ms = <50>;
+      key-positions = <32 33>;
+      bindings = <&caps_word>;
+    };
 	
+  };
+
+  behaviors {
+  hm: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods";
+#binding-cells = <2>;
+      tapping_term_ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+  com_quo: comma_quot {
+      compatible = "zmk,behavior-mod-morph";
+      label = "comma_quot";
+#binding-cells = <0>;
+      bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
+      mods = <(MOD_LSFT)>;
+    };
+  min_qma: min_qma {
+      compatible = "zmk,behavior-mod-morph";
+      label = "min_qma";
+#binding-cells = <0>;
+      bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
+      mods = <(MOD_LSFT)>;
+    };
+    
+  };
+
+  keymap {
+    compatible = "zmk,keymap";
+
+
+    magic_sturdy_layer {
+      label = "magic_sturdy";
+      bindings = <
+        &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
+        &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
+        &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
+        >;
     };
 
-    behaviors {
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "homerow mods";
-        #binding-cells = <2>;
-        tapping_term_ms = <200>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-      };
-    com_quo: comma_quot {
-        compatible = "zmk,behavior-mod-morph";
-        label = "comma_quot";
-        #binding-cells = <0>;
-        bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
-        mods = <(MOD_LSFT)>;
-      };
-    min_qma: min_qma {
-        compatible = "zmk,behavior-mod-morph";
-        label = "min_qma";
-        #binding-cells = <0>;
-        bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
-        mods = <(MOD_LSFT)>;
-      };
-      /*  space lead not working yet.
-    space_lead: space_cat {
-        compatible = "zmk,behavior-mod-morph";
-        label = "space_cat";
-        #binding-cells = <0>;
-        bindings = <&space_mx>, <RC(JP_AT)>;
-        mods = <(MOD_RSFT)>;
-      };
-    space_mx: space_mx {
-        compatible = "zmk,behavior-mod-morph";
-        label = "space_mx";
-        #binding-cells = <0>;
-        bindings = <&space_cc>, <RA(X)>;
-        mods = <(MOD_RALT)>;
-      };
-    space_cc: space_cc {
-        compatible = "zmk,behavior-mod-morph";
-        label = "space_cc";
-        #binding-cells = <0>;
-        bindings = <&space_cx>, <RG(C)>;
-        mods = <(MOD_RGUI)>;
-      };
-    space_cx: space_cx {
-        compatible = "zmk,behavior-mod-morph";
-        label = "space_cx";
-        #binding-cells = <0>;
-        bindings = <&kp SPACE>, <RC(X)>;
-        mods = <(MOD_RCTL)>;
-      };
-      */
+
+    nav_layer {
+      label = "Nav";
+      bindings = <
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG2     &trans
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
+        &kp ESC     &kp TAB          &trans     &trans                 
+        >;
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+    ext_layer {
+      label = "Ext";
+      bindings = <
+        &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5))    &trans         &trans       &trans       &trans
+        &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &trans
+        &trans          &trans       &trans           &trans
+        >;
+    };
 
+    num_layer {
+      label = "Num";
+      bindings = <
+        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)      &kp JP_PLUS     &kp JP_N7     &kp JP_N8      &kp JP_N9     &kp JP_ASTRK
+        &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT       &kp JP_MINUS    &kp JP_N4     &kp JP_N5      &kp JP_N6     &kp JP_SLASH
+        &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXCL   &kp JP_PIPE     &kp JP_EQUAL    &kp JP_N1     &kp JP_N2      &kp JP_N3     &kp JP_N0
+        &trans     &trans       &kp RET      &mo SYM_L  
+        >;
+    };
 
-        magic_sturdy_layer {
-            label = "magic_sturdy";
-            bindings = <
-                &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
-                &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-                &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
-                                                  &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
-            >;
-        };
+    sym_layer {
+      label = "Sym";
+      bindings = <
+        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(JP_N8)) &kp LS(JP_N3)   &kp JP_LT       &kp JP_GT       &kp JP_CARET
+        &trans       &trans      &trans     &trans    &trans   &kp JP_TILDE      &kp JP_PRCNT    &kp JP_LBRC     &kp JP_RBRC     &kp JP_GRAVE
+        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS          &kp JP_YEN      &kp LS(JP_N4)   &kp LA(JP_N3)   &kp LS(LA(JP_N2))
+        &trans   &trans   &trans         &trans
+        >;
+    };
 
-
-        nav_layer {
-            label = "Nav";
-            bindings = <
-                &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG2     &trans
-                &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-                &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
-                                                  &kp ESC     &kp TAB          &trans     &trans                 
-            >;
-        };
-
-        ext_layer {
-            label = "Ext";
-            bindings = <
-                &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5))    &trans         &trans       &trans       &trans
-                &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
-                &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &trans
-                                                  &trans          &trans       &trans           &trans
-            >;
-        };
-
-        num_layer {
-            label = "Num";
-            bindings = <
-                &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)      &kp JP_PLUS     &kp JP_N7     &kp JP_N8      &kp JP_N9     &kp JP_ASTRK
-                &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT       &kp JP_MINUS    &kp JP_N4     &kp JP_N5      &kp JP_N6     &kp JP_SLASH
-                &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXCL   &kp JP_PIPE     &kp JP_EQUAL    &kp JP_N1     &kp JP_N2      &kp JP_N3     &kp JP_N0
-                                                &trans     &trans       &kp RET      &mo SYM_L  
-            >;
-        };
-
-        sym_layer {
-            label = "Sym";
-            bindings = <
-                &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(JP_N8)) &kp LS(JP_N3)   &kp JP_LT       &kp JP_GT       &kp JP_CARET
-                &trans       &trans      &trans     &trans    &trans   &kp JP_TILDE      &kp JP_PRCNT    &kp JP_LBRC     &kp JP_RBRC     &kp JP_GRAVE
-                &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS          &kp JP_YEN      &kp LS(JP_N4)   &kp LA(JP_N3)   &kp LS(LA(JP_N2))
-                                                     &trans   &trans   &trans         &trans
-            >;
-        };
-
-        fun_layer {
-            label = "Fun";
-            bindings = <
-                &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
-                &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8           
-                &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4       
-                                                   &none      &none             &trans          &trans
-            >;
-        };
+    fun_layer {
+      label = "Fun";
+      bindings = <
+        &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
+        &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8           
+        &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4       
+        &none      &none             &trans          &trans
+        >;
+    };
         
-    };
+  };
 };
 
