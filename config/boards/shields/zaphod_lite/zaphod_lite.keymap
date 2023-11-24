@@ -17,54 +17,54 @@
 #define FUN_L 5
 
 // JIS
-#define JP_N1    N1    // 1
-#define JP_N2   N2    // 2
-#define JP_N3    N3    // 3
-#define JP_N4    N4    // 4
-#define JP_N5    N5    // 5
-#define JP_N6    N6    // 6
-#define JP_N7    N7    // 7
-#define JP_N8    N8    // 8
-#define JP_N9    N9    // 9
-#define JP_N0    N0    // 0
-#define JP_MINUS MINUS // -
-#define JP_CARET EQUAL   // ^
-#define JP_YEN  INT3 // ¥
-#define JP_AT   LBKT // @
-#define JP_LBKT RBKT // [
-#define JP_EISU CAPS // Eisū (英数)
-#define JP_SEMI SEMI // ;
-#define JP_COLON SQT // :
-#define JP_RBKT NUHS // ]
-#define JP_COMMA COMMA // ,
-#define JP_DOT  DOT  // .
-#define JP_SLASH SLASH // /
-#define JP_BSLH INT1 // (backslash)
-#define JP_MHEN INT5 // Muhenkan (無変換)
-#define JP_HENK INT4 // Henkan (変換)
-#define JP_KANA INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
-#define JP_EXCL LS(JP_N1)    // !
-#define JP_DQT LS(JP_N2)    // "
-#define JP_HASH LS(JP_N3)    // #
-#define JP_DLLR  LS(JP_N4)    // $
-#define JP_PRCNT LS(JP_N5)    // %
-#define JP_AMPS LS(JP_N6)    // &
-#define JP_SQT LS(JP_N7)    // '
-#define JP_LPAR LS(JP_N8)    // (
-#define JP_RPAR LS(JP_N9)    // )
-#define JP_EQUAL  LS(JP_MINUS) // =
-#define JP_TILDE LS(JP_CARET) // ~
-#define JP_PIPE LS(JP_YEN)  // |
-#define JP_GRAVE  LS(JP_AT)   // `
-#define JP_LBRC LS(JP_LBKT) // {
-#define JP_CAPS LS(JP_EISU) // Caps Lock
-#define JP_PLUS LS(JP_SEMI) // +
-#define JP_ASTRK LS(JP_COLON) // *
-#define JP_RBRC LS(JP_RBKT) // }
-#define JP_LT LS(JP_COMMA) // <
-#define JP_GT LS(JP_DOT)  // >
-#define JP_QMARK LS(JP_SLASH) // ?
-#define JP_UNDER LS(JP_BSLH) // _
+/* #define JP_N1    N1    // 1 */
+/* #define JP_N2   N2    // 2 */
+/* #define JP_N3    N3    // 3 */
+/* #define JP_N4    N4    // 4 */
+/* #define JP_N5    N5    // 5 */
+/* #define JP_N6    N6    // 6 */
+/* #define JP_N7    N7    // 7 */
+/* #define JP_N8    N8    // 8 */
+/* #define JP_N9    N9    // 9 */
+/* #define JP_N0    N0    // 0 */
+/* #define JP_MINUS MINUS // - */
+/* #define JP_CARET EQUAL   // ^ */
+/* #define JP_YEN  INT3 // ¥ */
+/* #define JP_AT   LBKT // @ */
+/* #define JP_LBKT RBKT // [ */
+/* #define JP_EISU CAPS // Eisū (英数) */
+/* #define JP_SEMI SEMI // ; */
+/* #define JP_COLON SQT // : */
+/* #define JP_RBKT NUHS // ] */
+/* #define JP_COMMA COMMA // , */
+/* #define JP_DOT  DOT  // . */
+/* #define JP_SLASH SLASH // / */
+/* #define JP_BSLH INT1 // (backslash) */
+/* #define JP_MHEN INT5 // Muhenkan (無変換) */
+/* #define JP_HENK INT4 // Henkan (変換) */
+/* #define JP_KANA INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字) */
+/* #define JP_EXCL LS(JP_N1)    // ! */
+/* #define JP_DQT LS(JP_N2)    // " */
+/* #define JP_HASH LS(JP_N3)    // # */
+/* #define JP_DLLR  LS(JP_N4)    // $ */
+/* #define JP_PRCNT LS(JP_N5)    // % */
+/* #define JP_AMPS LS(JP_N6)    // & */
+/* #define JP_SQT LS(JP_N7)    // ' */
+/* #define JP_LPAR LS(JP_N8)    // ( */
+/* #define JP_RPAR LS(JP_N9)    // ) */
+/* #define JP_EQUAL  LS(JP_MINUS) // = */
+/* #define JP_TILDE LS(JP_CARET) // ~ */
+/* #define JP_PIPE LS(JP_YEN)  // | */
+/* #define JP_GRAVE  LS(JP_AT)   // ` */
+/* #define JP_LBRC LS(JP_LBKT) // { */
+/* #define JP_CAPS LS(JP_EISU) // Caps Lock */
+/* #define JP_PLUS LS(JP_SEMI) // + */
+/* #define JP_ASTRK LS(JP_COLON) // * */
+/* #define JP_RBRC LS(JP_RBKT) // } */
+/* #define JP_LT LS(JP_COMMA) // < */
+/* #define JP_GT LS(JP_DOT)  // > */
+/* #define JP_QMARK LS(JP_SLASH) // ? */
+/* #define JP_UNDER LS(JP_BSLH) // _ */
 
 
 
@@ -134,7 +134,7 @@
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG2     &trans
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG1     &trans
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
         &kp ESC     &kp TAB          &trans     &trans                 
@@ -146,7 +146,7 @@
       bindings = <
         &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5))    &trans         &trans       &trans       &trans
         &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
-        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &trans
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &kp CAPS
         &trans          &trans       &trans           &trans
         >;
     };
@@ -154,9 +154,9 @@
     num_layer {
       label = "Num";
       bindings = <
-        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)      &kp JP_PLUS     &kp JP_N7     &kp JP_N8      &kp JP_N9     &kp JP_ASTRK
-        &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT       &kp JP_MINUS    &kp JP_N4     &kp JP_N5      &kp JP_N6     &kp JP_SLASH
-        &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXCL   &kp JP_PIPE     &kp JP_EQUAL    &kp JP_N1     &kp JP_N2      &kp JP_N3     &kp JP_N0
+        &kp LS(SLASH)  &kp RBKT  &kp NUHS   &kp SQT  &kp LC(F2)      &kp LS(SEMI)     &kp N7     &kp N8      &kp N9     &kp LS(SQT)
+        &kp LS(N6)   &kp LS(N8)  &kp LS(N9)   &kp SEMI   &kp LS(LBKT)       &kp MINUS    &kp N4     &kp N5      &kp N6     &kp SLASH
+        &kp LS(N2)    &kp LS(N7)  &kp INT1  &kp LS(N1)   &kp LS(INT3)     &kp LS(MINUS)    &kp N1     &kp N2      &kp N3     &kp N0
         &trans     &trans       &kp RET      &mo SYM_L  
         >;
     };
@@ -164,9 +164,9 @@
     sym_layer {
       label = "Sym";
       bindings = <
-        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(JP_N8)) &kp LS(JP_N3)   &kp JP_LT       &kp JP_GT       &kp JP_CARET
-        &trans       &trans      &trans     &trans    &trans   &kp JP_TILDE      &kp JP_PRCNT    &kp JP_LBRC     &kp JP_RBRC     &kp JP_GRAVE
-        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp NUBS          &kp JP_YEN      &kp LS(JP_N4)   &kp LA(JP_N3)   &kp LS(LA(JP_N2))
+        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8)) &kp LS(N3)   &kp LT       &kp GT       &kp EQUAL
+        &trans       &trans      &trans     &trans    &trans   &kp LS(EQUAL)      &kp LS(N5)    &kp LS(RBKT)      &kp  LS(NUHS)     &kp LS(LBKT)
+        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE          &kp INT3      &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
         >;
     };
