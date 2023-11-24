@@ -27,7 +27,7 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
-         
+
 &sk {  // sticky-key config
     release-after-ms = <900>;  // release after 0.6s
     quick-release;             // no double capitalization when rolling keys
@@ -42,15 +42,15 @@
       key-positions = <0 30>;
       bindings = <&mo FUN_L>;
     };
-        
+
     caps_word_combo {
       timeout-ms = <50>;
       key-positions = <31 32>;
       bindings = <&caps_word>;
     };
-	
+
   };
-  
+
   macros {
   TJ_GI: tron_gi {
       label = "tron_gi";
@@ -296,8 +296,8 @@
         , <&macro_release &kp LSHFT>
         ;
     };
-  TJ_RKAGIKAKO‎: tron_rkagikako‎ {
-      label = "tron_rkagikako‎";
+  TJ_RKAGIKAKO: tron_rkagikako {
+      label = "tron_rkagikako";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -355,7 +355,7 @@
 #binding-cells = <0>;
       bindings = <&kp SPACE>, <&kp RA(X)>;
       mods = <(MOD_RALT)>;
-    };    
+    };
   };
 
   keymap {
@@ -413,8 +413,8 @@
       bindings = <
         &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &kp _EISU   &kp LANG2     &kp LANG1     &kp _KANA
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
-        &kp ESC     &kp TAB          &trans     &trans                 
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp ESC     &kp TAB          &trans     &trans
         >;
     };
 
@@ -434,7 +434,7 @@
         &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)     &kp JP_PLUS    &kp JP_N7   &kp JP_N8    &kp JP_N9   &kp JP_ASTRK
         &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT      &kp JP_MINUS   &kp JP_N4   &kp JP_N5    &kp JP_N6   &kp JP_SLASH
         &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE    &kp JP_EQUAL   &kp JP_N1   &kp JP_N2    &kp JP_N3   &kp JP_N0
-        &trans     &trans       &kp RET      &mo SYM_L  
+        &trans     &trans       &kp RET      &mo SYM_L
         >;
     };
 
@@ -451,13 +451,12 @@
     fun_layer {
       label = "Fun";
       bindings = <
-        &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
-        &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8           
-        &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4       
+        &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12
+        &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8
+        &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4
         &none      &none             &trans          &trans
         >;
     };
-        
+
   };
 };
-
