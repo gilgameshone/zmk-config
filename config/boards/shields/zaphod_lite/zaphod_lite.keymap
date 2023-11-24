@@ -118,9 +118,9 @@
     num_layer {
       label = "Num";
       bindings = <
-        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT  &kp JP_COLON  &kp LC(F2)     &kp JP_PLUS    &kp JP_N7   &kp JP_N8    &kp JP_N9   &kp JP_ASTRK
-        &kp JP_AMPS   &kp JP_LPAR &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT      &kp JP_MINUS   &kp JP_N4   &kp JP_N5    &kp JP_N6   &kp JP_SLASH
-        &kp JP_DQT    &kp JP_SQT  &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE    &kp JP_EQUAL   &kp JP_N1   &kp JP_N2    &kp JP_N3   &kp JP_N0
+        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)     &kp JP_PLUS    &kp JP_N7   &kp JP_N8    &kp JP_N9   &kp JP_ASTRK
+        &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT      &kp JP_MINUS   &kp JP_N4   &kp JP_N5    &kp JP_N6   &kp JP_SLASH
+        &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE    &kp JP_EQUAL   &kp JP_N1   &kp JP_N2    &kp JP_N3   &kp JP_N0
         &trans     &trans       &kp RET      &mo SYM_L  
         >;
     };
@@ -128,9 +128,9 @@
     sym_layer {
       label = "Sym";
       bindings = <
-        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8))  &kp JP_HASH   &kp JP_LT       &kp JP_GT       &kp JP_CARET
-        &trans       &trans      &kp JP_RBRLS  &kp JP_YEN    &kp JP_EQUAL   &kp JP_PRNT   &kp JP_LBRLS &kp JP_RBRLS &kp JP_GRAVE
-        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE       &kp JP_YEN     &kp JP_DLLR   &kp LA(N3)   &kp LS(LA(N2))
+        &kp GRAVE    &kp INT5    &kp INT4      &kp INT2    &trans         &kp LS(LA(N8))  &kp JP_HASH    &kp JP_LT     &kp JP_GT    &kp JP_CARET
+        &trans       &trans      &trans        &trans      &trans         &kp JP_TILDE    &kp JP_PRNT    &kp JP_LBRLS  &kp JP_RBRLS &kp JP_GRAVE
+        &kp LANG5    &kp LANG3   &kp LANG4     &trans      &trans         &kp NUBS        &kp JP_YEN     &kp JP_DLLR   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
         >;
     };
