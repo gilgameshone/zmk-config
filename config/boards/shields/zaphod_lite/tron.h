@@ -1,12 +1,12 @@
-#ifndef JIS_H
-#define JIS_H
+#ifndef TRON_H
+#define TRON_H
 #pragma once
 
 #include <dt-bindings/zmk/hid_usage.h>
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-// JIS symbols  for macOS in ZMK
+// Tron Kana input for JIS
 
 #define TJ_NU (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION)) // 1
 #define TJ_FU (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_2_AND_AT)) // 2
