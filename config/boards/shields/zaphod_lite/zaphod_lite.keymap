@@ -387,7 +387,7 @@
       bindings = <
         &TJ_BI      &TJ_ZO      &TJ_GO  &TJ_BA    &TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
         &TJ_DA      &TJ_DO      &TJ_GA  &TJ_DE    &TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
-        &kp TJ_XE   &kp TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &TJ_XU
+        &kp TJ_XE   &kp TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
         &trans &mo TRP_L &trans &trans
         >;
     };
