@@ -47,7 +47,242 @@
 	
   };
 
-  
+  macros {
+  TR_GI: tron_gi {
+      label = "tron_gi";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_GE: tron_ge {
+      label = "tron_ge";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_GU: tron_gu {
+      label = "tron_gu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_DZI: tron_dzi {
+      label = "tron_dzi";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_CHI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_VU: tron_vu {
+      label = "tron_vu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_U>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_JI: tron_ji {
+      label = "tron_ji";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SHI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_ZU: tron_zu {
+      label = "tron_zu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_DZU: tron_dzu {
+      label = "tron_dzu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TSU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_BI: tron_bi {
+      label = "tron_bi";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_ZO: tron_zo {
+      label = "tron_zo";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_GO: tron_go {
+      label = "tron_go";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_BA: tron_ba {
+      label = "tron_ba";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_BO: tron_bo {
+      label = "tron_bo";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_DA: tron_da {
+      label = "tron_da";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_DO: tron_do {
+      label = "tron_do";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_GA: tron_ga {
+      label = "tron_ga";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_DE: tron_de {
+      label = "tron_de";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_BU: tron_bu {
+      label = "tron_bu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_U>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_ZE: tron_ze {
+      label = "tron_ze";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_ZA: tron_za {
+      label = "tron_za";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_BE: tron_be {
+      label = "tron_be";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TR_PA: tron_pa {
+      label = "tron_pa";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HA>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TR_PI: tron_pi {
+      label = "tron_pi";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HI>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TR_PU: tron_pu {
+      label = "tron_pu";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HU>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TR_PE: tron_pe {
+      label = "tron_pe";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HE>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TR_PO: tron_po {
+      label = "tron_po";
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HO>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  };
 
   behaviors {
   hm: homerow_mods {
@@ -134,7 +369,7 @@
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG1     &trans
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &mo magic_sturdy   &kp LANG2     &kp LANG1     &mo tron_base
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
         &kp ESC     &kp TAB          &trans     &trans                 
