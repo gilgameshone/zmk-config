@@ -385,9 +385,9 @@
     tron_blue_layer {
       label = "TRB";
       bindings = <
-        &kp TJ_BI   &kp TJ_ZO   &kp TJ_GO  &kp TJ_BA    &kp TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
-        &kp TJ_DA   &kp TJ_DO   &kp TJ_GA  &kp TJ_DE    &kp TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
-        &kp TJ_XE   &kp TJ_XO   &kp TJ_ZE  &kp TJ_ZA    &kp TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
+        &TJ_BI   &TJ_ZO   &TJ_GO  &TJ_BA    &TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
+        &TJ_DA   &TJ_DO   &TJ_GA  &TJ_DE    &TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
+        &TJ_XE   &TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
         &trans &mo TRP_L &trans &trans
         >;
     };
@@ -395,9 +395,9 @@
     tron_red_layer {
       label = "TRR";
       bindings = <
-        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &kp TJ_GI  &kp TJ_GE   &kp TJ_GU        &trans           &trans
-        &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O   &kp TJ_DZI  &kp TJ_VU        &kp TJ_JI        &trans
-        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &kp TJ_ZU  &kp TJ_DZU  &kp TJ_LKAGIKAKO &kp TJ_RKAGIKAKO &kp TJ_XU
+        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
+        &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
+        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJ_XU
         &trans &trans &mo TRP_L &trans
         >;
     };
@@ -405,9 +405,9 @@
     tron_purple_layer {
       label = "TRP";
       bindings = <
-        &kp TJ_PI   &trans &trans &kp TJ_PA  &kp TJ_PO          &trans   &trans        &trans        &trans        &trans
-        &trans      &trans &trans &trans     &kp TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans      &trans &trans &trans     &kp TJ_PE          &trans   &kp RET       &trans        &trans        &trans
+        &TJ_PI    &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &trans
+        &trans    &trans   &trans   &trans   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans    &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &trans
         &trans &trans &trans &trans
         >;
     };
@@ -415,7 +415,7 @@
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &kp _EISU   &kp LANG2     &kp LANG1     &kp _KANA
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &_EISU      &kp LANG2     &kp LANG1     &_KANA
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans
