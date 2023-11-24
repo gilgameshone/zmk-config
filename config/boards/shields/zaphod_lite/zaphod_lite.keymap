@@ -9,12 +9,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
-#define NAV_L 1
-#define EXT_L 2
-#define NUM_L 3
-#define SYM_L 4
-#define FUN_L 5
+#define SDY_L 0
+#define TRN_L 1
+#define TRB_L 2
+#define TRR_L 3
+#define TRP_L 4
+#define NAV_L 5
+#define EXT_L 6
+#define NUM_L 7
+#define SYM_L 8
+#define FUN_L 9
 
 // JIS
 
@@ -51,7 +55,7 @@
   TR_GI: tron_gi {
       label = "tron_gi";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -60,7 +64,7 @@
   TR_GE: tron_ge {
       label = "tron_ge";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -69,7 +73,7 @@
   TR_GU: tron_gu {
       label = "tron_gu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -78,7 +82,7 @@
   TR_DZI: tron_dzi {
       label = "tron_dzi";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_CHI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -87,7 +91,7 @@
   TR_VU: tron_vu {
       label = "tron_vu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_U>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -96,7 +100,7 @@
   TR_JI: tron_ji {
       label = "tron_ji";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SHI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -105,7 +109,7 @@
   TR_ZU: tron_zu {
       label = "tron_zu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -114,7 +118,7 @@
   TR_DZU: tron_dzu {
       label = "tron_dzu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TSU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -123,7 +127,7 @@
   TR_BI: tron_bi {
       label = "tron_bi";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -132,7 +136,7 @@
   TR_ZO: tron_zo {
       label = "tron_zo";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -141,7 +145,7 @@
   TR_GO: tron_go {
       label = "tron_go";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -150,7 +154,7 @@
   TR_BA: tron_ba {
       label = "tron_ba";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -159,7 +163,7 @@
   TR_BO: tron_bo {
       label = "tron_bo";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -168,7 +172,7 @@
   TR_DA: tron_da {
       label = "tron_da";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -177,7 +181,7 @@
   TR_DO: tron_do {
       label = "tron_do";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -186,7 +190,7 @@
   TR_GA: tron_ga {
       label = "tron_ga";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -195,7 +199,7 @@
   TR_DE: tron_de {
       label = "tron_de";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -204,7 +208,7 @@
   TR_BU: tron_bu {
       label = "tron_bu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_U>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -213,7 +217,7 @@
   TR_ZE: tron_ze {
       label = "tron_ze";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -222,7 +226,7 @@
   TR_ZA: tron_za {
       label = "tron_za";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -231,7 +235,7 @@
   TR_BE: tron_be {
       label = "tron_be";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -240,7 +244,7 @@
   TR_PA: tron_pa {
       label = "tron_pa";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HA>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -249,7 +253,7 @@
   TR_PI: tron_pi {
       label = "tron_pi";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HI>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -258,7 +262,7 @@
   TR_PU: tron_pu {
       label = "tron_pu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HU>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -267,7 +271,7 @@
   TR_PE: tron_pe {
       label = "tron_pe";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HE>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -276,26 +280,26 @@
   TR_PO: tron_po {
       label = "tron_po";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HO>
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
-      TJ_LKAGIKAKO: tron_lkagikako {
+  TJ_LKAGIKAKO: tron_lkagikako {
       label = "tron_lkagikako";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_HANDAKUTEN>
         , <&macro_release &kp LSHFT>
         ;
     };
-      TJ_RKAGIKAKO‎: tron_rkagikako‎ {
+  TJ_RKAGIKAKO‎: tron_rkagikako‎ {
       label = "tron_rkagikako‎";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_MU>
@@ -305,19 +309,19 @@
   _EISU: _eisu {
       label = "_eisu";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp LANG1>
-        , <&macro_tap &mo magic_sturdy>
+        , <&macro_tap &mo SDY_L>
         ;
     };
   _KANA: _kana {
       label = "_kana";
       compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings
         = <&macro_tap &kp LANG2>
-        , <&macro_tap &mo tron_base>
+        , <&macro_tap &mo TRN_L>
         ;
     };
   };
@@ -368,34 +372,34 @@
         >;
     };
     tron_base_layer {
-      label = "tron_base";
+      label = "Trn";
       bindings = <
         &kp TJ_RA   &kp TJ_RU   &kp TJ_KO   &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO   &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA   &kp TJ_TO   &kp TJ_KA   &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I    &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
         &kp TJ_MA   &kp TJ_RI   &kp TJ_NI   &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU  &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
-        &trans  &mo tron_red  &mo tron_blue   &trans
+        &trans  &mo TRR_L  &mo TRB_L   &trans
         >;
     };
     tron_blue_layer {
-      label = "tron_blue";
+      label = "Trb";
       bindings = <
         &kp TJ_BI   &kp TJ_ZO   &kp TJ_GO  &kp TJ_BA    &kp TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
         &kp TJ_DA   &kp TJ_DO   &kp TJ_GA  &kp TJ_DE    &kp TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
-        &kp TJ_XE   &kp TJ_XO   &kp TJ_ZE  &kp TJ_ZA    &kp TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA &trans  &kp TJ_XU
-        &trans &mo tron_purple &trans &trans
+        &kp TJ_XE   &kp TJ_XO   &kp TJ_ZE  &kp TJ_ZA    &kp TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
+        &trans &mo TRP_L &trans &trans
         >;
     };
     tron_red_layer {
-      label = "tron_red";
+      label = "Trr";
       bindings = <
         &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &kp TJ_GI  &kp TJ_GE   &kp TJ_GU        &trans           &trans
         &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O   &kp TJ_DZI  &kp TJ_VU        &kp TJ_JI        &trans
         &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &kp TJ_ZU  &kp TJ_DZU  &kp TJ_LKAGIKAKO &kp TJ_RKAGIKAKO &kp TJ_XU
-        &trans &trans &mo tron_purple &trans
+        &trans &trans &mo TRP_L &trans
         >;
     };
     tron_purple_layer {
-      label = "tron_purple";
+      label = "Trp";
       bindings = <
         &kp TJ_PI   &trans &trans &kp TJ_PA  &kp TJ_PO          &trans   &trans        &trans        &trans        &trans
         &trans      &trans &trans &trans     &kp TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
