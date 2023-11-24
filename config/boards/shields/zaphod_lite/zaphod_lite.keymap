@@ -367,12 +367,13 @@
       bindings = <
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo       &kp JP_DOT  &min_qma
         &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
         >;
     };
+
     tron_base_layer {
-      label = "Trn";
+      label = "TRN";
       bindings = <
         &kp TJ_RA   &kp TJ_RU   &kp TJ_KO   &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO   &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA   &kp TJ_TO   &kp TJ_KA   &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I    &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
@@ -380,8 +381,9 @@
         &trans  &mo TRR_L  &mo TRB_L   &trans
         >;
     };
+
     tron_blue_layer {
-      label = "Trb";
+      label = "TRB";
       bindings = <
         &kp TJ_BI   &kp TJ_ZO   &kp TJ_GO  &kp TJ_BA    &kp TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
         &kp TJ_DA   &kp TJ_DO   &kp TJ_GA  &kp TJ_DE    &kp TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
@@ -389,8 +391,9 @@
         &trans &mo TRP_L &trans &trans
         >;
     };
+
     tron_red_layer {
-      label = "Trr";
+      label = "TRR";
       bindings = <
         &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &kp TJ_GI  &kp TJ_GE   &kp TJ_GU        &trans           &trans
         &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O   &kp TJ_DZI  &kp TJ_VU        &kp TJ_JI        &trans
@@ -398,8 +401,9 @@
         &trans &trans &mo TRP_L &trans
         >;
     };
+
     tron_purple_layer {
-      label = "Trp";
+      label = "TRP";
       bindings = <
         &kp TJ_PI   &trans &trans &kp TJ_PA  &kp TJ_PO          &trans   &trans        &trans        &trans        &trans
         &trans      &trans &trans &trans     &kp TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
