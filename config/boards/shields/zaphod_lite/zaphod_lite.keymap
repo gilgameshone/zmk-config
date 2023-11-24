@@ -62,14 +62,14 @@
       compatible = "zmk,behavior-mod-morph";
       label = "comma_quot";
 #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp LS(N7)>;
+      bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
       mods = <(MOD_LSFT)>;
     };
   min_qma: min_qma {
       compatible = "zmk,behavior-mod-morph";
       label = "min_qma";
 #binding-cells = <0>;
-      bindings = <&kp MINUS>, <&kp QMARK>;
+      bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
       mods = <(MOD_LSFT)>;
     };
     
@@ -84,11 +84,10 @@
       bindings = <
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp DOT  &min_qma
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
         &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
         >;
     };
-
 
     nav_layer {
       label = "Nav";
@@ -113,9 +112,9 @@
     num_layer {
       label = "Num";
       bindings = <
-        &kp LS(SLASH) &kp RBKT   &kp NUHS   &kp SQT    &kp LC(F2)      &kp LS(SEMI)    &kp N7     &kp N8      &kp N9     &kp LS(SQT)
-        &kp LS(N6)    &kp LS(N8) &kp LS(N9) &kp SEMI   &kp LS(LBKT)    &kp MINUS       &kp N4     &kp N5      &kp N6     &kp SLASH
-        &kp LS(N2)    &kp LS(N7) &kp INT1   &kp LS(N1) &kp LS(INT3)    &kp LS(MINUS)   &kp N1     &kp N2      &kp N3     &kp N0
+        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT  &kp JP_COLON  &kp LC(F2)     &kp JP_PLUS    &kp JP_N7   &kp JP_N8    &kp JP_N9   &kp JP_ASTRK
+        &kp JP_AMPS   &kp JP_LPAR &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT      &kp JP_MINUS   &kp JP_N4   &kp JP_N5    &kp JP_N6   &kp JP_SLASH
+        &kp JP_DQT    &kp JP_SQT  &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE    &kp JP_EQUAL   &kp JP_N1   &kp JP_N2    &kp JP_N3   &kp JP_N0
         &trans     &trans       &kp RET      &mo SYM_L  
         >;
     };
@@ -123,9 +122,9 @@
     sym_layer {
       label = "Sym";
       bindings = <
-        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8))  &kp LS(N3)   &kp LT       &kp GT       &kp EQUAL
-        &trans       &trans      &kp JP_RBRLS  &kp JP_YEN    &kp LS(EQUAL)   &kp LS(N5)   &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBKT)
-        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE       &kp INT3     &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
+        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8))  &kp JP_HASH   &kp JP_LT       &kp JP_GT       &kp JP_CARET
+        &trans       &trans      &kp JP_RBRLS  &kp JP_YEN    &kp JP_EQUAL   &kp JP_PRNT   &kp JP_LBRLS &kp JP_RBRLS &kp JP_GRAVE
+        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE       &kp JP_YEN     &kp JP_DLLR   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
         >;
     };
