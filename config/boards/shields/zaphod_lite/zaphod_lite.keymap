@@ -81,7 +81,6 @@
       bindings = <&mo FUN_L>;
     };
         
-	
     caps_word_combo {
       timeout-ms = <50>;
       key-positions = <32 33>;
@@ -103,14 +102,14 @@
       compatible = "zmk,behavior-mod-morph";
       label = "comma_quot";
 #binding-cells = <0>;
-      bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
+      bindings = <&kp COMMA>, <&kp LS(N7)>;
       mods = <(MOD_LSFT)>;
     };
   min_qma: min_qma {
       compatible = "zmk,behavior-mod-morph";
       label = "min_qma";
 #binding-cells = <0>;
-      bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
+      bindings = <&kp MINUS>, <&kp QMARK>;
       mods = <(MOD_LSFT)>;
     };
     
