@@ -50,9 +50,9 @@
     };
 	
   };
-
+  
   macros {
-  TR_GI: tron_gi {
+  TJ_GI: tron_gi {
       label = "tron_gi";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -61,7 +61,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_GE: tron_ge {
+  TJ_GE: tron_ge {
       label = "tron_ge";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -70,7 +70,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_GU: tron_gu {
+  TJ_GU: tron_gu {
       label = "tron_gu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -79,7 +79,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_DZI: tron_dzi {
+  TJ_DZI: tron_dzi {
       label = "tron_dzi";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -88,7 +88,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_VU: tron_vu {
+  TJ_VU: tron_vu {
       label = "tron_vu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -97,7 +97,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_JI: tron_ji {
+  TJ_JI: tron_ji {
       label = "tron_ji";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -106,7 +106,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_ZU: tron_zu {
+  TJ_ZU: tron_zu {
       label = "tron_zu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -115,7 +115,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_DZU: tron_dzu {
+  TJ_DZU: tron_dzu {
       label = "tron_dzu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -124,7 +124,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_BI: tron_bi {
+  TJ_BI: tron_bi {
       label = "tron_bi";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -133,7 +133,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_ZO: tron_zo {
+  TJ_ZO: tron_zo {
       label = "tron_zo";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -142,7 +142,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_GO: tron_go {
+  TJ_GO: tron_go {
       label = "tron_go";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -151,7 +151,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_BA: tron_ba {
+  TJ_BA: tron_ba {
       label = "tron_ba";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -160,7 +160,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_BO: tron_bo {
+  TJ_BO: tron_bo {
       label = "tron_bo";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -169,7 +169,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_DA: tron_da {
+  TJ_DA: tron_da {
       label = "tron_da";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -178,7 +178,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_DO: tron_do {
+  TJ_DO: tron_do {
       label = "tron_do";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -187,7 +187,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_GA: tron_ga {
+  TJ_GA: tron_ga {
       label = "tron_ga";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -196,7 +196,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_DE: tron_de {
+  TJ_DE: tron_de {
       label = "tron_de";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -205,7 +205,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_BU: tron_bu {
+  TJ_BU: tron_bu {
       label = "tron_bu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -214,7 +214,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_ZE: tron_ze {
+  TJ_ZE: tron_ze {
       label = "tron_ze";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -223,7 +223,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_ZA: tron_za {
+  TJ_ZA: tron_za {
       label = "tron_za";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -232,7 +232,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_BE: tron_be {
+  TJ_BE: tron_be {
       label = "tron_be";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -241,7 +241,7 @@
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
-  TR_PA: tron_pa {
+  TJ_PA: tron_pa {
       label = "tron_pa";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -250,7 +250,7 @@
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
-  TR_PI: tron_pi {
+  TJ_PI: tron_pi {
       label = "tron_pi";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -259,7 +259,7 @@
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
-  TR_PU: tron_pu {
+  TJ_PU: tron_pu {
       label = "tron_pu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -268,7 +268,7 @@
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
-  TR_PE: tron_pe {
+  TJ_PE: tron_pe {
       label = "tron_pe";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -277,7 +277,7 @@
         , <&macro_tap &kp TJ_HANDAKUTEN>
         ;
     };
-  TR_PO: tron_po {
+  TJ_PO: tron_po {
       label = "tron_po";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
