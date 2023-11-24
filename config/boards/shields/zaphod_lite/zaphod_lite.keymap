@@ -2,7 +2,7 @@
  * Copyright (c) 2021 Pete Johanson
  *
  * SPDX-License-Identifier: MIT
- */
+*/
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -124,7 +124,7 @@
       bindings = <
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp DOT  &min_qma
         &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
         >;
     };
@@ -143,9 +143,9 @@
     ext_layer {
       label = "Ext";
       bindings = <
-        &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))    &kp LS(LG(N5))    &trans         &trans       &trans       &trans
-        &trans       &trans        &trans       &trans       &trans           &trans            &trans         &trans       &trans       &trans
-        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0     &trans            &trans         &trans       &trans       &kp CAPS
+        &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
+        &trans       &trans        &trans       &trans       &trans         &trans          &trans      &trans     &trans     &trans
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans          &trans      &trans     &trans     &kp CAPS
         &trans          &trans       &trans           &trans
         >;
     };
@@ -153,9 +153,9 @@
     num_layer {
       label = "Num";
       bindings = <
-        &kp LS(SLASH)  &kp RBKT  &kp NUHS   &kp SQT  &kp LC(F2)      &kp LS(SEMI)     &kp N7     &kp N8      &kp N9     &kp LS(SQT)
-        &kp LS(N6)   &kp LS(N8)  &kp LS(N9)   &kp SEMI   &kp LS(LBKT)       &kp MINUS    &kp N4     &kp N5      &kp N6     &kp SLASH
-        &kp LS(N2)    &kp LS(N7)  &kp INT1  &kp LS(N1)   &kp LS(INT3)     &kp LS(MINUS)    &kp N1     &kp N2      &kp N3     &kp N0
+        &kp LS(SLASH) &kp RBKT   &kp NUHS   &kp SQT    &kp LC(F2)      &kp LS(SEMI)    &kp N7     &kp N8      &kp N9     &kp LS(SQT)
+        &kp LS(N6)    &kp LS(N8) &kp LS(N9) &kp SEMI   &kp LS(LBKT)    &kp MINUS       &kp N4     &kp N5      &kp N6     &kp SLASH
+        &kp LS(N2)    &kp LS(N7) &kp INT1   &kp LS(N1) &kp LS(INT3)    &kp LS(MINUS)   &kp N1     &kp N2      &kp N3     &kp N0
         &trans     &trans       &kp RET      &mo SYM_L  
         >;
     };
@@ -163,9 +163,9 @@
     sym_layer {
       label = "Sym";
       bindings = <
-        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8)) &kp LS(N3)   &kp LT       &kp GT       &kp EQUAL
-        &trans       &trans      &trans     &trans    &trans   &kp LS(EQUAL)      &kp LS(N5)    &kp LS(RBKT)      &kp  LS(NUHS)     &kp LS(LBKT)
-        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE          &kp INT3      &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
+        &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8))  &kp LS(N3)   &kp LT       &kp GT       &kp EQUAL
+        &trans       &trans      &trans     &trans    &trans   &kp LS(EQUAL)   &kp LS(N5)   &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBKT)
+        &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE       &kp INT3     &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
         >;
     };
