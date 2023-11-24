@@ -91,7 +91,43 @@
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
-        &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
+        &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
+        >;
+    };
+    tron_base_layer {
+      label = "tron_base";
+      bindings = <
+        &kp TJ_RA   &kp TJ_RU   &kp TJ_KO   &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO   &kp TJ_KU     &kp TJ_A     &kp TJ_RE
+        &kp TJ_TA   &kp TJ_TO   &kp TJ_KA   &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I    &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
+        &kp TJ_MA   &kp TJ_RI   &kp TJ_NI   &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU  &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
+        &trans  &mo tron_red  &mo tron_blue   &trans
+        >;
+    };
+    tron_blue_layer {
+      label = "tron_blue";
+      bindings = <
+        &kp TJ_BI   &kp TJ_ZO   &kp TJ_GO  &kp TJ_BA    &kp TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
+        &kp TJ_DA   &kp TJ_DO   &kp TJ_GA  &kp TJ_DE    &kp TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
+        &kp TJ_XE   &kp TJ_XO   &kp TJ_ZE  &kp TJ_ZA    &kp TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA &trans  &kp TJ_XU
+        &trans &mo tron_purple &trans &trans
+        >;
+    };
+    tron_red_layer {
+      label = "tron_red";
+      bindings = <
+        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &kp TJ_GI  &kp TJ_GE   &kp TJ_GU        &trans           &trans
+        &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O   &kp TJ_DZI  &kp TJ_VU        &kp TJ_JI        &trans
+        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &kp TJ_ZU  &kp TJ_DZU  &kp TJ_LKAGIKAKO &kp TJ_RKAGIKAKO &kp TJ_XU
+        &trans &trans &mo tron_purple &trans
+        >;
+    };
+    tron_purple_layer {
+      label = "tron_purple";
+      bindings = <
+        &kp TJ_PI   &trans &trans &kp TJ_PA  &kp TJ_PO          &trans   &trans        &trans        &trans        &trans
+        &trans      &trans &trans &trans     &kp TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans      &trans &trans &trans     &kp TJ_PE          &trans   &kp RET       &trans        &trans        &trans
+        &trans &trans &trans &trans
         >;
     };
 
