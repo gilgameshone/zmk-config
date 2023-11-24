@@ -17,54 +17,6 @@
 #define FUN_L 5
 
 // JIS
-/* #define JP_N1    N1    // 1 */
-/* #define JP_N2   N2    // 2 */
-/* #define JP_N3    N3    // 3 */
-/* #define JP_N4    N4    // 4 */
-/* #define JP_N5    N5    // 5 */
-/* #define JP_N6    N6    // 6 */
-/* #define JP_N7    N7    // 7 */
-/* #define JP_N8    N8    // 8 */
-/* #define JP_N9    N9    // 9 */
-/* #define JP_N0    N0    // 0 */
-/* #define JP_MINUS MINUS // - */
-/* #define JP_CARET EQUAL   // ^ */
-/* #define JP_YEN  INT3 // ¥ */
-/* #define JP_AT   LBKT // @ */
-/* #define JP_LBKT RBKT // [ */
-/* #define JP_EISU CAPS // Eisū (英数) */
-/* #define JP_SEMI SEMI // ; */
-/* #define JP_COLON SQT // : */
-/* #define JP_RBKT NUHS // ] */
-/* #define JP_COMMA COMMA // , */
-/* #define JP_DOT  DOT  // . */
-/* #define JP_SLASH SLASH // / */
-/* #define JP_BSLH INT1 // (backslash) */
-/* #define JP_MHEN INT5 // Muhenkan (無変換) */
-/* #define JP_HENK INT4 // Henkan (変換) */
-/* #define JP_KANA INT2 // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字) */
-/* #define JP_EXCL LS(JP_N1)    // ! */
-/* #define JP_DQT LS(JP_N2)    // " */
-/* #define JP_HASH LS(JP_N3)    // # */
-/* #define JP_DLLR  LS(JP_N4)    // $ */
-/* #define JP_PRCNT LS(JP_N5)    // % */
-/* #define JP_AMPS LS(JP_N6)    // & */
-/* #define JP_SQT LS(JP_N7)    // ' */
-/* #define JP_LPAR LS(JP_N8)    // ( */
-/* #define JP_RPAR LS(JP_N9)    // ) */
-/* #define JP_EQUAL  LS(JP_MINUS) // = */
-/* #define JP_TILDE LS(JP_CARET) // ~ */
-/* #define JP_PIPE LS(JP_YEN)  // | */
-/* #define JP_GRAVE  LS(JP_AT)   // ` */
-/* #define JP_LBRC LS(JP_LBKT) // { */
-/* #define JP_CAPS LS(JP_EISU) // Caps Lock */
-/* #define JP_PLUS LS(JP_SEMI) // + */
-/* #define JP_ASTRK LS(JP_COLON) // * */
-/* #define JP_RBRC LS(JP_RBKT) // } */
-/* #define JP_LT LS(JP_COMMA) // < */
-/* #define JP_GT LS(JP_DOT)  // > */
-/* #define JP_QMARK LS(JP_SLASH) // ? */
-/* #define JP_UNDER LS(JP_BSLH) // _ */
 
 
 
