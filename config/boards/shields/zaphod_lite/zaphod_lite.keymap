@@ -18,6 +18,7 @@
 
 // JIS
 
+#include "jis.h"
 
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
@@ -123,7 +124,7 @@
       label = "Sym";
       bindings = <
         &kp GRAVE    &kp INT5    &kp INT4   &kp INT2  &trans   &kp LS(LA(N8))  &kp LS(N3)   &kp LT       &kp GT       &kp EQUAL
-        &trans       &trans      &trans     &trans    &trans   &kp LS(EQUAL)   &kp LS(N5)   &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBKT)
+        &trans       &trans      &kp JP_RBRLS  &kp JP_YEN    &kp LS(EQUAL)   &kp LS(N5)   &kp LS(RBKT) &kp LS(NUHS) &kp LS(LBKT)
         &kp LANG5    &kp LANG3   &kp LANG4  &trans    &trans   &kp GRAVE       &kp INT3     &kp LS(N4)   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
         >;
