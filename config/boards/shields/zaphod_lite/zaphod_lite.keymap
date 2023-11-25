@@ -210,7 +210,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_tap &kp TJ_U>
+        = <&macro_tap &kp TJ_FU>
         , <&macro_tap &kp TJ_DAKUTEN>
         ;
     };
