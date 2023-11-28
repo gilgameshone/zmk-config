@@ -324,6 +324,38 @@
         , <&macro_tap &to TRN_L>
         ;
     };
+    googl: googl {
+            label = "googl";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp G &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
+                ;
+        };
+    gtran: gtran {
+            label = "gtran";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp T &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
+                ;
+        };
+    defin: defin {
+            label = "defin";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp D &kp SPACE> , <&macro_tap &kp LG(V)>
+                , <&macro_wait_time 500>
+                , <&kp RET>
+                ;
+        };
   };
 
   behaviors {
@@ -427,7 +459,7 @@
       bindings = <
         &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
         &trans       &trans        &trans       &trans       &trans         &trans          &trans      &trans     &trans     &trans
-        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans          &trans      &trans     &trans     &kp CAPS
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans          &googl      &gtran     &defin     &kp CAPS
         &trans          &trans       &trans           &trans
         >;
     };
