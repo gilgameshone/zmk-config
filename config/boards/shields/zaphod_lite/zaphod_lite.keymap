@@ -19,8 +19,9 @@
 #define NUM_L 7
 #define SYM_L 8
 #define FUN_L 9
+#define BLE_L 10
 #define HYPER LS(LA(LG(LCTL)))
-#define MEH LS(LA(LCTL))
+#define MEH(key) LS(LA(LC(key)))
 
 // JIS
 
@@ -51,6 +52,24 @@
       bindings = <&caps_word>;
     };
 
+    ext_mo {
+      timeout-ms = <50>;
+      key-positions = <30 31>;
+      bindings = <&mo EXT_L>;
+    };
+
+    hyp_combo {
+      timeout-ms = <50>;
+      key-positions = <32 33>;
+      bindings = <&kp HYPER>;
+    };
+    
+    ble_to {
+      timeout-ms = <50>;
+      key-positions = <9 19 29>;
+      bindings = <&to BLE_L>;
+    };
+    
   };
 
   macros {
@@ -354,7 +373,7 @@
                 = <&macro_tap &kp LG(C)>
                 , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
                 , <&macro_tap &kp D &kp SPACE> , <&macro_tap &kp LG(V)>
-                , <&macro_wait_time 500>
+                , <&macro_wait_time 50>
                 , <&kp RET>
                 ;
         };
@@ -401,8 +420,8 @@
       bindings = <
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &hm HYPER J &kp G          &kp W         &kp Z            &kp H          &hm HYPER com_quo &hm MEH JP_DOT &min_qma
-        &lt NUM_L BKSP  &space_lead &sk LSHIFT   &lt NAV_L RET
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo       &kp JP_DOT  &min_qma
+        &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
         >;
     };
 
@@ -449,7 +468,7 @@
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans             &trans   &_EISU       &_KANA &trans
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &_EISU        &_KANA        &trans
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans
@@ -459,13 +478,13 @@
     ext_layer {
       label = "Ext";
       bindings = <
-        &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
-        &trans       &trans        &trans       &trans       &trans         &trans          &trans      &trans     &trans     &trans
-        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans          &googl      &gtran     &defin     &kp CAPS
-        &trans          &trans       &trans           &trans
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)  &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)  &kp MEH(Y)     &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)  &kp MEH(W)     &trans          &googl      &gtran     &defin     &kp CAPS
+        &trans       &trans        &trans       &trans
         >;
     };
-
+    
     num_layer {
       label = "Num";
       bindings = <
@@ -494,7 +513,16 @@
         &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4
         &none      &none             &trans          &trans
         >;
-    };
 
+    };
+    ble_layer {
+      label = "ble";
+      bindings = <
+        &bt BT_CLR   &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
+        &trans       &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans      &trans      &trans     &trans     &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
   };
 };
