@@ -9,23 +9,30 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
-#define NAV_L 1
-#define EXT_L 2
-#define NUM_L 3
-#define SYM_L 4
-#define FUN_L 5
+#define SDY_L 0
+#define TRN_L 1
+#define TRB_L 2
+#define TRR_L 3
+#define TRP_L 4
+#define NAV_L 5
+#define EXT_L 6
+#define NUM_L 7
+#define SYM_L 8
+#define FUN_L 9
+#define BLE_L 10
+#define HYPER LS(LA(LG(LCTL)))
+#define MEH(key) LS(LA(LC(key)))
 
 // JIS
 
 #include "jis.h"
-
+#include "tron.h"
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
-         
+
 &sk {  // sticky-key config
-    release-after-ms = <900>;  // release after 0.6s
+    release-after-ms = <1000>;  // release after 0.6s
     quick-release;             // no double capitalization when rolling keys
 };
 
@@ -38,25 +45,358 @@
       key-positions = <0 30>;
       bindings = <&mo FUN_L>;
     };
-        
+
     caps_word_combo {
       timeout-ms = <50>;
       key-positions = <31 32>;
       bindings = <&caps_word>;
     };
-	
+
+    ext_mo {
+      timeout-ms = <50>;
+      key-positions = <30 31>;
+      bindings = <&mo EXT_L>;
+    };
+
+    hyp_combo {
+      timeout-ms = <50>;
+      key-positions = <32 33>;
+      bindings = <&kp HYPER>;
+    };
+    
+    ble_to {
+      timeout-ms = <50>;
+      key-positions = <9 19 29>;
+      bindings = <&to BLE_L>;
+    };
+    
   };
 
-  
+  macros {
+  TJ_GI: tron_gi {
+      label = "tron_gi";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_GE: tron_ge {
+      label = "tron_ge";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_GU: tron_gu {
+      label = "tron_gu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_DZI: tron_dzi {
+      label = "tron_dzi";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_CHI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_VU: tron_vu {
+      label = "tron_vu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_U>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_JI: tron_ji {
+      label = "tron_ji";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SHI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_ZU: tron_zu {
+      label = "tron_zu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_DZU: tron_dzu {
+      label = "tron_dzu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TSU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_BI: tron_bi {
+      label = "tron_bi";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HI>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_ZO: tron_zo {
+      label = "tron_zo";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_GO: tron_go {
+      label = "tron_go";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_BA: tron_ba {
+      label = "tron_ba";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_BO: tron_bo {
+      label = "tron_bo";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_DA: tron_da {
+      label = "tron_da";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_DO: tron_do {
+      label = "tron_do";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TO>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_GA: tron_ga {
+      label = "tron_ga";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_DE: tron_de {
+      label = "tron_de";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_TE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_BU: tron_bu {
+      label = "tron_bu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_FU>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_ZE: tron_ze {
+      label = "tron_ze";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_ZA: tron_za {
+      label = "tron_za";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_SA>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_BE: tron_be {
+      label = "tron_be";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HE>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        ;
+    };
+  TJ_PA: tron_pa {
+      label = "tron_pa";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HA>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TJ_PI: tron_pi {
+      label = "tron_pi";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HI>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TJ_PU: tron_pu {
+      label = "tron_pu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_FU>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TJ_PE: tron_pe {
+      label = "tron_pe";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HE>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TJ_PO: tron_po {
+      label = "tron_po";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_HO>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        ;
+    };
+  TJ_LKAGIKAKO: tron_lkagikako {
+      label = "tron_lkagikako";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        , <&macro_release &kp LSHFT>
+        ;
+    };
+  TJ_RKAGIKAKO: tron_rkagikako {
+      label = "tron_rkagikako";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_MU>
+        , <&macro_release &kp LSHFT>
+        ;
+    };
+  _EISU: _eisu {
+      label = "_eisu";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LANG2>
+        , <&macro_tap &to SDY_L>
+        ;
+    };
+  _KANA: _kana {
+      label = "_kana";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LANG1>
+        , <&macro_tap &to TRN_L>
+        ;
+    };
+    googl: googl {
+            label = "googl";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LG(SPACE)>
+                , <&macro_tap &kp G &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
+                ;
+        };
+    gtran: gtran {
+            label = "gtran";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LG(SPACE)>
+                , <&macro_tap &kp T &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
+                ;
+        };
+    defin: defin {
+            label = "defin";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(C)>
+                , <&macro_tap &kp LG(SPACE)>
+                , <&macro_tap &kp D &kp SPACE> , <&macro_tap &kp LG(V)>
+                , <&macro_wait_time 50>
+                , <&kp RET>
+                ;
+        };
+  };
 
   behaviors {
-  hm: homerow_mods {
+  hml: homerow_mods_left {
       compatible = "zmk,behavior-hold-tap";
       label = "homerow mods";
 #binding-cells = <2>;
       tapping_term_ms = <250>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>
+    };
+  hmr: homerow_mods_right {
+      compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods";
+#binding-cells = <2>;
+      tapping_term_ms = <250>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>
     };
   com_quo: comma_quot {
       compatible = "zmk,behavior-mod-morph";
@@ -78,7 +418,7 @@
 #binding-cells = <0>;
       bindings = <&kp SPACE>, <&kp RA(X)>;
       mods = <(MOD_RALT)>;
-    };    
+    };
   };
 
   keymap {
@@ -89,39 +429,79 @@
       label = "magic_sturdy";
       bindings = <
         &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
-        &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo   &kp JP_DOT  &min_qma
+        &hml LSHFT S &hml LALT T &hml LGUI R  &hml LCTRL D    &kp Y         &kp F            &hmr RCTRL N    &hmr RGUI E     &hmr RALT A  &hmr  RSHFT I
+        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo       &kp JP_DOT  &min_qma
         &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
+        >;
+    };
+
+    tron_base_layer {
+      label = "TRN";
+      bindings = <
+        &kp TJ_RA   &kp TJ_RU   &kp TJ_KO   &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO   &kp TJ_KU     &kp TJ_A     &kp TJ_RE
+        &kp TJ_TA   &kp TJ_TO   &kp TJ_KA   &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I    &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
+        &kp TJ_MA   &kp TJ_RI   &kp TJ_NI   &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU  &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
+        &trans  &mo TRR_L  &mo TRB_L   &trans
+        >;
+    };
+
+    tron_blue_layer {
+      label = "TRB";
+      bindings = <
+        &TJ_BI      &TJ_ZO      &TJ_GO  &TJ_BA    &TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
+        &TJ_DA      &TJ_DO      &TJ_GA  &TJ_DE    &TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
+        &kp TJ_XE   &kp TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
+        &trans &mo TRP_L &trans &trans
+        >;
+    };
+
+    tron_red_layer {
+      label = "TRR";
+      bindings = <
+        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
+        &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
+        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &kp TJ_XU
+        &trans &trans &mo TRP_L &trans
+        >;
+    };
+
+    tron_purple_layer {
+      label = "TRP";
+      bindings = <
+        &TJ_PI    &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &trans
+        &trans    &trans   &trans   &trans   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans    &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &trans
+        &trans &trans &trans &trans
         >;
     };
 
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &kp LANG2     &kp LANG1     &trans
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &_EISU        &_KANA        &trans
         &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE               
-        &kp ESC     &kp TAB          &trans     &trans                 
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp ESC     &kp TAB          &trans     &trans
         >;
     };
 
     ext_layer {
       label = "Ext";
       bindings = <
-        &bt BT_CLR   &trans        &trans       &trans       &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
-        &trans       &trans        &trans       &trans       &trans         &trans          &trans      &trans     &trans     &trans
-        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans          &trans      &trans     &trans     &kp CAPS
-        &trans          &trans       &trans           &trans
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)  &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)  &kp MEH(Y)     &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)  &kp MEH(W)     &trans          &googl      &gtran     &defin     &kp CAPS
+        &trans       &trans        &trans       &trans
         >;
     };
-
+    
     num_layer {
       label = "Num";
       bindings = <
         &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)     &kp JP_PLUS    &kp JP_N7   &kp JP_N8    &kp JP_N9   &kp JP_ASTRK
         &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT      &kp JP_MINUS   &kp JP_N4   &kp JP_N5    &kp JP_N6   &kp JP_SLASH
         &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE    &kp JP_EQUAL   &kp JP_N1   &kp JP_N2    &kp JP_N3   &kp JP_N0
-        &trans     &trans       &kp RET      &mo SYM_L  
+        &trans     &trans       &kp RET      &mo SYM_L
         >;
     };
 
@@ -138,13 +518,21 @@
     fun_layer {
       label = "Fun";
       bindings = <
-        &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12             
-        &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8           
-        &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4       
+        &trans          &trans         &trans      &trans     &trans    &kp PSCRN       &kp F9     &kp F10    &kp F11     &kp F12
+        &trans          &trans         &trans      &trans     &trans    &kp PAUSE_BREAK &kp F5     &kp F6     &kp F7      &kp F8
+        &trans          &trans         &trans      &trans     &trans    &kp SLCK        &kp F1     &kp F2     &kp F3      &kp F4
         &none      &none             &trans          &trans
         >;
+
     };
-        
+    ble_layer {
+      label = "ble";
+      bindings = <
+        &bt BT_CLR   &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
+        &trans       &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
+        &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans      &trans      &trans     &trans     &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
   };
 };
-
