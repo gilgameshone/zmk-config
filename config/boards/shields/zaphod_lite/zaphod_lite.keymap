@@ -351,7 +351,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LG(C)>
-                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp LG(SPACE)>
                 , <&macro_tap &kp G &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
                 ;
         };
@@ -361,7 +361,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LG(C)>
-                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp LG(SPACE)>
                 , <&macro_tap &kp T &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
                 ;
         };
@@ -371,7 +371,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LG(C)>
-                , <&macro_tap &kp LS(LA(LG(LC(SPACE))))>
+                , <&macro_tap &kp LG(SPACE)>
                 , <&macro_tap &kp D &kp SPACE> , <&macro_tap &kp LG(V)>
                 , <&macro_wait_time 50>
                 , <&kp RET>
