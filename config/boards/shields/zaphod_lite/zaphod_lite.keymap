@@ -410,7 +410,7 @@
       mods = <(MOD_RALT)>;
     };
   };
-
+    
   keymap {
     compatible = "zmk,keymap";
 
@@ -478,10 +478,10 @@
     ext_layer {
       label = "Ext";
       bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)  &kp LS(LG(V))  &kp LS(LG(N5))  &trans      &trans     &trans     &trans
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)  &kp MEH(Y)     &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
-        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)  &kp MEH(W)     &trans          &googl      &gtran     &defin     &kp CAPS
-        &trans       &trans        &trans       &trans
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp LS(LG(V))  &kp MEH(P) &kp LS(LG(N5))  &trans      &trans     &trans     &trans
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &kp HYPER(Y)     &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)     &trans          &googl      &gtran     &defin     &kp CAPS
+        &trans       &kp MEH(SPC)     &trans       &trans
         >;
     };
     
