@@ -402,11 +402,18 @@
       bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
       mods = <(MOD_LSFT)>;
     };
-  space_lead: space_lead {
+      dot_dbq: dot_doublequote {
       compatible = "zmk,behavior-mod-morph";
-      label = "space_lead";
+      label = "dot_doublequote";
 #binding-cells = <0>;
-      bindings = <&kp SPACE>, <&kp RA(X)>;
+      bindings = <&kp JP_DOT>, <&kp JP_DQT>;
+      mods = <(MOD_LSFT)>;
+    };
+  space_ext: space_ext {
+      compatible = "zmk,behavior-mod-morph";
+      label = "space_ext";
+#binding-cells = <0>;
+      bindings = <&kp SPACE>, <&sl EXT_L>;
       mods = <(MOD_RALT)>;
     };
   };
@@ -418,19 +425,19 @@
     magic_sturdy_layer {
       label = "magic_sturdy";
       bindings = <
-        &kp X       &kp M      &kp L       &kp C          &kp P         &kp B            &kp NUBS       &kp U          &kp O       &kp Q
-        &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D    &kp Y         &kp F            &hm RCTRL N    &hm RGUI E     &hm RALT A  &hm  RSHFT I
-        &kp V       &kp K      &kp J       &kp G          &kp W         &kp Z            &kp H          &com_quo       &kp JP_DOT  &min_qma
-        &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &lt NAV_L RET
+        &kp X       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
+        &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
+        &kp V       &kp K      &kp J       &kp G        &kp W    &kp Z  &kp H        &com_quo    &dot_dbq    &min_qma
+        &lt NUM_L BKSP  &space_ext &sk LSHIFT   &lt NAV_L RET
         >;
     };
 
     tron_base_layer {
       label = "TRN";
       bindings = <
-        &kp TJ_RA   &kp TJ_RU   &kp TJ_KO   &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO   &kp TJ_KU     &kp TJ_A     &kp TJ_RE
-        &kp TJ_TA   &kp TJ_TO   &kp TJ_KA   &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I    &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
-        &kp TJ_MA   &kp TJ_RI   &kp TJ_NI   &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU  &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
+        &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
+        &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
+        &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
         &trans  &mo TRR_L  &mo TRB_L   &trans
         >;
     };
@@ -438,9 +445,9 @@
     tron_blue_layer {
       label = "TRB";
       bindings = <
-        &TJ_BI      &TJ_ZO      &TJ_GO  &TJ_BA    &TJ_BO      &kp TJ_E   &kp TJ_KE   &kp TJ_ME         &kp TJ_MU  &kp TJ_RO
-        &TJ_DA      &TJ_DO      &TJ_GA  &TJ_DE    &TJ_BU      &kp TJ_O   &kp TJ_CHI  &kp TJ_CHOUONNPU  &kp TJ_MI  &kp TJ_YA
-        &kp TJ_XE   &kp TJ_XO   &TJ_ZE  &TJ_ZA    &TJ_BE      &kp TJ_WA  &kp TJ_XI   &kp TJ_XA         &trans     &kp TJ_XU
+        &TJ_BI     &TJ_ZO     &TJ_GO  &TJ_BA  &TJ_BO    &kp TJ_E   &kp TJ_KE  &kp TJ_ME         &kp TJ_MU &kp TJ_RO
+        &TJ_DA     &TJ_DO     &TJ_GA  &TJ_DE  &TJ_BU    &kp TJ_O   &kp TJ_CHI &kp TJ_CHOUONNPU  &kp TJ_MI &kp TJ_YA
+        &kp TJ_XE  &kp TJ_XO  &TJ_ZE  &TJ_ZA  &TJ_BE    &kp TJ_WA  &kp TJ_XI  &kp TJ_XA         &trans    &kp TJ_XU
         &trans &mo TRP_L &trans &trans
         >;
     };
@@ -469,18 +476,18 @@
       label = "Nav";
       bindings = <
         &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &_EISU        &_KANA        &trans
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp TAB           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
-        &kp ESC     &kp TAB          &trans     &trans
+        &kp ESC     &sl EXT_L          &trans     &trans
         >;
     };
 
     ext_layer {
       label = "Ext";
       bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp LS(LG(V))  &kp MEH(P)       &kp LS(LG(N5))  &trans      &trans     &trans     &trans
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &kp LS(LA(LG(LC(Y))))     &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
-        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)       &trans          &googl      &gtran     &defin     &kp CAPS
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp LS(LA(LG(V)))  &kp MEH(P)             &kp LS(LG(N5))  &trans      &trans     &trans     &trans
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &kp LS(LA(LG(LC(Y))))  &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)             &trans          &googl      &gtran     &defin     &kp CAPS
         &trans       &kp MEH(SPC)     &trans       &trans
         >;
     };
