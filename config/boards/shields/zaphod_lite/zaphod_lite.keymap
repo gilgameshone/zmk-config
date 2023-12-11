@@ -505,7 +505,7 @@
     sym_layer {
       label = "Sym";
       bindings = <
-        &kp GRAVE    &kp INT5    &kp INT4      &kp INT2    &trans         &kp LS(LA(N8))  &kp JP_HASH    &kp JP_LT     &kp JP_GT    &kp JP_CARET
+        &kp GRAVE    &kp INT5    &kp INT4      &kp INT2    &kp KP_NLCK    &kp LS(LA(N8))  &kp JP_HASH    &kp JP_LT     &kp JP_GT    &kp JP_CARET
         &trans       &trans      &trans        &trans      &trans         &kp JP_TILDE    &kp JP_PRNT    &kp JP_LBRLS  &kp JP_RBRLS &kp JP_GRAVE
         &kp LANG5    &kp LANG3   &kp LANG4     &trans      &trans         &kp NUBS        &kp JP_YEN     &kp JP_DLLR   &kp LA(N3)   &kp LS(LA(N2))
         &trans   &trans   &trans         &trans
