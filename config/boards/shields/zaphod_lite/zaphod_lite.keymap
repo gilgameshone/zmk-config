@@ -476,8 +476,8 @@
       label = "Nav";
       bindings = <
         &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &trans                &trans      &_EISU        &_KANA        &trans
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp TAB           &sl EXT_L             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp TAB           &kp DEL             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INS           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &sl EXT_L          &trans     &trans
         >;
     };
@@ -488,7 +488,7 @@
         &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp LS(LA(LG(V)))  &kp MEH(P)             &kp LS(LG(N5))  &trans      &trans     &trans     &trans
         &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &kp LS(LA(LG(LC(Y))))  &trans          &kp LC(X)   &kp LC(C)  &kp LA(X)  &kp LC(JP_AT)
         &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)             &trans          &googl      &gtran     &defin     &kp CAPS
-        &trans       &kp MEH(SPC)     &trans       &trans
+        &kp MEH(SPC) &trans    &trans       &trans
         >;
     };
     
