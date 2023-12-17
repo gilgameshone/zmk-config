@@ -383,7 +383,7 @@
   hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
       label = "homerow mods";
-#binding-cells = <2>;
+      #binding-cells = <2>;
       tapping_term_ms = <240>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
@@ -391,40 +391,33 @@
   com_quo: comma_quot {
       compatible = "zmk,behavior-mod-morph";
       label = "comma_quot";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
       mods = <(MOD_LSFT)>;
     };
   min_qma: min_qma {
       compatible = "zmk,behavior-mod-morph";
       label = "min_qma";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
       mods = <(MOD_LSFT)>;
     };
-      dot_dbq: dot_doublequote {
+  dot_dbq: dot_doublequote {
       compatible = "zmk,behavior-mod-morph";
       label = "dot_doublequote";
-#binding-cells = <0>;
+      #binding-cells = <0>;
       bindings = <&kp JP_DOT>, <&kp JP_DQT>;
       mods = <(MOD_LSFT)>;
     };
-  space_ext: space_ext {
-      compatible = "zmk,behavior-mod-morph";
-      label = "space_ext";
-#binding-cells = <0>;
-      bindings = <&kp SPACE>, <&sl EXT_L>;
-      mods = <(MOD_RALT)>;
+  nav_rep: nav_rep {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+      bindings = <&mo>, <&key_repeat>;
     };
-    nav_rep: nav_rep {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
-    bindings = <&mo NAV_L>, <&key_repeat>;
   };
-};
     
   keymap {
     compatible = "zmk,keymap";
@@ -436,7 +429,7 @@
         &kp X       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &kp G        &kp W    &kp Z  &kp H        &com_quo    &dot_dbq    &min_qma
-        &lt NUM_L BKSP  &space_ext &sk LSHIFT   &nav_rep
+        &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &nav_rep NAV_L 0
         >;
     };
 
