@@ -52,16 +52,16 @@
       bindings = <&caps_word>;
     };
 
-    ext_mo {
+    3thumb_left {
       timeout-ms = <50>;
       key-positions = <30 31>;
-      bindings = <&mo EXT_L>;
+      bindings = <&lt FUN_L TAB>;
     };
 
-    hyp_combo {
+    3thumb_right {
       timeout-ms = <50>;
       key-positions = <32 33>;
-      bindings = <&kp HYPER>;
+      bindings = <&kp DEL>;
     };
     
     ble_mo {
