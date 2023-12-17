@@ -416,6 +416,12 @@
       bindings = <&kp SPACE>, <&sl EXT_L>;
       mods = <(MOD_RALT)>;
     };
+      nav_rep: nav_rep {
+      compatible = "zmk,behavior-mod-morph";
+      label = "nav_rep";
+#binding-cells = <0>;
+      bindings = <&key_repeat>, <&mo NAV_L>;
+      };
   };
     
   keymap {
