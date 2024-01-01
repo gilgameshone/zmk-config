@@ -435,13 +435,23 @@
       quick-tap-ms = <175>;
       bindings = <&mo>, <&key_repeat>;
     };
+skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "sticky_key_quick_release";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
 ss_mo: ss_mo {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
       quick-tap-ms = <175>;
-      bindings = <&mo>, <&sk LSHIFT>;
+      bindings = <&mo>, <&skq>;
     };
   };
     
