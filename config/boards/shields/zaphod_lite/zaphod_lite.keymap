@@ -435,6 +435,14 @@
       quick-tap-ms = <175>;
       bindings = <&mo>, <&key_repeat>;
     };
+ss_mo: ss_mo {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+      bindings = <&mo>, <&sk LSHIFT>;
+    };
   };
     
   keymap {
@@ -447,7 +455,7 @@
         &kp X       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &kp G        &kp W    &kp Z  &kp H        &com_quo    &dot_dbq    &min_qma
-        &lt NUM_L BKSP  &kp SPACE &sk LSHIFT   &nav_rep NAV_L 0
+        &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L 0 &nav_rep NAV_L 0
         >;
     };
 
