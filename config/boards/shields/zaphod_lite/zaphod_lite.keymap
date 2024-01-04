@@ -378,7 +378,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <2>; 
-            bindings = <&kp> <&sl>
+            bindings = <&kp>, <&sl>
             ;
         };
 
