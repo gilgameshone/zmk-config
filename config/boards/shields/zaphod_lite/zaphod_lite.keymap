@@ -435,22 +435,13 @@
       quick-tap-ms = <175>;
       bindings = <&mo>, <&key_repeat>;
     };
-skq: skq {
-            compatible = "zmk,behavior-sticky-key";
-            label = "sticky_key_quick_release";
-            #binding-cells = <1>;
-            bindings = <&sk LSHFT>;
-            release-after-ms = <1000>;
-            quick-release;
-            ignore-modifiers;
-        };
 ss_mo: ss_mo {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      flavor = "hold-preferred";
-      tapping-term-ms = <200>;
-      quick-tap-ms = <175>;
-      bindings = <&mo>, <&skq>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_ss";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sk>;
     };
   };
     
@@ -464,7 +455,7 @@ ss_mo: ss_mo {
         &kp X       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &hm HYPER G        &kp W    &kp Z  &hm HYPER H        &com_quo    &dot_dbq    &min_qma
-        &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L 0 &nav_rep NAV_L 0
+        &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
         >;
     };
 
