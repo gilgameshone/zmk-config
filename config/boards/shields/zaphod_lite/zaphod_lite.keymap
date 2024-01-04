@@ -371,15 +371,6 @@
                 , <&macro_tap &kp JP_PLUS>
                 ;
         };
-          dqt_dqt: dqt_dqt {
-            label = "dqt_dqt";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp JP_DQT>
-                , <&macro_tap &kp JP_DQT>
-                ;
-        };
   };
 
   behaviors {
