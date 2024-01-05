@@ -20,7 +20,11 @@
 #define SYM_L 8
 #define FUN_L 9
 #define BLE_L 10
+
 #define MG_X_L 11
+#define MG_L_L 12
+#define MG_U_L 13
+#define MG_O_L 14
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -381,6 +385,33 @@
            = <&macro_tap &kp X>
            , <&macro_tap &sl MG_X_L>
            ;
+    };  
+    mg_l: mg_l {
+       label = "mg_l";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp L>
+           , <&macro_tap &sl MG_L_L>
+           ;
+    };
+    mg_u: mg_u {
+       label = "mg_u";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp U>
+           , <&macro_tap &sl MG_U_L>
+           ;
+    };
+    mg_o: mg_o {
+       label = "mg_o";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp O>
+           , <&macro_tap &sl MG_O_L>
+           ;
     };
 };
 
@@ -439,7 +470,7 @@
     magic_sturdy_layer {
       label = "magic_sturdy";
       bindings = <
-        &mg_x       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
+        &mg_x       &kp M      &mg_l       &kp C        &kp P    &kp B  &kp NUBS     &mg_u       &mg_o       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &hm HYPER G  &kp W    &kp Z  &hm HYPER H  &com_quo    &dot_dbq    &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
@@ -554,5 +585,33 @@
         &trans          &trans       &trans           &trans
         >;
     };
+        mg_l_l {
+      label = "mg_l_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp R   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+      mg_u_l {
+      label = "mg_o_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp E   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+      mg_o_l {
+      label = "mg_o_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+
   };
 };
