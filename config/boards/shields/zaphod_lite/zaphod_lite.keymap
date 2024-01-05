@@ -20,8 +20,6 @@
 #define SYM_L 8
 #define FUN_L 9
 #define BLE_L 10
-#define XT_L 11
-
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
 
@@ -372,16 +370,6 @@
            , <&macro_tap &kp JP_PLUS>
            ;
     };
-
-        mga: mga {
-            compatible = "zmk,behavior-macro-two-param";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <2>; 
-            bindings = <&kp>, <&sl>
-            ;
-        };
-
   };
 
   behaviors {
@@ -439,7 +427,7 @@
     magic_sturdy_layer {
       label = "magic_sturdy";
       bindings = <
-        &mga X XT_L      &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
+        &kp X       &kp M      &kp L       &kp C        &kp P    &kp B  &kp NUBS     &kp U       &kp O       &kp Q
         &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
         &kp V       &kp K      &kp J       &hm HYPER G  &kp W    &kp Z  &hm HYPER H  &com_quo    &dot_dbq    &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
@@ -545,15 +533,5 @@
         &trans          &trans       &trans           &trans
         >;
     };
-        XT_magiclayer {
-      label = "xt";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp T   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-
   };
 };
