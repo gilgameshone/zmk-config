@@ -379,7 +379,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp X>
-           , <&macro_tap &sk MG_X_L>
+           , <&macro_tap &sl MG_X_L>
            ;
     };
 };
