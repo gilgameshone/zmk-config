@@ -424,6 +424,24 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+  hmr: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods";
+      #binding-cells = <2>;
+      tapping_term_ms = <240>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
+    };
+  hml: homerow_mods {
+     compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods";
+      #binding-cells = <2>;
+      tapping_term_ms = <240>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
+    };
   com_quo: comma_quot {
       compatible = "zmk,behavior-mod-morph";
       label = "comma_quot";
@@ -471,7 +489,7 @@
       label = "magic_sturdy";
       bindings = <
         &mg_x       &kp M      &mg_l       &kp C        &kp P    &kp B  &kp NUBS     &mg_u       &mg_o       &kp Q
-        &hm LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hm  RSHFT I
+        &hml LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hmr RSHFT I
         &kp V       &kp K      &kp J       &hm HYPER G  &kp W    &kp Z  &hm HYPER H  &com_quo    &dot_dbq    &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
         >;
