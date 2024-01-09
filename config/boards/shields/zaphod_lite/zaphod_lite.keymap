@@ -340,6 +340,7 @@
         , <&macro_tap &kp TJ_MU>
         , <&macro_release &kp LSHFT>
         ;
+    };
   TJ_QMARK: tron_question_mark {
       label = "tron_question_mark";
       compatible = "zmk,behavior-macro";
