@@ -426,7 +426,7 @@
     };
   hmr: homerow_mods_right {
       compatible = "zmk,behavior-hold-tap";
-      label = "homerow mods";
+      label = "homerow mods right";
       #binding-cells = <2>;
       tapping_term_ms = <300>;
       flavor = "tap-unless-interrupted";
@@ -435,7 +435,7 @@
     };
   hml: homerow_mods_left {
      compatible = "zmk,behavior-hold-tap";
-      label = "homerow mods";
+      label = "homerow mods left";
       #binding-cells = <2>;
       tapping_term_ms = <300>;
       flavor = "tap-unless-interrupted";
