@@ -528,7 +528,7 @@
       label = "homerow mods right";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
@@ -537,7 +537,7 @@
       label = "homerow mods left";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
@@ -546,7 +546,7 @@
       label = "homerow mods left t";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&mg_t>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
@@ -555,7 +555,7 @@
       label = "homerow mods left r";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&mg_r>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
@@ -564,7 +564,7 @@
       label = "homerow mods left d";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&mg_d>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
@@ -573,7 +573,7 @@
       label = "homerow mods right e";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&mg_e>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
@@ -582,7 +582,7 @@
       label = "homerow mods right a";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
-      flavor = "tap-unless-interrupted";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&mg_a>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
@@ -632,7 +632,7 @@
     magic_sturdy_layer {
       label = "magic_sturdy";
       bindings = <
-        &mg_x        &mg_m         &mg_l          &kp C           &kp P    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
+        &mg_x        &mg_m         &mg_l          &mg_C           &mg_P    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
         &kp V        &kp K         &kp J          &hm HYPER G     &kp W    &kp Z  &hm HYPER H   &com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
