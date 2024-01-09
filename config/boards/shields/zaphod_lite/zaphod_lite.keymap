@@ -399,6 +399,8 @@
        label = "mg_x";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp X>
            , <&macro_tap &sl MG_X_L>
@@ -408,6 +410,8 @@
        label = "mg_m";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp M>
            , <&macro_tap &sl MG_M_L>
@@ -417,6 +421,8 @@
        label = "mg_l";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp L>
            , <&macro_tap &sl MG_L_L>
@@ -426,6 +432,8 @@
        label = "mg_u";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp U>
            , <&macro_tap &sl MG_U_L>
@@ -435,6 +443,8 @@
        label = "mg_o";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp O>
            , <&macro_tap &sl MG_O_L>
@@ -444,6 +454,8 @@
        label = "mg_t";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp T>
            , <&macro_tap &sl MG_T_L>
@@ -453,6 +465,8 @@
        label = "mg_r";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp R>
            , <&macro_tap &sl MG_R_L>
@@ -462,6 +476,8 @@
        label = "mg_d";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp D>
            , <&macro_tap &sl MG_D_L>
@@ -471,6 +487,8 @@
        label = "mg_e";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp E>
            , <&macro_tap &sl MG_E_L>
@@ -480,6 +498,8 @@
        label = "mg_a";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp A>
            , <&macro_tap &sl MG_A_L>
@@ -489,6 +509,8 @@
        label = "mg_c";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp C>
            , <&macro_tap &sl MG_C_L>
@@ -498,6 +520,8 @@
        label = "mg_g";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp G>
            , <&macro_tap &sl MG_G_L>
@@ -507,6 +531,8 @@
        label = "mg_p";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
+       wait-ms = <10>;
+       tap-ms = <10>;
        bindings
            = <&macro_tap &kp P>
            , <&macro_tap &sl MG_P_L>
@@ -632,7 +658,7 @@
     magic_sturdy_layer {
       label = "magic_sturdy";
       bindings = <
-        &mg_x        &mg_m         &mg_l          &mg_C           &mg_P    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
+        &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
         &kp V        &kp K         &kp J          &hm HYPER G     &kp W    &kp Z  &hm HYPER H   &com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
