@@ -26,6 +26,16 @@
 #define MG_U_L 13
 #define MG_O_L 14
 #define MG_T_L 15
+#define MG_R_L 16
+#define MG_D_L 17
+#define MG_E_L 18
+#define MG_A_L 19
+
+#define MG_C_L 20
+#define MG_G_L 21
+#define MG_P_L 22
+
+
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -419,7 +429,7 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp O>
+           = <&macro_tap &kp T>
            , <&macro_tap &sl MG_T_L>
            ;
     };
