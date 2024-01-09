@@ -489,7 +489,7 @@
       label = "magic_sturdy";
       bindings = <
         &mg_x       &kp M      &mg_l       &kp C        &kp P    &kp B  &kp NUBS     &mg_u       &mg_o       &kp Q
-        &hml LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hmr RSHFT I
+        &hmr LSHFT S &hm LALT T &hm LGUI R  &hm LCTRL D  &kp Y    &kp F  &hm RCTRL N  &hm RGUI E  &hm RALT A  &hml RSHFT I
         &kp V       &kp K      &kp J       &hm HYPER G  &kp W    &kp Z  &hm HYPER H  &com_quo    &dot_dbq    &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
         >;
