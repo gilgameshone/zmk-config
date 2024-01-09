@@ -25,6 +25,7 @@
 #define MG_L_L 12
 #define MG_U_L 13
 #define MG_O_L 14
+
 #define MG_T_L 15
 #define MG_R_L 16
 #define MG_D_L 17
@@ -50,6 +51,11 @@
 
 &sk {  // sticky-key config
     release-after-ms = <1000>;  // release after 0.6s
+    quick-release;             // no double capitalization when rolling keys
+};
+
+&sl {  // sticky-layer config
+    release-after-ms = <1000>;  
     quick-release;             // no double capitalization when rolling keys
 };
 
@@ -433,6 +439,69 @@
            , <&macro_tap &sl MG_T_L>
            ;
     };
+    mg_r: mg_r {
+       label = "mg_r";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp R>
+           , <&macro_tap &sl MG_R_L>
+           ;
+    };
+    mg_d: mg_d {
+       label = "mg_d";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp D>
+           , <&macro_tap &sl MG_D_L>
+           ;
+    };
+    mg_e: mg_e {
+       label = "mg_e";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp E>
+           , <&macro_tap &sl MG_E_L>
+           ;
+    };
+    mg_a: mg_a {
+       label = "mg_a";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp A>
+           , <&macro_tap &sl MG_A_L>
+           ;
+    };
+    mg_c: mg_c {
+       label = "mg_c";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp C>
+           , <&macro_tap &sl MG_C_L>
+           ;
+    };
+    mg_g: mg_g {
+       label = "mg_g";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp G>
+           , <&macro_tap &sl MG_G_L>
+           ;
+    };
+    mg_p: mg_p {
+       label = "mg_p";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp P>
+           , <&macro_tap &sl MG_P_L>
+           ;
+    };
 };
 
   behaviors {
@@ -668,6 +737,68 @@
         &trans          &trans       &trans           &trans
         >;
     };
-
+    mg_r_l {
+      label = "mg_r_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp L   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_d_l {
+      label = "mg_d_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_e_l {
+      label = "mg_e_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp U   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_a_l {
+      label = "mg_a_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp O   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_c_l {
+      label = "mg_c_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_g_l {
+      label = "mg_g_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_p_l {
+      label = "mg_p_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
   };
 };
