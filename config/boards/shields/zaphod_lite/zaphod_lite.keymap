@@ -340,6 +340,59 @@
         , <&macro_tap &kp TJ_MU>
         , <&macro_release &kp LSHFT>
         ;
+  TJ_QMARK: tron_question_mark {
+      label = "tron_question_mark";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_NAKAGURO>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJ_SLASH: tron_slash {
+      label = "tron_slash";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_ME>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJ_SEMI: tron_semi_colon {
+      label = "tron_semi_colon";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_RE>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJ_COLON: tron_colon {
+      label = "tron_colon";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_KE>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJ_AT: tron_at {
+      label = "tron_at";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_DAKUTEN>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJ_EXCL: tron_exclamation_mark {
+      label = "tron_exclamation_mark";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_NU>
+        , <&macro_tap &kp LC(L)>
+        ;      
     };
   _EISU: _eisu {
       label = "_eisu";
@@ -713,9 +766,9 @@
     tron_purple_layer {
       label = "TRP";
       bindings = <
-        &TJ_PI    &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &trans
-        &trans    &trans   &trans   &trans   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans    &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &trans
+        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &TJ_SLASH
+        &trans     &trans   &trans   &TJ_AT   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans     &trans   &trans   &TJ_EXCL &TJ_PE          &trans   &kp RET       &TJ_SEMI      &TJ_COLON     &TJ_QMARK
         &trans &trans &trans &trans
         >;
     };
