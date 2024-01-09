@@ -20,22 +20,23 @@
 #define SYM_L 8
 #define FUN_L 9
 #define BLE_L 10
+#define WIN_L 11
 
-#define MG_X_L 11
-#define MG_M_L 12
-#define MG_L_L 13
-#define MG_U_L 14
-#define MG_O_L 15
+#define MG_X_L 12
+#define MG_M_L 13
+#define MG_L_L 14
+#define MG_U_L 15
+#define MG_O_L 16
 
-#define MG_T_L 16
-#define MG_R_L 17
-#define MG_D_L 18
-#define MG_E_L 19
-#define MG_A_L 20
+#define MG_T_L 17
+#define MG_R_L 18
+#define MG_D_L 19
+#define MG_E_L 20
+#define MG_A_L 21
 
-#define MG_C_L 21
-#define MG_G_L 22
-#define MG_P_L 23
+#define MG_C_L 22
+#define MG_G_L 23
+#define MG_P_L 24
 
 
 
@@ -72,7 +73,12 @@
       timeout-ms = <50>;
       key-positions = <30 31>;
       bindings = <&mo FUN_L>;
-    };    
+    };
+    3thumb_righ {
+      timeout-ms = <50>;
+      key-positions = <32 33>;
+      bindings = <&mo WIN_L>;
+    };  
     ble_mo {
       timeout-ms = <50>;
       key-positions = <9 19 29>;
@@ -594,6 +600,15 @@
       bindings = <&kp>, <&mg_d>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
+  hml_g: homerow_mods_left_g {
+      compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods left g";
+      #binding-cells = <2>;
+      tapping_term_ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&mg_g>;
+      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
+    };
   hmr_e: homerow_mods_right_e {
       compatible = "zmk,behavior-hold-tap";
       label = "homerow mods right e";
@@ -660,7 +675,7 @@
       bindings = <
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &kp V        &kp K         &kp J          &hm HYPER G     &kp W    &kp Z  &hm HYPER H   &com_quo       &dot_dbq       &min_qma
+        &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hm HYPER H   &com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
         >;
     };
@@ -718,10 +733,10 @@
     ext_layer {
       label = "Ext";
       bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp LS(LA(LG(V)))  &kp MEH(P)             &kp LC(TAB)  &kp TAB   &kp LG(TAB)  &kp LA(TAB)  &trans
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &kp LS(LA(LG(LC(Y))))      &kp LC(DEL)  &kp DEL   &kp LG(DEL)  &kp LA(DEL)  &trans
-        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)                 &trans       &googl    &gtran       &defin       &kp CAPS
-        &trans &kp MEH(SPC)    &kp MEH(SPC)        &trans
+        &trans    &trans   &trans   &kp LS(LA(LG(V))) &trans              &kp LC(TAB)  &kp TAB   &kp LG(TAB)  &kp LA(TAB)  &trans
+        &trans    &trans   &trans   &trans     &kp LS(LA(LG(LC(Y))))      &kp LC(DEL)  &kp DEL   &kp LG(DEL)  &kp LA(DEL)  &trans
+        &trans    &trans   &trans   &trans     &trans                     &trans       &googl    &gtran       &defin       &kp CAPS
+        &trans  &trans  &trans  &trans
         >;
     };
     
@@ -762,6 +777,15 @@
         &trans       &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
         &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans      &trans      &trans     &trans     &trans 
         &trans          &trans       &trans           &trans
+        >;
+    };
+    win_layer {
+      label = "Win";
+      bindings = <
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &trans  &kp MEH(P)          &trans      &trans      &trans     &trans     &trans 
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &trans       &trans      &trans      &trans     &trans     &trans 
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)   &trans      &trans      &trans     &trans     &trans 
+        &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
     mg_x_l {
