@@ -25,6 +25,7 @@
 #define MG_L_L 12
 #define MG_U_L 13
 #define MG_O_L 14
+#define MG_T_L 15
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -413,6 +414,15 @@
            , <&macro_tap &sl MG_O_L>
            ;
     };
+    mg_t: mg_t {
+       label = "mg_t";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp O>
+           , <&macro_tap &sl MG_T_L>
+           ;
+    };
 };
 
   behaviors {
@@ -428,18 +438,27 @@
       compatible = "zmk,behavior-hold-tap";
       label = "homerow mods right";
       #binding-cells = <2>;
-      tapping_term_ms = <300>;
+      tapping_term_ms = <200>;
       flavor = "tap-unless-interrupted";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
   hml: homerow_mods_left {
-     compatible = "zmk,behavior-hold-tap";
+      compatible = "zmk,behavior-hold-tap";
       label = "homerow mods left";
       #binding-cells = <2>;
-      tapping_term_ms = <300>;
+      tapping_term_ms = <200>;
       flavor = "tap-unless-interrupted";
       bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
+    };
+  hml_t: homerow_mods_left_t {
+      compatible = "zmk,behavior-hold-tap";
+      label = "homerow mods left T";
+      #binding-cells = <2>;
+      tapping_term_ms = <200>;
+      flavor = "tap-unless-interrupted";
+      bindings = <&kp>, <&mg_t>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
     };
   com_quo: comma_quot {
@@ -625,6 +644,15 @@
       label = "mg_o_l";
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+    mg_t_l {
+      label = "mg_t_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp M   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
         &trans          &trans       &trans           &trans
