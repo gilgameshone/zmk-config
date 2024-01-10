@@ -344,7 +344,7 @@
         , <&macro_release &kp LSHFT>
         ;
     };
-    TJ_QMARK: tron_question_mark {
+    TJS_QMARK: tron_question_mark {
       label = "tron_question_mark";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -353,7 +353,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_SLASH: tron_slash {
+    TJS_SLASH: tron_slash {
       label = "tron_slash";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -362,7 +362,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_SEMI: tron_semi_colon {
+    TJS_SEMI: tron_semi_colon {
       label = "tron_semi_colon";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -371,7 +371,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_COLON: tron_colon {
+    TJS_COLON: tron_colon {
       label = "tron_colon";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -380,7 +380,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N1: tron_1 {
+    TJS_N1: tron_1 {
       label = "tron_1";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -389,7 +389,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N2: tron_2 {
+    TJS_N2: tron_2 {
       label = "tron_2";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -398,7 +398,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N3: tron_3 {
+    TJS_N3: tron_3 {
       label = "tron_3";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -407,7 +407,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N4: tron_4 {
+    TJS_N4: tron_4 {
       label = "tron_4";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -416,7 +416,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N5: tron_5 {
+    TJS_N5: tron_5 {
       label = "tron_5";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -425,7 +425,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N6: tron_6 {
+    TJS_N6: tron_6 {
       label = "tron_6";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -434,7 +434,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N7: tron_7 {
+    TJS_N7: tron_7 {
       label = "tron_7";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -443,7 +443,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N8: tron_8 {
+    TJS_N8: tron_8 {
       label = "tron_8";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -452,7 +452,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N9: tron_9 {
+    TJS_N9: tron_9 {
       label = "tron_9";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -461,7 +461,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_N0: tron_0 {
+    TJS_N0: tron_0 {
       label = "tron_0";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -470,7 +470,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_AT: tron_at {
+    TJS_AT: tron_at {
       label = "tron_at";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -479,7 +479,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_MINUS: tron_minus {
+    TJS_MINUS: tron_minus {
       label = "tron_minus";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -488,7 +488,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_CARET: tron_circumflex {
+    TJS_CARET: tron_circumflex {
       label = "tron_circumflex";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -497,7 +497,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_EXCL: tron_exclamation_mark {
+    TJS_EXL: tron_exclamation_mark {
       label = "tron_exclamation_mark";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -508,7 +508,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_DQT: tron_double_quote {
+    TJS_DQT: tron_double_quote {
       label = "tron_double_quote";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -519,7 +519,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_HASH: tron_hash {
+    TJS_HASH: tron_hash {
       label = "tron_hash";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -530,7 +530,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_DLR: tron_dollar {
+    TJS_DLR: tron_dollar {
       label = "tron_dollar";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -541,7 +541,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_PRNT: tron_percent {
+    TJS_PRNT: tron_percent {
       label = "tron_percent";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -552,7 +552,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_AMPS: tron_ampersand {
+    TJS_AMPS: tron_ampersand {
       label = "tron_ampersand";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -563,7 +563,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_SQT: tron_single_quote {
+    TJS_SQT: tron_single_quote {
       label = "tron_single_quote";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -574,7 +574,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_LPAR: tron_left_parenthesis {
+    TJS_LPAR: tron_left_parenthesis {
       label = "tron_ left_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -585,7 +585,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJ_RPAR: tron_right_parenthesis {
+    TJS_RPAR: tron_right_parenthesis {
       label = "tron_ right_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -978,9 +978,9 @@
    tron_num_layer {
       label = "Tron_Num";
       bindings = <
-        &TJ_QMARK  &kp JP_LBKT  &kp JP_RBKT   &TJ_COLON  &kp LC(F2)    &kp JP_PLUS   &TJ_N7  &TJ_N8  &TJ_N9  &kp JP_ASTRK
-        &TJ_AMPS   &TJ_LPAR     &TJ_RPAR      &TJ_SEMI   &kp TJ_AT     &TJ_MINUS     &TJ_N4  &TJ_N5  &TJ_N6  &TJ_SLASH
-        &TJ_DQT    &TJ_SQT      &kp JP_UNDER  &TJ_EXCL    &kp JP_PIPE   &kp JP_EQUAL  &TJ_N1  &TJ_N2  &TJ_N3  &TJ_N0
+        &TJS_QMARK  &kp JP_LBKT  &kp JP_RBKT   &TJS_COLON  &kp LC(F2)    &kp JP_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &kp JP_ASTRK
+        &TJS_AMPS   &TJS_LPAR    &TJS_RPAR     &TJS_SEMI   &TJS_AT     &TJS_MINUS     &TJS_N4  &TJS_N5  &TJS_N6  &TJS_SLASH
+        &TJS_DQT    &TJS_SQT     &kp JP_UNDER  &TJS_EXL    &kp JP_PIPE   &kp JP_EQUAL  &TJS_N1  &TJS_N2  &TJS_N3  &TJS_N0
         &trans     &trans       &kp RET      &mo TR_SYM_L
         >;
     };
@@ -988,9 +988,9 @@
     tron_sym_layer {
       label = "Tron_Sym";
       bindings = <
-        &trans  &trans  &trans  &hash_plus  &kp KP_NLCK      &kp LS(LA(N8))  &TJ_HASH  &kp JP_LT     &kp JP_GT     &TJ_CARET
-        &trans  &trans  &trans  &trans      &kp INS          &kp JP_TILDE    &TJ_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &trans  &trans  &trans  &trans      &trans           &kp NUBS        &kp JP_YEN   &TJ_DLLR   &kp LA(N3)    &kp LS(LA(N2))
+        &trans  &trans  &trans  &hash_plus  &kp KP_NLCK      &kp LS(LA(N8))  &TJS_HASH  &kp JP_LT     &kp JP_GT     &TJS_CARET
+        &trans  &trans  &trans  &trans      &kp INS          &kp JP_TILDE    &TJS_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &trans  &trans  &trans  &trans      &trans           &kp NUBS        &kp JP_YEN   &TJS_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
         >;
     };
