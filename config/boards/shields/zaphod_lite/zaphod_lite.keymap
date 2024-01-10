@@ -497,6 +497,24 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
+    TJS_UNDER: tron_underscore {
+      label = "tron_underscore";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_RO>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_YEN: tron_yen {
+      label = "tron_yen";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp TJ_CHOUONNPU>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
     TJS_EXL: tron_exclamation_mark {
       label = "tron_exclamation_mark";
       compatible = "zmk,behavior-macro";
@@ -575,7 +593,7 @@
         ;      
     };
     TJS_LPAR: tron_left_parenthesis {
-      label = "tron_ left_parenthesis";
+      label = "tron_left_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -586,12 +604,122 @@
         ;      
     };
     TJS_RPAR: tron_right_parenthesis {
-      label = "tron_ right_parenthesis";
+      label = "tron_right_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_YO>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_EQUAL: tron_equal {
+      label = "tron_equal";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_HO>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_TILDE: tron_tilde {
+      label = "tron_tilde";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_HE>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_PIPE: tron_pipe {
+      label = "tron_pipe";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_CHOUONNPU>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_GRAVE: tron_grave {
+      label = "tron_grave";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_DAKUTEN>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_LBRC: tron_left_brace {
+      label = "tron_left_brace";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_HANDAKUTEN>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_RBRC: tron_right_brace {
+      label = "tron_right_brace";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp MU>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_PLUS: tron_plus {
+      label = "tron_plus";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_RE>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_ASTRK: tron_asterisk {
+      label = "tron_asterisk";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_KE>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_LT: tron_less_than {
+      label = "tron_less_than";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_DOUTEN>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp LC(L)>
+        ;      
+    };
+    TJS_GT: tron_greater_than {
+      label = "tron_greater_than";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp TJ_KUTEN>
         , <&macro_release &kp LSHFT>
         , <&macro_tap &kp LC(L)>
         ;      
@@ -970,7 +1098,7 @@
       bindings = <
         &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &trans
         &trans     &trans   &trans   &trans   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &trans
+        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &TJS_QMARK
         &trans &trans &trans &trans
         >;
     };
@@ -978,9 +1106,9 @@
    tron_num_layer {
       label = "Tron_Num";
       bindings = <
-        &TJS_QMARK  &kp JP_LBKT  &kp JP_RBKT   &TJS_COLON  &kp LC(F2)    &kp JP_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &kp JP_ASTRK
-        &TJS_AMPS   &TJS_LPAR    &TJS_RPAR     &TJS_SEMI   &TJS_AT     &TJS_MINUS     &TJS_N4  &TJS_N5  &TJS_N6  &TJS_SLASH
-        &TJS_DQT    &TJS_SQT     &kp JP_UNDER  &TJS_EXL    &kp JP_PIPE   &kp JP_EQUAL  &TJS_N1  &TJS_N2  &TJS_N3  &TJS_N0
+        &TJS_QMARK  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJS_COLON  &kp LC(F2)  &TJS_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &TJS_ASTRK
+        &TJS_AMPS   &TJS_LPAR     &TJS_RPAR     &TJS_SEMI   &TJS_AT     &TJS_MINUS  &TJS_N4  &TJS_N5  &TJS_N6  &TJS_SLASH
+        &TJS_DQT    &TJS_SQT      &TJS_UNDER    &TJS_EXL    &TJS_PIPE   &TJS_EQUAL  &TJS_N1  &TJS_N2  &TJS_N3  &TJS_N0
         &trans     &trans       &kp RET      &mo TR_SYM_L
         >;
     };
@@ -988,9 +1116,9 @@
     tron_sym_layer {
       label = "Tron_Sym";
       bindings = <
-        &trans  &trans  &trans  &hash_plus  &kp KP_NLCK      &kp LS(LA(N8))  &TJS_HASH  &kp JP_LT     &kp JP_GT     &TJS_CARET
-        &trans  &trans  &trans  &trans      &kp INS          &kp JP_TILDE    &TJS_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &trans  &trans  &trans  &trans      &trans           &kp NUBS        &kp JP_YEN &TJS_DLLR     &kp LA(N3)    &kp LS(LA(N2))
+        &trans  &trans  &trans  &trans      &kp KP_NLCK   &trans      &TJS_HASH  &TJS_LT    &TJS_GT    &TJS_CARET
+        &trans  &trans  &trans  &trans      &kp INS       &TJS_TILDE  &TJS_PRNT  &TJS_LBRC  &TJS_RBRC  &TJS_GRAVE
+        &trans  &trans  &trans  &trans      &trans        &kp NUBS    &TJS_YEN   &TJS_DLLR  &trans     &trans 
         &trans   &trans   &trans   &trans
         >;
     };
