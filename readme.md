@@ -46,9 +46,9 @@
 ### Nav (hold REP)
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
- │ Und	Cut	Cpy	Pst	Rdo │ │        Eis Kan      │ 
- │ ← ↑ ↓ → | |    Ctl	Cmd	Opt	Sft  │ 
- │ Hme	PgD	PgU	End     │ │ Rwd Pse vDn vUp Mut │ 
+ │ Und Cut Cpy Pst Rdo │ │ Eis Kan │ 
+ │ ← ↑ ↓ → | | Ctl Cmd Opt Sft │ 
+ │ Hme PgD PgU End │ │ Rwd Pse vDn vUp Mut │ 
  ╰─────────╮ ESC       │ │         ╭───────────╯
            ╰───────────╯ ╰─────────╯
 ```
