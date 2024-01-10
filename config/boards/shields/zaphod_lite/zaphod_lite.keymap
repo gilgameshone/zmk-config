@@ -344,7 +344,7 @@
         , <&macro_release &kp LSHFT>
         ;
     };
-  TJ_QMARK: tron_question_mark {
+    TJ_QMARK: tron_question_mark {
       label = "tron_question_mark";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -380,7 +380,6 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
     TJ_N1: tron_1 {
       label = "tron_1";
       compatible = "zmk,behavior-macro";
@@ -390,8 +389,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N2: tron_2 {
+    TJ_N2: tron_2 {
       label = "tron_2";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -400,8 +398,7 @@ TJ_N2: tron_2 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N3: tron_3 {
+    TJ_N3: tron_3 {
       label = "tron_3";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -410,8 +407,7 @@ TJ_N3: tron_3 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N4: tron_4 {
+    TJ_N4: tron_4 {
       label = "tron_4";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -420,8 +416,7 @@ TJ_N4: tron_4 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N5: tron_5 {
+    TJ_N5: tron_5 {
       label = "tron_5";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -430,8 +425,7 @@ TJ_N5: tron_5 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N6: tron_6 {
+    TJ_N6: tron_6 {
       label = "tron_6";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -440,8 +434,7 @@ TJ_N6: tron_6 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N7: tron_7 {
+    TJ_N7: tron_7 {
       label = "tron_7";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -450,8 +443,7 @@ TJ_N7: tron_7 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N8: tron_8 {
+    TJ_N8: tron_8 {
       label = "tron_8";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -460,8 +452,7 @@ TJ_N8: tron_8 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N9: tron_9 {
+    TJ_N9: tron_9 {
       label = "tron_9";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -470,8 +461,7 @@ TJ_N9: tron_9 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_N0: tron_0 {
+    TJ_N0: tron_0 {
       label = "tron_0";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -480,8 +470,7 @@ TJ_N0: tron_0 {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_AT: tron_at {
+    TJ_AT: tron_at {
       label = "tron_at";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -490,8 +479,7 @@ TJ_AT: tron_at {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_MINUS: tron_minus {
+    TJ_MINUS: tron_minus {
       label = "tron_minus";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -500,8 +488,7 @@ TJ_MINUS: tron_minus {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_CARET: tron_circumflex {
+    TJ_CARET: tron_circumflex {
       label = "tron_circumflex";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -510,8 +497,7 @@ TJ_CARET: tron_circumflex {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_EXL: tron_exclamation_mark {
+    TJ_EXL: tron_exclamation_mark {
       label = "tron_exclamation_mark";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -522,8 +508,7 @@ TJ_EXL: tron_exclamation_mark {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_DQT: tron_double_quote {
+    TJ_DQT: tron_double_quote {
       label = "tron_double_quote";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -534,8 +519,7 @@ TJ_DQT: tron_double_quote {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_HASH: tron_hash {
+    TJ_HASH: tron_hash {
       label = "tron_hash";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -546,8 +530,7 @@ TJ_HASH: tron_hash {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_DLR: tron_dollar {
+    TJ_DLR: tron_dollar {
       label = "tron_dollar";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -558,8 +541,7 @@ TJ_DLR: tron_dollar {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_PRNT: tron_percent {
+    TJ_PRNT: tron_percent {
       label = "tron_percent";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -570,8 +552,7 @@ TJ_PRNT: tron_percent {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_AMPS: tron_ampersand {
+    TJ_AMPS: tron_ampersand {
       label = "tron_ampersand";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -582,8 +563,7 @@ TJ_AMPS: tron_ampersand {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_SQT: tron_single_quote {
+    TJ_SQT: tron_single_quote {
       label = "tron_single_quote";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -594,8 +574,7 @@ TJ_SQT: tron_single_quote {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_LPAR: tron_left_parenthesis {
+    TJ_LPAR: tron_left_parenthesis {
       label = "tron_ left_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -606,8 +585,7 @@ TJ_LPAR: tron_left_parenthesis {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-
-TJ_RPAR: tron_right_parenthesis {
+    TJ_RPAR: tron_right_parenthesis {
       label = "tron_ right_parenthesis";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -618,7 +596,7 @@ TJ_RPAR: tron_right_parenthesis {
         , <&macro_tap &kp LC(L)>
         ;      
     };
-  _EISU: _eisu {
+    _EISU: _eisu {
       label = "_eisu";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -627,7 +605,7 @@ TJ_RPAR: tron_right_parenthesis {
         , <&macro_tap &to SDY_L>
         ;
     };
-  _KANA: _kana {
+    _KANA: _kana {
       label = "_kana";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
