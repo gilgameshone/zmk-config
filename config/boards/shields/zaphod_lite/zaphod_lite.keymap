@@ -18,8 +18,8 @@
 #define TRR_L 3
 #define TRP_L 4
 
-#define TRN_L 5
-#define TRS_L 6
+#define TR_NUM_L 5
+#define TR_SYM_L 6
 
 #define NAV_L 7
 #define EXT_L 8
@@ -963,7 +963,7 @@ TJ_RPAR: tron_right_parenthesis {
         &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
         &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
-        &lt TRN_L BKSP  &mo TRR_L  &mo TRB_L   &trans
+        &lt TR_NUM_L BKSP  &mo TRR_L  &mo TRB_L   &trans
         >;
     };
 
@@ -1003,7 +1003,7 @@ TJ_RPAR: tron_right_parenthesis {
         &TJ_QMARK  &kp JP_LBKT  &kp JP_RBKT   &TJ_COLON  &kp LC(F2)    &kp JP_PLUS   &TJ_N7  &TJ_N8  &TJ_N9  &kp JP_ASTRK
         &TJ_AMPS   &TJ_LPAR     &TJ_RPAR      &TJ_SEMI   &kp TJ_AT     &TJ_MINUS     &TJ_N4  &TJ_N5  &TJ_N6  &TJ_SLASH
         &TJ_DQT    &TJ_SQT      &kp JP_UNDER  &TJ_EXL    &kp JP_PIPE   &kp JP_EQUAL  &TJ_N1  &TJ_N2  &TJ_N3  &TJ_N0
-        &trans     &trans       &kp RET      &mo TRS_L
+        &trans     &trans       &kp RET      &mo TR_SYM_L
         >;
     };
 
