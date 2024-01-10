@@ -675,7 +675,7 @@
       #binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
-        , <&macro_tap &kp MU>
+        , <&macro_tap &kp TJ_MU>
         , <&macro_release &kp LSHFT>
         , <&macro_tap &kp LC(L)>
         ;      
