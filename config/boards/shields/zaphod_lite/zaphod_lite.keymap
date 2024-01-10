@@ -530,7 +530,7 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_DLR: tron_dollar {
+    TJS_DLLR: tron_dollar {
       label = "tron_dollar";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -990,7 +990,7 @@
       bindings = <
         &trans  &trans  &trans  &hash_plus  &kp KP_NLCK      &kp LS(LA(N8))  &TJS_HASH  &kp JP_LT     &kp JP_GT     &TJS_CARET
         &trans  &trans  &trans  &trans      &kp INS          &kp JP_TILDE    &TJS_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &trans  &trans  &trans  &trans      &trans           &kp NUBS        &kp JP_YEN   &TJS_DLLR   &kp LA(N3)    &kp LS(LA(N2))
+        &trans  &trans  &trans  &trans      &trans           &kp NUBS        &kp JP_YEN &TJS_DLLR     &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
         >;
     };
