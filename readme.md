@@ -47,7 +47,7 @@
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
  │ Und	Cut	Cpy	Pst	Rdo │ │        Eis Kan      │ 
- │ ←	  ↑  	↓  	→	      | |    Ctl	Cmd	Opt	Sft  │ 
+ │ ← ↑ ↓ → | |    Ctl	Cmd	Opt	Sft  │ 
  │ Hme	PgD	PgU	End     │ │ Rwd Pse vDn vUp Mut │ 
  ╰─────────╮ ESC       │ │         ╭───────────╯
            ╰───────────╯ ╰─────────╯
