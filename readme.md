@@ -1,4 +1,10 @@
+# Gilgamesh keymap
+
+A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and macros. The keys are laid out on a 3x5 grid + 2 thumb keys per hand. It is optimised to be used on Mac machines expecting a JIS keyboard (Kana input).
+
 ## Magic Sturdy mod
+
+The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `SHFT` on tap that lasts for only one character. `Caps Word` can be accessed by tapping `SHFT` and `SPC` simultaneously. 
 
 ```
  ╭─────────────────────╮ ╭─────────────────────╮

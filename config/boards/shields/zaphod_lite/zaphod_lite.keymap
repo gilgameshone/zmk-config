@@ -60,7 +60,7 @@
 };
 
 &sl {  // sticky-layer config
-    release-after-ms = <1000>;  
+    release-after-ms = <5000>;  
     quick-release;             // no double capitalization when rolling keys
 };
 
@@ -787,8 +787,6 @@
        label = "mg_x";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp X>
            , <&macro_tap &sl MG_X_L>
@@ -798,8 +796,6 @@
        label = "mg_m";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp M>
            , <&macro_tap &sl MG_M_L>
@@ -809,8 +805,6 @@
        label = "mg_l";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp L>
            , <&macro_tap &sl MG_L_L>
@@ -820,8 +814,6 @@
        label = "mg_u";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp U>
            , <&macro_tap &sl MG_U_L>
@@ -831,8 +823,6 @@
        label = "mg_o";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp O>
            , <&macro_tap &sl MG_O_L>
@@ -842,8 +832,6 @@
        label = "mg_t";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp T>
            , <&macro_tap &sl MG_T_L>
@@ -853,8 +841,6 @@
        label = "mg_r";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp R>
            , <&macro_tap &sl MG_R_L>
@@ -864,8 +850,6 @@
        label = "mg_d";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp D>
            , <&macro_tap &sl MG_D_L>
@@ -875,8 +859,6 @@
        label = "mg_e";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp E>
            , <&macro_tap &sl MG_E_L>
@@ -886,8 +868,6 @@
        label = "mg_a";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp A>
            , <&macro_tap &sl MG_A_L>
@@ -897,8 +877,6 @@
        label = "mg_c";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp C>
            , <&macro_tap &sl MG_C_L>
@@ -908,8 +886,6 @@
        label = "mg_g";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp G>
            , <&macro_tap &sl MG_G_L>
@@ -919,8 +895,6 @@
        label = "mg_p";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
-       wait-ms = <10>;
-       tap-ms = <10>;
        bindings
            = <&macro_tap &kp P>
            , <&macro_tap &sl MG_P_L>
