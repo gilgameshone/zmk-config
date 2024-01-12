@@ -900,6 +900,33 @@
            , <&macro_tap &sl MG_P_L>
            ;
     };
+    mg_pp: mg_pp {
+       label = "mg_pp";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &key_repeat>
+           , <&macro_tap &sl MG_P_L>
+           ;
+    };
+    mg_dd: mg_dd {
+       label = "mg_dd";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &key_repeat>
+           , <&macro_tap &sl MG_D_L>
+           ;
+    };
+    mg_gg: mg_gg {
+       label = "mg_gg";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &key_repeat>
+           , <&macro_tap &sl MG_G_L>
+           ;
+    };
 };
 
 
@@ -1236,7 +1263,7 @@
         &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
+        &trans          &trans       &trans           &mg_dd
         >;
     };
         mg_e_l {
@@ -1272,7 +1299,7 @@
         &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
+        &trans          &trans       &trans           &mg_gg
         >;
     };
         mg_p_l {
@@ -1281,7 +1308,7 @@
         &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
+        &trans          &trans       &trans           &mg_pp
         >;
     };
 
