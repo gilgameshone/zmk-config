@@ -13,35 +13,36 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define SDY_L 0
-#define TRN_L 1
-#define TRB_L 2
-#define TRR_L 3
-#define TRP_L 4
+#define MG_X_L 1
+#define MG_M_L 2
+#define MG_L_L 3
+#define MG_U_L 4
+#define MG_O_L 5
+#define MG_T_L 6
+#define MG_R_L 7
+#define MG_D_L 8
+#define MG_E_L 9
+#define MG_A_L 10
+#define MG_C_L 11
+#define MG_G_L 12
+#define MG_P_L 13
 
-#define TR_NUM_L 5
-#define TR_SYM_L 6
+#define TRN_L 14
+#define TRB_L 15
+#define TRR_L 16
+#define TRP_L 17
 
-#define NAV_L 7
-#define EXT_L 8
-#define NUM_L 9
-#define SYM_L 10
-#define FUN_L 11
-#define BLE_L 12
-#define WIN_L 13
+#define TR_NUM_L 18
+#define TR_SYM_L 19
 
-#define MG_X_L 14
-#define MG_M_L 15
-#define MG_L_L 16
-#define MG_U_L 17
-#define MG_O_L 18
-#define MG_T_L 19
-#define MG_R_L 20
-#define MG_D_L 21
-#define MG_E_L 22
-#define MG_A_L 23
-#define MG_C_L 24
-#define MG_G_L 25
-#define MG_P_L 26
+#define NAV_L 20
+#define EXT_L 21
+#define NUM_L 22
+#define SYM_L 23
+#define FUN_L 24
+#define BLE_L 25
+#define WIN_L 26
+
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -1063,7 +1064,123 @@
         &lt NUM_L BKSP  &lt SYM_L SPACE &ss_mo EXT_L LSHIFT &nav_rep NAV_L 0
         >;
     };
-
+mg_x_l {
+      label = "mg_x_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+    mg_m_l {
+      label = "mg_m_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_l_l {
+      label = "mg_l_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp R   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+      mg_u_l {
+      label = "mg_o_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp E   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+      mg_o_l {
+      label = "mg_o_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+    mg_t_l {
+      label = "mg_t_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp M   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+    mg_r_l {
+      label = "mg_r_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp L   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_d_l {
+      label = "mg_d_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &mg_dd
+        >;
+    };
+        mg_e_l {
+      label = "mg_e_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp U   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_a_l {
+      label = "mg_a_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp O   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_c_l {
+      label = "mg_c_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+        mg_g_l {
+      label = "mg_g_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &mg_gg
+        >;
+    };
+        mg_p_l {
+      label = "mg_p_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &mg_pp
+        >;
+    };
     tron_base_layer {
       label = "TRN";
       bindings = <
@@ -1194,123 +1311,7 @@
         &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
-    mg_x_l {
-      label = "mg_x_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_m_l {
-      label = "mg_m_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-        mg_l_l {
-      label = "mg_l_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp R   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-      mg_u_l {
-      label = "mg_o_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp E   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-      mg_o_l {
-      label = "mg_o_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_t_l {
-      label = "mg_t_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp M   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_r_l {
-      label = "mg_r_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp L   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-        mg_d_l {
-      label = "mg_d_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_dd
-        >;
-    };
-        mg_e_l {
-      label = "mg_e_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp U   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-        mg_a_l {
-      label = "mg_a_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp O   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-        mg_c_l {
-      label = "mg_c_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-        mg_g_l {
-      label = "mg_g_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_gg
-        >;
-    };
-        mg_p_l {
-      label = "mg_p_l";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_pp
-        >;
-    };
+    
 
   };
 };
