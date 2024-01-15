@@ -945,6 +945,7 @@
       label = "homerow mods right";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
@@ -954,6 +955,7 @@
       label = "homerow mods left";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
@@ -963,6 +965,7 @@
       label = "homerow mods left t";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_t>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
@@ -972,6 +975,7 @@
       label = "homerow mods left r";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_r>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
@@ -981,6 +985,7 @@
       label = "homerow mods left d";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_d>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
@@ -990,6 +995,7 @@
       label = "homerow mods left g";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_g>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
@@ -999,6 +1005,7 @@
       label = "homerow mods right e";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_e>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
@@ -1008,6 +1015,7 @@
       label = "homerow mods right a";
       #binding-cells = <2>;
       tapping_term_ms = <200>;
+      require-prior-idle-ms = <125>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&mg_a>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
