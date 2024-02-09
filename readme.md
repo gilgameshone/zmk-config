@@ -4,7 +4,7 @@ A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and ma
 
 ## Magic Sturdy mod
 
-The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `SHFT` on tap that lasts for only one character. `Caps Word` can be accessed by tapping `SHFT` and `SPC` simultaneously. 
+The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `SHFT` on tap, a shift function that lasts for only one character. `Caps Word` can be accessed by tapping `SHFT` and `SPC` simultaneously. The repeat key, `REP`, helps to reduce single finger bigrams and improve typing comfort. 
 
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
@@ -16,6 +16,7 @@ The base layer uses a modified Magic Sturdy for the alpha arrangement. The shift
 ```
 
 ## Magic keys "§"
+The magic key outputs the following when the previous key is pressed. It also reduces single finger bigrams and improves typing comfort.
 
 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -35,42 +36,37 @@ The base layer uses a modified Magic Sturdy for the alpha arrangement. The shift
  │  ?   [   ]   : C-F2 │ │  +   7   8   9   *  │ 
  │  &   (   )   ;   @  | |  -   4   5   6   /  │ 
  │  "   '   _   !   |  │ │  =   1   2   3   0  │ 
- ╰─────────╮           │ │ RET     ╭───────────╯
+ ╰─────────╮           │ │ RET  0  ╭───────────╯
            ╰───────────╯ ╰─────────╯
 ```
 
 ### Sym (hold SPC)
+
+This layer has some realestate available. `Pst` here pastes without formatting. `Ynk` pulls from Alfred's kill list / clipboard. 
+Am considering an App switcher, tab forward/backward, zoom kinds of keys, but these may rely on Alfred to become application agnostic. 
 ```
- ╭─────────────────────╮ ╭─────────────────────╮
- │                  #+ │ │  °   #   <   >   ^  │ 
- │                     | |  ~   %   {   }   `  │ 
- │                     │ │  §   ¥   $   £   €  │ 
- ╰─────────╮           │ │ RET     ╭───────────╯
-           ╰───────────╯ ╰─────────╯
+ ╭───────────────────────╮ ╭─────────────────────╮
+ │                Pst    │ │  °   #   <   >   ^  │ 
+ │      M-DEL     DEL Ynk| |  ~   %   {   }   `  │ 
+ │ Caps def   gTr Ggl    │ │  §   ¥   $   £   €  │ 
+ ╰───────────╮           │ │         ╭───────────╯
+             ╰───────────╯ ╰─────────╯
 ```
 
 ### Nav (hold REP)
+
+Nav has some available realestate, but the hold key to access it gets used heavily. `Rwd` uses Alfred to rewind the media player slightly. 
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
- │ Und Cut Cpy Pst Rdo │ │         Eis Kan     │ 
+ │ Und Cut Cpy Pst Rdo │ │ Ssel    Eis Kan     │ 
  │ ←   ↑   ↓   →       | |     Ctl Cmd Opt Sft │ 
  │ Hme PgD PgU End     │ │ Rwd Pse vDn vUp Mut │ 
- ╰─────────╮ ESC       │ │         ╭───────────╯
+ ╰─────────╮ ESC  TAB  │ │         ╭───────────╯
            ╰───────────╯ ╰─────────╯
 ```
 
 
-### Ext (hold SHFT)
-```
- ╭─────────────────────╮ ╭────────────────────────────╮
- │                     │ │  C-TAB TAB G-TAB A-TAB     │ 
- │                     | |  C-DEL DEL G-DEL A-DEL     │ 
- │                     │ │        Gogl gTrn defn Caps │ 
- ╰─────────╮           │ │         ╭──────────────── ─╯
-           ╰───────────╯ ╰─────────╯
-```
 ## Japanese JIS kana Tron arrangement
-
 
 ### Base
 ```
