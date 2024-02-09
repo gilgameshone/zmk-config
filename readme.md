@@ -1,6 +1,6 @@
 # Gilgamesh keymap
 
-A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and macros. The keys are laid out on a 3x5 grid + 2 thumb keys per hand. It is optimised to be used on Mac machines expecting a JIS keyboard (Kana input).
+A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and macros. The keys are laid out on a 3x5 grid + 2 thumb keys per hand. It is optimised to be used on Mac machines expecting a JIS keyboard (Kana input), and uses Alfred for some functions. 
 
 ## Magic Sturdy mod
 
