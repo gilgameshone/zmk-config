@@ -1034,6 +1034,7 @@
     };
   nav_rep: nav_rep {
       compatible = "zmk,behavior-hold-tap";
+      tapping_term_ms = <175>;
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <175>;
@@ -1236,7 +1237,7 @@ mg_x_l {
       label = "Nav";
       bindings = <
         &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &kp LS(LG(N5))      &trans      &_EISU        &_KANA        &trans
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp TAB           &trans             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &trans             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &sl EXT_L           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans
         >;
@@ -1258,7 +1259,7 @@ mg_x_l {
         &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
         &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
         &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_N0
-        &trans     &trans       &kp RET      &mo SYM_L
+        &trans     &trans       &kp RET      &kp JP_N0
         >;
     };
 
