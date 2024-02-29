@@ -1051,8 +1051,8 @@
       bindings = <
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hm HYPER H   &com_quo       &dot_dbq       &min_qma
-        &lt NUM_L BKSP  &lt SYM_L SPACE &sk LSHIFT &nav_rep NAV_L 0
+        &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
+        &lt NUM_L BKSP   &lt SYM_L SPACE   &sk LSHIFT   &nav_rep NAV_L 0
         >;
     };
 mg_x_l {
@@ -1236,9 +1236,9 @@ mg_x_l {
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &kp LS(LG(N5))      &trans      &_EISU        &_KANA        &trans
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans           &trans             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &sl EXT_L           &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))   &kp LS(LG(N5))      &trans      &_EISU        &_KANA        &trans
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans          &trans             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &sl EXT_L       &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans
         >;
     };
