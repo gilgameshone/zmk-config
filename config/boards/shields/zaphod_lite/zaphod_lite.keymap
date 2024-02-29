@@ -66,10 +66,10 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS AMPS BACKSPACE>;
+  continue-list = <UNDERSCORE JP_UNDER MINUS AMPS BACKSPACE>;
 };
 
-/ {
+
   combos {
     compatible = "zmk,combos";
     caps_word_combo {
