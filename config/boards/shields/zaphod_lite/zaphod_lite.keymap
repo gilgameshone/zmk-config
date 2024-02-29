@@ -65,6 +65,10 @@
     quick-release;             // no double capitalization when rolling keys
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS AMPS>;
+};
+
 / {
   combos {
     compatible = "zmk,combos";
