@@ -66,9 +66,8 @@
 };
 
 &caps_word {
-  continue-list = <UNDERSCORE JP_UNDER MINUS AMPS BACKSPACE>;
+  continue-list = <UNDERSCORE INT1 MINUS AMPS BACKSPACE>;
 };
-
 
   combos {
     compatible = "zmk,combos";
