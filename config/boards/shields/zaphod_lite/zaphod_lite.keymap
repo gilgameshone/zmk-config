@@ -1219,9 +1219,9 @@ mg_x_l {
    tron_num_layer {
       label = "Tron_Num";
       bindings = <
-        &TJS_QMARK  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJS_COLON  &kp LC(F2)  &TJS_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &TJS_ASTRK
+        &TJS_EXL    &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJS_COLON  &kp LC(F2)  &TJS_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &TJS_ASTRK
         &TJS_AMPS   &TJS_LPAR     &TJS_RPAR     &TJS_SEMI   &TJS_AT     &TJS_MINUS  &TJS_N4  &TJS_N5  &TJS_N6  &TJS_SLASH
-        &TJS_DQT    &TJS_SQT      &TJS_UNDER    &TJS_EXL    &TJS_PIPE   &TJS_EQUAL  &TJS_N1  &TJS_N2  &TJS_N3  &TJS_N0
+        &TJS_QMARK  &TJS_UNDER    &TJS_DQT      &TJS_SQT    &TJS_PIPE   &TJS_EQUAL  &TJS_N1  &TJS_N2  &TJS_N3  &TJS_N0
         &trans     &trans       &kp RET      &mo TR_SYM_L
         >;
     };
@@ -1260,9 +1260,9 @@ mg_x_l {
     num_layer {
       label = "Num";
       bindings = <
-        &kp JP_QMARK  &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
-        &kp JP_AMPS   &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
-        &kp JP_DQT    &kp JP_SQT   &kp JP_UNDER  &kp JP_EXL    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_N0
+        &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
+        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
+        &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
         &trans     &trans       &kp RET      &kp JP_N0
         >;
     };
