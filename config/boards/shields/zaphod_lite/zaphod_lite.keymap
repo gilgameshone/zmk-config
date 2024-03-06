@@ -26,22 +26,23 @@
 #define MG_C_L 11
 #define MG_G_L 12
 #define MG_P_L 13
+#define RP_OSS_L 14
 
-#define TRN_L 14
-#define TRB_L 15
-#define TRR_L 16
-#define TRP_L 17
+#define TRN_L 15
+#define TRB_L 16
+#define TRR_L 17
+#define TRP_L 18
 
-#define TR_NUM_L 18
-#define TR_SYM_L 19
+#define TR_NUM_L 19
+#define TR_SYM_L 20
 
-#define NAV_L 20
-#define EXT_L 21
-#define NUM_L 22
-#define SYM_L 23
-#define FUN_L 24
-#define BLE_L 25
-#define WIN_L 26
+#define NAV_L 21
+#define EXT_L 22
+#define NUM_L 23
+#define SYM_L 24
+#define FUN_L 25
+#define BLE_L 26
+#define WIN_L 27
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -923,6 +924,15 @@
            , <&macro_tap &sl MG_G_L>
            ;
     };
+    mg_space: mg_space {
+       label = "mg_space";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp SPACE>
+           , <&macro_tap &sl RP_OSS_L>
+           ;
+    };
 };
 
 
@@ -1043,6 +1053,13 @@
       #binding-cells = <2>;
       flavor = "hold-preferred";
       bindings = <&mo>, <&key_repeat>;
+    };
+  sym_spc: sym_spc {
+      compatible = "zmk,behavior-hold-tap";
+      tapping_term_ms = <150>;
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      bindings = <&mo>, <&mg_space>;
     };
   };
     
@@ -1174,6 +1191,15 @@ mg_x_l {
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
         &trans          &trans       &trans           &mg_pp
+        >;
+    };
+        rp_oss_l {
+      label = "rp_oss_l";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &sk LSHIFT           &trans
         >;
     };
     tron_base_layer {
