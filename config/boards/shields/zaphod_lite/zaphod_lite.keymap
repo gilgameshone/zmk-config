@@ -1045,6 +1045,14 @@
       flavor = "balanced";
       bindings = <&mo>, <&key_repeat>;
     };
+   ck_pp: ck_pp {
+      compatible = "zmk,behavior-mod-morph";
+      label = "consumer_keyboard_play_pause";
+      #binding-cells = <0>;
+      bindings = <&kp C_PP>, <&kp K_PP>;
+      mods = <(MOD_LSFT)>;
+    };
+    
   };
     
   keymap {
@@ -1241,9 +1249,9 @@ mg_x_l {
     nav_layer {
       label = "Nav";
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))   &kp LS(LG(N5))     &kp LANG2   &_EISU        &_KANA        &kp LANG1
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans          &trans             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans       &kp LS(LA(LG(LC(B)))) &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))   &kp LS(LG(N5))        &kp LANG2   &_EISU        &_KANA        &kp LANG1
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans          &trans                &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans          &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans
         >;
     };
