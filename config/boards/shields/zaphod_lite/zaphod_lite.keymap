@@ -26,21 +26,23 @@
 #define MG_C_L 11
 #define MG_G_L 12
 #define MG_P_L 13
+#define MG_REP_OSS 14
 
-#define TRN_L 14
-#define TRB_L 15
-#define TRR_L 16
-#define TRP_L 17
 
-#define TR_NUM_L 18
-#define TR_SYM_L 19
+#define TRN_L 15
+#define TRB_L 16
+#define TRR_L 17
+#define TRP_L 18
 
-#define NAV_L 20
-#define NUM_L 21
-#define SYM_L 22
-#define FUN_L 23
-#define BLE_L 24
-#define WIN_L 25
+#define TR_NUM_L 19
+#define TR_SYM_L 20
+
+#define NAV_L 21
+#define NUM_L 22
+#define SYM_L 23
+#define FUN_L 24
+#define BLE_L 25
+#define WIN_L 26
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -922,7 +924,24 @@
            , <&macro_tap &sl MG_G_L>
            ;
     };
-
+    mg_spc: mg_spc {
+       label = "mg_spc";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp SPACE>
+           , <&macro_tap &sl MG_REP_OSS>
+           ;
+    };
+    mg_ret: mg_ret {
+       label = "mg_ret";
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp RET>
+           , <&macro_tap &sl MG_REP_OSS>
+           ;
+    };
 };
 
 
@@ -1059,6 +1078,14 @@
       bindings = <&kp JP_MINUS>, <&kp KP_MINUS>;
       mods = <(MOD_LSFT)>;
     };
+   mg_space: mg_space {
+      compatible = "zmk,behavior-hold-tap";
+      tapping_term_ms = <200>;
+      require-prior-idle-ms = <150>;
+      #binding-cells = <2>;
+      flavor = "balanced";
+      bindings = <&mo>, <&mg_spc>;
+    };
     
   };
     
@@ -1072,7 +1099,7 @@
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
         &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
-        &lt NUM_L BKSP   &lt SYM_L SPACE   &sk LSHIFT   &nav_rep NAV_L 0
+        &lt NUM_L BKSP   &mg_space SYM_L 0   &key_repeat   &nav_rep NAV_L 0
         >;
     };
 mg_x_l {
@@ -1192,6 +1219,15 @@ mg_x_l {
         &trans          &trans       &trans           &mg_pp
         >;
     };
+   mg_rep_oss {
+      label = "mg_rep_oss";
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &sk LSHIFT           &trans
+        >;
+    };
     tron_base_layer {
       label = "TRN";
       bindings = <
@@ -1269,7 +1305,7 @@ mg_x_l {
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
         &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &jpkp_minus  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
         &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
-        &trans     &trans       &kp RET      &kp JP_N0
+        &trans     &trans       &mg_ret      &kp JP_N0
         >;
     };
 
