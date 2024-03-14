@@ -1042,7 +1042,7 @@
       tapping_term_ms = <200>;
       #binding-cells = <2>;
       flavor = "hold-preferred";
-      hold-while-undecided
+      hold-while-undecided;
       bindings = <&mo>, <&key_repeat>;
     };
    ck_pp: ck_pp {
