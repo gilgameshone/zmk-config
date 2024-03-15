@@ -861,7 +861,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp D>
-           , <&macro_tap &sl MG_D_L
+           , <&macro_tap &sl MG_D_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp D>
            ;
