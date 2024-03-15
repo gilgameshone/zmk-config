@@ -783,8 +783,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp X>
+           = <&macro_press &kp X>
            , <&macro_tap &sl MG_X_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp X>
            ;
     };
     mg_m: mg_m {
@@ -792,26 +794,32 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp M>
+           = <&macro_press &kp M>
            , <&macro_tap &sl MG_M_L>
-           ;
+           , <&macro_pause_for_release>
+           , <&macro_release &kp M>
+          ;
     };  
     mg_l: mg_l {
        label = "mg_l";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp L>
+           = <&macro_press &kp L>
            , <&macro_tap &sl MG_L_L>
-           ;
+           , <&macro_pause_for_release>
+           , <&macro_release &kp L>
+         ;
     };
     mg_u: mg_u {
        label = "mg_u";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp U>
+           = <&macro_press &kp U>
            , <&macro_tap &sl MG_U_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp U>
            ;
     };
     mg_o: mg_o {
@@ -819,8 +827,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp O>
+           = <&macro_press &kp O>
            , <&macro_tap &sl MG_O_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp O>
            ;
     };
     mg_t: mg_t {
@@ -828,8 +838,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp T>
+           = <&macro_press &kp T>
            , <&macro_tap &sl MG_T_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp T>
            ;
     };
     mg_r: mg_r {
@@ -837,8 +849,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp R>
+           = <&macro_press &kp R>
            , <&macro_tap &sl MG_R_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp R>
            ;
     };
     mg_d: mg_d {
@@ -846,8 +860,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp D>
-           , <&macro_tap &sl MG_D_L>
+           = <&macro_press &kp D>
+           , <&macro_tap &sl MG_D_L
+           , <&macro_pause_for_release>
+           , <&macro_release &kp D>
            ;
     };
     mg_e: mg_e {
@@ -855,8 +871,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp E>
+           = <&macro_press &kp E>
            , <&macro_tap &sl MG_E_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp E>
            ;
     };
     mg_a: mg_a {
@@ -864,8 +882,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp A>
+           = <&macro_press &kp A>
            , <&macro_tap &sl MG_A_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp A>
            ;
     };
     mg_c: mg_c {
@@ -873,8 +893,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp C>
+           = <&macro_press &kp C>
            , <&macro_tap &sl MG_C_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp C>
            ;
     };
     mg_g: mg_g {
@@ -882,8 +904,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp G>
+           = <&macro_press &kp G>
            , <&macro_tap &sl MG_G_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp G>
            ;
     };
     mg_p: mg_p {
@@ -891,17 +915,21 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp P>
+           = <&macro_press &kp P>
            , <&macro_tap &sl MG_P_L>
-           ;
+           , <&macro_pause_for_release>
+           , <&macro_release &kp P>
+         ;
     };
     mg_pp: mg_pp {
        label = "mg_pp";
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &key_repeat>
+           = <&macro_press &key_repeat>
            , <&macro_tap &sl MG_P_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &key_repeat>
            ;
     };
     mg_dd: mg_dd {
@@ -909,8 +937,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &key_repeat>
+           = <&macro_press &key_repeat>
            , <&macro_tap &sl MG_D_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &key_repeat>
            ;
     };
     mg_gg: mg_gg {
@@ -918,8 +948,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &key_repeat>
+           = <&macro_press &key_repeat>
            , <&macro_tap &sl MG_G_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &key_repeat>
            ;
     };
 
