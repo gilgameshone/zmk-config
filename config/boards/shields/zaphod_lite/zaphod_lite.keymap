@@ -91,6 +91,16 @@
       key-positions = <9 19 29>;
       bindings = <&mo BLE_L>;
     };
+    forward_word {
+      timeout-ms = <50>;
+      key-positions = <23 24>;
+      bindings = <&kp LA(LEFT)>;
+    };
+    backward_word {
+      timeout-ms = <50>;
+      key-positions = <25 26>;
+      bindings = <&kp LA(RIGHT)>;
+    };
   };
 
   macros {
