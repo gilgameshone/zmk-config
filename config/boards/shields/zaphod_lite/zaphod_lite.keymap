@@ -101,6 +101,11 @@
       key-positions = <25 26>;
       bindings = <&kp LA(RIGHT)>;
     };
+    sorcery {
+      timeout-ms = <50>;
+      key-positions = <3 6>;
+      bindings = <&kp LS(NUBS)>;
+    };
   };
 
   macros {
