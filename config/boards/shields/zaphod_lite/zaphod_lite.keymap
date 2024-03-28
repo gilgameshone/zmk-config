@@ -114,12 +114,12 @@
     backward_sentence {
       timeout-ms = <50>;
       key-positions = <21 23>;
-      bindings = <&kp LA(LEFT)>;
+      bindings = <&kp HOME>;
     };
     forward_sentence {
       timeout-ms = <50>;
       key-positions = <26 28>;
-      bindings = <&kp LA(RIGHT)>;
+      bindings = <&kp END>;
     };
     sorcery {
       timeout-ms = <50>;
