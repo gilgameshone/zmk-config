@@ -134,12 +134,12 @@
     previous_paragraph {
       timeout-ms = <50>;
       key-positions = <11 22>;
-      bindings = <&kp LC(UP)>;
+      bindings = <&kp LA(UP)>;
     };
     next_paragraph {
       timeout-ms = <50>;
       key-positions = <18 27>;
-      bindings = <&kp LC(DOWN)>;
+      bindings = <&kp LA(DOWN)>;
     };
     sorcery {
       timeout-ms = <50>;
