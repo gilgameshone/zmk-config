@@ -91,14 +91,34 @@
       key-positions = <9 19 29>;
       bindings = <&mo BLE_L>;
     };
-    forward_word {
+    backward_char {
       timeout-ms = <50>;
-      key-positions = <23 24>;
-      bindings = <&kp LA(LEFT)>;
+      key-positions = <22 23>;
+      bindings = <&kp LEFT>;
+    };
+    forward_char {
+      timeout-ms = <50>;
+      key-positions = <26 27>;
+      bindings = <&kp RIGHT>;
     };
     backward_word {
       timeout-ms = <50>;
-      key-positions = <25 26>;
+      key-positions = <21 22>;
+      bindings = <&kp LA(LEFT)>;
+    };
+    forward_word {
+      timeout-ms = <50>;
+      key-positions = <27 28>;
+      bindings = <&kp LA(RIGHT)>;
+    };
+    backward_sentence {
+      timeout-ms = <50>;
+      key-positions = <21 23>;
+      bindings = <&kp LA(LEFT)>;
+    };
+    forward_sentence {
+      timeout-ms = <50>;
+      key-positions = <26 28>;
       bindings = <&kp LA(RIGHT)>;
     };
     sorcery {
