@@ -123,23 +123,23 @@
     };
     previous_line {
       timeout-ms = <50>;
-      key-positions = <13 23>;
+      key-positions = <13 22>;
       bindings = <&kp UP>;
     };
     next_line {
       timeout-ms = <50>;
-      key-positions = <16 26>;
+      key-positions = <16 27>;
       bindings = <&kp DOWN>;
     };
     previous_paragraph {
       timeout-ms = <50>;
-      key-positions = <13 23>;
-      bindings = <&kp LA(UP)>;
+      key-positions = <11 22>;
+      bindings = <&kp LC(UP)>;
     };
     next_paragraph {
       timeout-ms = <50>;
-      key-positions = <16 26>;
-      bindings = <&kp LA(DOWN)>;
+      key-positions = <18 27>;
+      bindings = <&kp LC(DOWN)>;
     };
     sorcery {
       timeout-ms = <50>;
