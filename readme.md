@@ -8,14 +8,14 @@ The base layer uses a modified Magic Sturdy for the alpha arrangement. The shift
 
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
- │  X   M   L   C   P  │ │  B   §   U   O   Q  │ 
+ │  X   M   L   C   P  │ │  B   ★   U   O   Q  │ 
  │  S   T   R   D   Y  | |  F   N   E   A   I  │ 
  │  V   K   J   G   W  │ │  Z   H  ',  ".  ?-  │ 
  ╰─────────╮  BKSP SPC │ │ SHFT  REP ╭─────────╯
            ╰───────────╯ ╰───────────╯
 ```
 
-## Magic keys "§"
+## Magic keys "★"
 The magic key outputs the following when the previous key is pressed. It also reduces single finger bigrams and improves typing comfort.
 
 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
@@ -28,6 +28,8 @@ The magic key outputs the following when the previous key is pressed. It also re
 | Prev  | `Q` | `R` | `S` | `T` | `U` | `V` | `W` | `X` | `Y` | `Z` | `,` | `.` | `-` | 
 | Magic | --  | `L` | --  | `M` | `E` | --  | --  | `T` | --  | --  | --  | --  | --  |
 
+
+The second magic key `☆` can be accessed by pressing `★` and `C` at the same time. This transforms things like "us☆" into "the United States" or "para" into "paragraph" using Alfred for snippet expansion (this is not yet onboard the keyboard). 
 
 ## other layers
 ### Num (hold BKSP)
@@ -64,6 +66,9 @@ Nav has some available realestate, but the hold key to access it gets used heavi
  ╰─────────╮ ESC  TAB  │ │         ╭───────────╯
            ╰───────────╯ ╰─────────╯
 ```
+### Combos
+
+Other combos, where two keys are pressed at nearly exactly the same time are those for navigation. `,` and `.` will move the cursor forward one word, simply press `REP` to repeat. `H` and `.` will move forward by sentence. I am currently experimenting with these. 
 
 
 ## Japanese JIS kana Tron arrangement
