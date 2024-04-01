@@ -7,12 +7,14 @@ A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and ma
 The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `SHFT` on tap, a shift function that lasts for only one character. `Caps Word` can be accessed by tapping `SHFT` and `SPC` simultaneously. The repeat key, `REP`, helps to reduce single finger bigrams and improve typing comfort. 
 
 ```
+                ╭───────☆───────╮
  ╭─────────────────────╮ ╭─────────────────────╮
  │  X   M   L   C   P  │ │  B   ★   U   O   Q  │ 
  │  S   T   R   D   Y  | |  F   N   E   A   I  │ 
  │  V   K   J   G   W  │ │  Z   H  ',  ".  ?-  │ 
  ╰─────────╮  BKSP SPC │ │ SHFT  REP ╭─────────╯
            ╰───────────╯ ╰───────────╯
+                   ╰─CapsWord─╯
 ```
 
 ## Magic keys "★"
@@ -29,7 +31,7 @@ The magic key outputs the following when the previous key is pressed. It also re
 | Magic | --  | `L` | --  | `M` | `E` | --  | --  | `T` | --  | --  | --  | --  | --  |
 
 
-The second magic key `☆` can be accessed by pressing `★` and `C` at the same time. This transforms things like "us☆" into "the United States" or "para" into "paragraph" using Alfred for snippet expansion (this is not yet onboard the keyboard). 
+The second magic key `☆` can be accessed by pressing `★` and `C` at the same time. This transforms things like "us☆" into "the United States" or "para☆" into "paragraph" using Alfred for snippet expansion (this is not yet onboard the keyboard). 
 
 ## other layers
 ### Num (hold BKSP)
