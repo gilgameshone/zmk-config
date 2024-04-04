@@ -68,11 +68,9 @@ Nav has some available realestate, but the hold key to access it gets used heavi
  ╰─────────╮ ESC  TAB  │ │         ╭───────────╯
            ╰───────────╯ ╰─────────╯
 ```
-
 ### Combos
 
 Other combos, where two keys are pressed at nearly exactly the same time, are those for navigation. `,` and `.` will move the cursor forward one word, simply press `REP` to repeat. `H` and `.` will move forward by sentence. I am currently experimenting with these. 
-
 
 ## Japanese JIS kana Tron arrangement
 
