@@ -1050,7 +1050,7 @@
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&mo>, <&sk LSHIFT>;
+      bindings = <&mo>, <&sk>;
     };
   };
 
@@ -1063,7 +1063,7 @@
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &kp NUBS      &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
         &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
-        &lt NUM_L BKSP   &lt SYM_L SPACE   &ss_mo NAV_L 0   &nav_rep NAV_L 0
+        &lt NUM_L BKSP   &lt SYM_L SPACE   &ss_mo NAV_L LSHIFT   &nav_rep NAV_L 0
         >;
     };
 mg_x_l {
