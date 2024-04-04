@@ -1146,7 +1146,7 @@
       bindings = <&kp JP_MINUS>, <&kp KP_MINUS>;
       mods = <(MOD_LSFT)>;
     };
-    ss_mo: ss_mo {
+   ss_mo: ss_mo {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "hold-preferred";
