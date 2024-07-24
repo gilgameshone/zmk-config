@@ -1175,7 +1175,7 @@ mg_x_l {
         &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
         &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
-        &lt TR_NUM_L BKSP  &mo TRR_L  &mo TRB_L   &trans
+        &lt TR_NUM_L BKSP  &lt TRR_L SPACE &lt TRB_L RET   &trans
         >;
     };
 
@@ -1245,7 +1245,7 @@ mg_x_l {
 
     sym_layer {
       bindings = <
-        &trans    &trans       &trans   &kp LS(LA(LG(V)))  &trans            &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &trans    &kp LG(C)   &kp LG(V)    &kp LS(LA(LG(V)))            &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
         &trans    &kp LA(DEL)  &trans   &kp DEL     &kp LS(LA(LG(LC(Y))))    &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
         &kp CAPS  &defin       &gtran   &googl      &trans                   &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
