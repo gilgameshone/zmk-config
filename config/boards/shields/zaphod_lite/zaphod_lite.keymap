@@ -197,6 +197,7 @@
 
   macros {
   TJ_GI: tron_gi {
+      display-name = "ぎ";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
