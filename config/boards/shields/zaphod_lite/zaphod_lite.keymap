@@ -146,6 +146,53 @@
       key-positions = <3 6>;
       bindings = <&kp LS(NUBS)>;
     };
+
+    tab_combo {
+      timeout-ms = <50>;
+      key-positions = <11 13>;
+      bindings = <&kp TAB>;
+    };
+    esc_combo {
+      timeout-ms = <50>;
+      key-positions = <11 14>;
+      bindings = <&kp ESC>;
+    };
+    spc_combo {
+      timeout-ms = <50>;
+      key-positions = <11 12 13>;
+      bindings = <&kp SPACE>;
+    };
+    ret_combo {
+      timeout-ms = <50>;
+      key-positions = <16 17 18>;
+      bindings = <&kp RET>;
+    };
+    del_combo {
+      timeout-ms = <50>;
+      key-positions = <16 18>;
+      bindings = <&kp BKSP>;
+    };
+    eisu_combo {
+      timeout-ms = <50>;
+      key-positions = <2 7>;
+      bindings = <&_EISU>;
+    };
+    kana_combo {
+      timeout-ms = <50>;
+      key-positions = <1 8>;
+      bindings = <&_KANA>;
+    };
+    hiragana_combo {
+      timeout-ms = <50>;
+      key-positions = <12 17>;
+      bindings = <&kp LC(J)>;
+    };
+    katakana_combo {
+      timeout-ms = <50>;
+      key-positions = <11 18>;
+      bindings = <&kp LC(K)>;
+    };
+    
   };
 
   macros {
@@ -1175,7 +1222,7 @@ mg_x_l {
         &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
         &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
-        &lt TR_NUM_L BKSP  &lt TRR_L SPACE &lt TRB_L RET   &trans
+        &lt TR_NUM_L BKSP  &sl TRR_L  &sl TRB_L    &trans
         >;
     };
 
@@ -1184,7 +1231,7 @@ mg_x_l {
         &TJ_BI     &TJ_ZO     &TJ_GO  &TJ_BA  &TJ_BO    &kp TJ_E   &kp TJ_KE  &kp TJ_ME         &kp TJ_MU &kp TJ_RO
         &TJ_DA     &TJ_DO     &TJ_GA  &TJ_DE  &TJ_BU    &kp TJ_O   &kp TJ_CHI &kp TJ_CHOUONNPU  &kp TJ_MI &kp TJ_YA
         &kp TJ_XE  &kp TJ_XO  &TJ_ZE  &TJ_ZA  &TJ_BE    &kp TJ_WA  &kp TJ_XI  &kp TJ_XA         &trans    &kp TJ_XU
-        &trans &mo TRP_L &trans &trans
+        &trans &sl TRP_L &trans &trans
         >;
     };
 
@@ -1193,15 +1240,15 @@ mg_x_l {
         &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
         &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
         &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &kp TJ_XU
-        &trans &trans &mo TRP_L &trans
+        &trans &trans &sl TRP_L &trans
         >;
     };
 
     tron_purple_layer {
       bindings = <
-        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans        &trans        &trans        &trans
-        &trans     &trans   &trans   &trans   &TJ_PU          &kp SPC  &kp LC(JP_J)  &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &kp RET       &trans        &trans        &TJS_QMARK
+        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans    &trans  &trans        &trans
+        &trans     &trans   &trans   &trans   &TJ_PU          &trans   &trans    &trans  &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &trans    &trans  &trans        &TJS_QMARK
         &trans &trans &trans &trans
         >;
     };
