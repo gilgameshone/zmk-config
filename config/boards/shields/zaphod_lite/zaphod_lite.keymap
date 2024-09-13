@@ -26,21 +26,23 @@
 #define MG_C_L 11
 #define MG_G_L 12
 #define MG_P_L 13
+#define MG_Y_L 14
+#define MG_V_L 15
 
-#define TRN_L 14
-#define TRB_L 15
-#define TRR_L 16
-#define TRP_L 17
+#define TRN_L 16
+#define TRB_L 17
+#define TRR_L 18
+#define TRP_L 19
 
-#define TR_NUM_L 18
-#define TR_SYM_L 19
+#define TR_NUM_L 20
+#define TR_SYM_L 21
 
-#define NAV_L 20
-#define NUM_L 21
-#define SYM_L 22
-#define FUN_L 23
-#define BLE_L 24
-#define WIN_L 25
+#define NAV_L 22
+#define NUM_L 23
+#define SYM_L 24
+#define FUN_L 25
+#define BLE_L 26
+#define WIN_L 27
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -940,6 +942,25 @@
            , <&macro_release &kp P>
          ;
     };
+    mg_y: mg_y {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_press &kp Y>
+           , <&macro_tap &sl MG_Y_P>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp Y>
+         ;
+    };
+    mg_v: mg_v {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+           = <&macro_press &kp V>
+           , <&macro_tap &sl MG_V_S>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp V>
+         ;
+    };
     mg_pp: mg_pp {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
@@ -1114,7 +1135,7 @@
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
-mg_x_l {
+    mg_x_l {
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
@@ -1213,6 +1234,22 @@ mg_x_l {
     mg_p_l {
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &mg_pp
+        >;
+    };
+    mg_y_l {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp P   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &mg_pp
+        >;
+    };
+    mg_v_l {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp S   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
         &trans          &trans       &trans           &mg_pp
