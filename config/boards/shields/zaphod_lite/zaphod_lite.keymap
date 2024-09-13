@@ -947,7 +947,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp Y>
-           , <&macro_tap &sl MG_Y_P>
+           , <&macro_tap &sl MG_Y_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp Y>
          ;
@@ -956,7 +956,7 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
            = <&macro_press &kp V>
-           , <&macro_tap &sl MG_V_S>
+           , <&macro_tap &sl MG_V_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp V>
          ;
@@ -991,7 +991,6 @@
            , <&macro_release &key_repeat>
            ;
     };
-
 };
 
 
@@ -1244,7 +1243,7 @@
         &trans  &trans  &trans  &trans  &trans   &trans  &kp P   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_pp
+        &trans          &trans       &trans     &trans
         >;
     };
     mg_v_l {
@@ -1252,7 +1251,7 @@
         &trans  &trans  &trans  &trans  &trans   &trans  &kp S   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_pp
+        &trans          &trans       &trans       &trans
         >;
     };
     tron_base_layer {
