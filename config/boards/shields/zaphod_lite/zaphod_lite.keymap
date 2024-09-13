@@ -26,22 +26,23 @@
 #define MG_C_L 11
 #define MG_G_L 12
 #define MG_P_L 13
+#define MG_Y_L 14
+#define MG_V_L 15
 
+#define TRN_L 16
+#define TRB_L 17
+#define TRR_L 18
+#define TRP_L 19
 
-#define TRN_L 14
-#define TRB_L 15
-#define TRR_L 16
-#define TRP_L 17
+#define TR_NUM_L 20
+#define TR_SYM_L 21
 
-#define TR_NUM_L 18
-#define TR_SYM_L 19
-
-#define NAV_L 20
-#define NUM_L 21
-#define SYM_L 22
-#define FUN_L 23
-#define BLE_L 24
-#define WIN_L 25
+#define NAV_L 22
+#define NUM_L 23
+#define SYM_L 24
+#define FUN_L 25
+#define BLE_L 26
+#define WIN_L 27
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -155,7 +156,7 @@
     };
     esc_combo {
       timeout-ms = <50>;
-      key-positions = <11 14>;
+      key-positions = <1 3>;
       bindings = <&kp ESC>;
     };
     spc_combo {
@@ -941,7 +942,26 @@
            , <&macro_release &kp P>
          ;
     };
-
+    mg_y: mg_y {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_press &kp Y>
+           , <&macro_tap &sl MG_Y_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp Y>
+           ;
+    };
+    mg_v: mg_v {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_press &kp V>
+           , <&macro_tap &sl MG_V_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp V>
+           ;
+    };
     mg_pp: mg_pp {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
@@ -1110,8 +1130,8 @@
     magic_sturdy_layer {
       bindings = <
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u          &mg_o          &kp Q
-        &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &kp Y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &kp V        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
+        &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
+        &mg_v        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
@@ -1219,7 +1239,22 @@
         &trans          &trans       &trans           &mg_pp
         >;
     };
-
+    mg_y_l {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp P   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
+    mg_v_l {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans   &trans  &kp S   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
+        &trans          &trans       &trans           &trans
+        >;
+    };
 
     tron_base_layer {
       bindings = <
