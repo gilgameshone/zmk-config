@@ -40,9 +40,9 @@
 #define NAV_L 22
 #define NUM_L 23
 #define SYM_L 24
-#define NUM_W_L 26
-#define BLE_L 27
-#define WIN_L 28
+#define NUM_W_L 25
+#define BLE_L 26
+#define WIN_L 27
 
 
 #define HYPER LS(LA(LG(LCTL)))
