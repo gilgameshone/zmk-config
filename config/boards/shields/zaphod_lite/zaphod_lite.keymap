@@ -40,9 +40,9 @@
 #define NAV_L 22
 #define NUM_L 23
 #define SYM_L 24
-#define FUN_L 25
-#define BLE_L 26
-#define WIN_L 27
+#define NUM_W_L 26
+#define BLE_L 27
+#define WIN_L 28
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -194,7 +194,11 @@
       key-positions = <11 18>;
       bindings = <&kp LC(K)>;
     };
-    
+    num_word_combo {
+      timeout-ms = <50>;
+      key-positions = <32 35>;
+      bindings = <&to NUM_W_L>;
+    };
   };
 
   macros {
@@ -992,6 +996,26 @@
            , <&macro_release &key_repeat>
            ;
     };
+    nw_spc: nw_spc {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_press &kp SPACE>
+           , <&macro_tap &to SDY_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp SPACE>
+           ;
+    };
+    nw_ret: nw_ret {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_press &kp RET>
+           , <&macro_tap &to SDY_L>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp RET>
+           ;
+    };
 };
 
 
@@ -1345,7 +1369,14 @@
         &trans          &trans         &trans      &trans     &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
         &none      &none             &trans          &trans
         >;
-
+    };
+    num_word_layer {
+      bindings = <
+        &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
+        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
+        &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
+        &to SDY_L     &nw_spc       &nw_ret      &kp JP_N0
+        >;
     };
     ble_layer {
       bindings = <
