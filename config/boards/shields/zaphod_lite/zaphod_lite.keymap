@@ -200,6 +200,26 @@
       key-positions = <31 34>;
       bindings = <&to NUM_W_L>;
     };
+    up {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp UP>;
+    };
+    down {
+      timeout-ms = <50>;
+      key-positions = <16 17>;
+      bindings = <&kp DOWN>;
+    };
+    up_paragraph {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      bindings = <&kp LA(UP)>;
+    };
+    down_paragraph {
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&kp LA(DOWN)>;
+    };
   };
 
   macros {
