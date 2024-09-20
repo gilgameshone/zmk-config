@@ -1092,10 +1092,10 @@
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp END &kp HOME>
-           , <&macro_press &kp LS(END)>
+           = <&macro_tap &kp HOME &kp LS(END)>
+           , <&macro_press &kp LS(DOWN)>
            , <&macro_pause_for_release>
-           , <&macro_release &kp LS(END)>
+           , <&macro_release &kp LS(DOWN)>
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
@@ -1490,7 +1490,7 @@
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
         &trans     &trans     &trans    &selword_f_ext  &trans          &trans     &selword_f_ext   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &selword_f_ext    &trans
+        &trans     &kp A     &selword_f_ext    &trans
         >;
     };    
 
