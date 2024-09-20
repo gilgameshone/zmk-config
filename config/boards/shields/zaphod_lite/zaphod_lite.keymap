@@ -44,8 +44,8 @@
 #define NUM_W_L 26
 #define BLE_L 27
 #define WIN_L 28
-#define SRT_EX_L 29
-
+#define SRT_EXW_L 29
+#define SRT_EXW_L 30
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -1064,7 +1064,15 @@
            = <&macro_tap &kp LA(RIGHT)>
            , <&macro_tap &kp LA(LEFT)>
            , <&macro_tap &kp LA(LS(RIGHT))>
-           , <&macro_tap &sl SRT_EX_L>
+           , <&macro_tap &sl SRT_EXW_L>
+           ;
+    };
+    selword_f_rep: select_word_forwards_repeat {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp LA(LS(RIGHT))>
+           , <&macro_tap &sl SRT_EXW_L>
            ;
     };
     selline_f: select_line_forwards {
@@ -1072,13 +1080,18 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp HOME &kp LS(END)>
-           , <&macro_press &kp LS(DOWN)>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp LS(DOWN)>
-           , <&macro_tap &sl SRT_EX_L>
+           , <&macro_tap &sl SRT_EXL_L>
            ;
     };
-
+    selline_f_rep: select_line_forwards_repeat {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings    
+           = <&macro_press &kp LS(DOWN)>
+           , <&macro_press &kp LS(END)>
+           , <&macro_tap &sl SRT_EXL_L>
+           ;
+     };
 };
 
 
@@ -1464,14 +1477,23 @@
         &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
-    short_ext_layer {
+    short_ext_word_layer {
       bindings = <
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &trans    &key_repeat  &trans          &trans     &key_repeat   &trans    &trans    &trans 
+        &trans     &trans     &trans    &selword_f_rep  &trans          &trans     &selword_f_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
         &trans     &kp A     &key_repeat    &trans
         >;
     };    
+short_ext_line_layer {
+      bindings = <
+        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &trans     &trans    &selline_f_rep  &trans          &trans     &selline_f_rep   &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &kp B     &key_repeat    &trans
+        >;
+    };    
 
+ 
   };
 };
