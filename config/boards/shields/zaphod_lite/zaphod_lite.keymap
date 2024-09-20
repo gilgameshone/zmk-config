@@ -1467,9 +1467,9 @@
     short_ext_layer {
       bindings = <
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &trans    &selword_f_ext  &trans          &trans     &selword_f_ext   &trans    &trans    &trans 
+        &trans     &trans     &trans    &key_repeat  &trans          &trans     &key_repeat   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &kp A     &selword_f_ext    &trans
+        &trans     &kp A     &key_repeat    &trans
         >;
     };    
 
