@@ -237,7 +237,7 @@
     selword_combo {
       timeout-ms = <39>;
       key-positions = <13 16>;
-      bindings = <&selword>;
+      bindings = <&selword_f>;
     };
   };
 
@@ -1056,7 +1056,7 @@
            , <&macro_release &kp RET>
            ;
     };
-    selword: select_word {
+    selword_b: select_word_backwards {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
@@ -1064,6 +1064,16 @@
            , <&macro_press &kp LA(LS(LEFT))>
            , <&macro_pause_for_release>
            , <&macro_release &kp LA(LS(LEFT))>
+           ;
+    };
+    selword_f: select_word_forwards {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp LA(RIGHT) &kp LA(LEFT)>
+           , <&macro_press &kp LA(LS(RIGHT))>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp LA(LS(RIGHT))>
            ;
     };
 };
