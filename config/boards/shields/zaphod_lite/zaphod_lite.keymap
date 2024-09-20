@@ -186,13 +186,13 @@
       bindings = <&_KANA>;
     };
     hiragana_combo {
-      layers = <16 17 18 19>
+      layers = <16 17 18 19>;
       timeout-ms = <39>;
       key-positions = <2 7>;
       bindings = <&kp LC(J)>;
     };
     katakana_combo {
-      layers = <16 17 18 19>
+      layers = <16 17 18 19>;
       timeout-ms = <39>;
       key-positions = <1 8>;
       bindings = <&kp LC(K)>;
@@ -243,13 +243,13 @@
       bindings = <&selw_sell>;
     };
     selword_rep_combo {
-      layers = <29>
+      layers = <29>;
       timeout-ms = <39>;
       key-positions = <13 16>;
       bindings = <&selword_f_rep>;
     };
     selline_rep_combo {
-      layers = <30>
+      layers = <30>;
       timeout-ms = <39>;
       key-positions = <13 16>;
       bindings = <&selline_f_rep>;
