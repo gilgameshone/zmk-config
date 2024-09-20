@@ -238,7 +238,7 @@
     selword_combo {
       timeout-ms = <39>;
       key-positions = <13 16>;
-      bindings = <&selword_f>;
+      bindings = <&selw_sell>;
     };
   };
 
@@ -1078,17 +1078,28 @@
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
+    selword_f_ext: select_word_forwards_extend {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings            
+           = <&macro_press &key_repeat>
+           , <&macro_pause_for_release>
+           , <&macro_release &key_repeat>
+           , <&macro_tap &sl SRT_EX_L>
+           ;
+    };
     selline_f: select_line_forwards {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp END &kp HOME>
-           , <&macro_press &kp LS(HOME)>
+           , <&macro_press &kp LS(END)>
            , <&macro_pause_for_release>
-           , <&macro_release &kp LS(HOME)>
+           , <&macro_release &kp LS(END)>
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
+
 };
 
 
@@ -1476,10 +1487,10 @@
     };
     short_ext_layer {
       bindings = <
-        &trans     &trans     &trans    &trans       &trans          &trans     &trans        &trans    &trans    &trans 
-        &trans     &trans     &trans    &key_repeat  &trans          &trans     &key_repeat   &trans    &trans    &trans 
-        &trans     &trans     &trans    &trans       &trans          &trans     &trans        &trans    &trans    &trans 
-        &trans     &trans     &trans    &trans
+        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &trans     &trans    &selword_f_ext  &trans          &trans     &selword_f_ext   &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &trans     &selword_f_ext    &trans
         >;
     };    
 
