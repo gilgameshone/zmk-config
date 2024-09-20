@@ -1221,7 +1221,7 @@
     selw_sell: selword_selline {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&selword_f>, <&selline>;
+      bindings = <&selword_f>, <&selline_f>;
       mods = <(MOD_LSFT)>;
     };
   };
