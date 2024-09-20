@@ -224,15 +224,20 @@
       key-positions = <12 17>;
       bindings = <&sl NUM_L>;
     };
+    nav_sticky_combo {
+      timeout-ms = <39>;
+      key-positions = <11 18>;
+      bindings = <&sl NAV_L>;
+    };
     sym_sticky_combo {
       timeout-ms = <39>;
       key-positions = <10 19>;
       bindings = <&sl SYM_L>;
     };
-    nav_sticky_combo {
+    selword_combo {
       timeout-ms = <39>;
-      key-positions = <11 18>;
-      bindings = <&sl NAV_L>;
+      key-positions = <13 16>;
+      bindings = <&selword>;
     };
   };
 
@@ -1049,6 +1054,16 @@
            , <&macro_tap &to SDY_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp RET>
+           ;
+    };
+    selword: select_word {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp LA(LEFT) &kp LA(RIGHT)>
+           , <&macro_press &kp LA(LS(LEFT))>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp LA(LS(LEFT))>
            ;
     };
 };
