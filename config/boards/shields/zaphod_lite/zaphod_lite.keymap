@@ -44,6 +44,7 @@
 #define NUM_W_L 26
 #define BLE_L 27
 #define WIN_L 28
+#define SRT_EX_L 29
 
 
 #define HYPER LS(LA(LG(LCTL)))
@@ -1074,6 +1075,18 @@
            , <&macro_press &kp LA(LS(RIGHT))>
            , <&macro_pause_for_release>
            , <&macro_release &kp LA(LS(RIGHT))>
+           , <&macro_tap &sl SRT_EX_L>
+           ;
+    };
+    selline_f: select_line_forwards {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+           = <&macro_tap &kp END &kp HOME>
+           , <&macro_press &kp LS(HOME)>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp LS(HOME)>
+           , <&macro_tap &sl SRT_EX_L>
            ;
     };
 };
@@ -1204,6 +1217,12 @@
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
       bindings = <&mo>, <&sk>;
+    };
+    selw_sell: selword_selline {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&selword>, <&selline>;
+      mods = <(MOD_LSFT)>;
     };
   };
 
@@ -1455,7 +1474,14 @@
         &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
-    
+    short_ext_layer {
+      bindings = <
+        &trans     &trans     &trans    &trans       &trans          &trans     &trans        &trans    &trans    &trans 
+        &trans     &trans     &trans    &key_repeat  &trans          &trans     &key_repeat   &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans       &trans          &trans     &trans        &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans
+        >;
+    };    
 
   };
 };
