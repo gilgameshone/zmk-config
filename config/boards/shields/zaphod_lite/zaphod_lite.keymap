@@ -45,7 +45,7 @@
 #define BLE_L 27
 #define WIN_L 28
 #define SRT_EXW_L 29
-#define SRT_EXW_L 30
+#define SRT_EXL_L 30
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
