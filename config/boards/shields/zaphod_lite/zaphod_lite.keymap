@@ -1072,7 +1072,9 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp LA(RIGHT) &kp LA(LEFT)>
-           , <&macro_tap &kp LA(LS(RIGHT))>
+           , <&macro_press &kp LA(LS(RIGHT))>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp LA(LS(RIGHT))>
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
@@ -1089,7 +1091,9 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp HOME &kp LS(END)>
-           , <&macro_tap &kp LS(DOWN)>
+           , <&macro_press &kp LS(DOWN)>
+           , <&macro_pause_for_release>
+           , <&macro_release &kp LS(DOWN)>
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
@@ -1227,7 +1231,7 @@
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&selword_f>, <&selline_f>;
-      mods = <(MOD_LSFT)>,<(MOD_RSFT)>;
+      mods = <(MOD_LSFT),(MOD_RSFT)>;
     };
   };
 
