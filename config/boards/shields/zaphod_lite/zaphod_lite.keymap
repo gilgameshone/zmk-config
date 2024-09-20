@@ -1057,32 +1057,13 @@
            , <&macro_release &kp RET>
            ;
     };
-    selword_b: select_word_backwards {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp LA(LEFT) &kp LA(RIGHT)>
-           , <&macro_press &kp LA(LS(LEFT))>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp LA(LS(LEFT))>
-           ;
-    };
     selword_f: select_word_forwards {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
-           = <&macro_tap &kp LA(RIGHT) &kp LA(LEFT)>
-           , <&macro_press &kp LA(LS(RIGHT))>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp LA(LS(RIGHT))>
-           , <&macro_tap &sl SRT_EX_L>
-           ;
-    };
-    selword_f_ext: select_word_forwards_extend {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings            
-           = <&macro_tap &key_repeat>
+           = <&macro_tap &kp LA(RIGHT)>
+           , <&macro_tap &kp LA(LEFT)>
+           , <&macro_tap &kp LA(LS(RIGHT))>
            , <&macro_tap &sl SRT_EX_L>
            ;
     };
