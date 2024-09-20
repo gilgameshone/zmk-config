@@ -1231,7 +1231,7 @@
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&selword_f>, <&selline_f>;
-      mods = <(MOD_LSFT),(MOD_RSFT)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
 
