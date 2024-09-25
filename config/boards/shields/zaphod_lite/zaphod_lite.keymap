@@ -1241,6 +1241,12 @@
       bindings = <&selword_f>, <&selline_f>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    capsw_capsl: capsword_capslock {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&caps_word>, <&kp CAPS>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
   
