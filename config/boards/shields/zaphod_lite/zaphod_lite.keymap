@@ -191,6 +191,16 @@
       key-positions = <16 32>;
       bindings = <&kp BKSP>;
     };
+    up {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp UP>;
+    };
+    up_paragraph {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      bindings = <&kp LA(UP)>;
+    };
     del_word_combo {
       timeout-ms = <50>;
       key-positions = <11 13>;
@@ -201,6 +211,12 @@
       key-positions = <13 31>;
       bindings = <&kp DEL>;
     };
+    spc_combo {
+      timeout-ms = <30>;
+      key-positions = <11 12 13>;
+      bindings = <&kp SPACE>;
+    };
+    
     page_up_combo {
       timeout-ms = <50>;
       key-positions = <23 31>;
@@ -238,21 +254,13 @@
       key-positions = <31 34>;
       bindings = <&to NUM_W_L>;
     };
-    up {
-      timeout-ms = <50>;
-      key-positions = <12 13>;
-      bindings = <&kp UP>;
-    };
+
     down {
       timeout-ms = <50>;
       key-positions = <16 17>;
       bindings = <&kp DOWN>;
     };
-    up_paragraph {
-      timeout-ms = <50>;
-      key-positions = <11 12>;
-      bindings = <&kp LA(UP)>;
-    };
+    
     down_paragraph {
       timeout-ms = <50>;
       key-positions = <17 18>;
