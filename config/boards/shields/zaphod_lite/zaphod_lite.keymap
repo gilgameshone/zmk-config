@@ -306,7 +306,11 @@
       key-positions = <18 32>;
       bindings = <&kp LG(A)>;
     };
-
+    spc_combo {
+      timeout-ms = <30>;
+      key-positions = <11 12 13>;
+      bindings = <&kp SPACE>;
+    };
     
   };
 };
