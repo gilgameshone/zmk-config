@@ -307,6 +307,7 @@ combos {
  };
 };
 
+/ {
   macros {
   TJ_GI: tron_gi {
       display-name = "ぎ";
@@ -1158,8 +1159,8 @@ combos {
            ;
      };
 };
-
-
+};
+/ {
   behaviors {
   hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
@@ -1299,8 +1300,9 @@ combos {
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
+};
 
-  
+/ {
   keymap {
     compatible = "zmk,keymap";
 
@@ -1564,7 +1566,7 @@ combos {
         &trans     &kp B     &key_repeat    &trans
         >;
     };    
-
+};
  
   };
 };
