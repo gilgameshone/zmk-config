@@ -162,7 +162,7 @@ combos {
   };
 
   ret_combo {
-    timeout-ms = <40>;
+    timeout-ms = <50>;
     key-positions = <16 17 18>;
     bindings = <&kp RET>;
   };
@@ -298,7 +298,7 @@ combos {
   };
 
   spc_combo {
-    timeout-ms = <40>;
+    timeout-ms = <50>;
     key-positions = <11 12 13>;
     bindings = <&kp SPACE>;
   };
