@@ -152,7 +152,7 @@
     };
     tab_combo {
       timeout-ms = <39>;
-      key-positions = <11 13>;
+      key-positions = <11 23>;
       bindings = <&kp TAB>;
     };
     esc_combo {
@@ -170,11 +170,36 @@
       key-positions = <16 17 18>;
       bindings = <&kp RET>;
     };
-    del_combo {
+    bksp_word_combo {
       timeout-ms = <39>;
       key-positions = <16 18>;
+      bindings = <&kp LA(BKSP)>;
+    };
+    bksp_combo {
+      timeout-ms = <39>;
+      key-positions = <16 32>;
       bindings = <&kp BKSP>;
     };
+    del_word_combo {
+      timeout-ms = <39>;
+      key-positions = <11 13>;
+      bindings = <&kp LA(DEL)>;
+    };
+    del_combo {
+      timeout-ms = <39>;
+      key-positions = <16 32>;
+      bindings = <&kp DEL>;
+    };
+    page_up_combo {
+      timeout-ms = <39>;
+      key-positions = <23 31>;
+      bindings = <&kp PG_UP>;
+    };
+    page_down_combo {
+      timeout-ms = <39>;
+      key-positions = <26 32>;
+      bindings = <&kp DOWN>;
+    };  
     eisu_combo {
       timeout-ms = <39>;
       key-positions = <1 2 3>;
@@ -254,6 +279,31 @@
       key-positions = <13 16>;
       bindings = <&selline_f_rep>;
     };
+    save_combo {
+      timeout-ms = <39>;
+      key-positions = <11 31>;
+      bindings = <&kp LG(S)>;
+    };
+    copy_combo {
+      timeout-ms = <39>;
+      key-positions = <1 2>;
+      bindings = <&kp LG(C)>;
+    };
+    paste_combo {
+      timeout-ms = <39>;
+      key-positions = <2 3>;
+      bindings = <&kp LG(V)>;
+    };
+    undo_combo {
+      timeout-ms = <39>;
+      key-positions = <1 31>;
+      bindings = <&kp LG(S)>;
+    };
+    select_all_combo {
+      timeout-ms = <39>;
+      key-positions = <18 32>;
+      bindings = <&kp LG(A)>;
+    }; 
   };
 
   macros {
