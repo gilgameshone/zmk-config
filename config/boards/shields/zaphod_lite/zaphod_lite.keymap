@@ -187,7 +187,7 @@
     };
     del_combo {
       timeout-ms = <39>;
-      key-positions = <16 32>;
+      key-positions = <13 31>;
       bindings = <&kp DEL>;
     };
     page_up_combo {
@@ -198,7 +198,7 @@
     page_down_combo {
       timeout-ms = <39>;
       key-positions = <26 32>;
-      bindings = <&kp DOWN>;
+      bindings = <&kp PG_DN>;
     };  
     eisu_combo {
       timeout-ms = <39>;
