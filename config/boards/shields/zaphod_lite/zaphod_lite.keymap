@@ -73,243 +73,242 @@
 };
 
 / {
-combos {
-  compatible = "zmk,combos";
-  caps_word_combo {
-    timeout-ms = <50>;
-    key-positions = <31 32>;
-    bindings = <&caps_word>;
-  };
-  3thumb_left {
-    timeout-ms = <50>;
-    key-positions = <30 31>;
-    bindings = <&mo FUN_L>;
-  };
-  3thumb_right {
-    timeout-ms = <50>;
-    key-positions = <32 33>;
-    bindings = <&mo WIN_L>;
-  };  
-  ble_mo {
-    timeout-ms = <50>;
-    key-positions = <9 19 29>;
-    bindings = <&mo BLE_L>;
-  };
-  backward_char {
-    timeout-ms = <50>;
-    key-positions = <22 23>;
-    bindings = <&kp LEFT>;
-  };
-  forward_char {
-    timeout-ms = <50>;
-    key-positions = <26 27>;
-    bindings = <&kp RIGHT>;
-  };
-  backward_word {
-    timeout-ms = <50>;
-    key-positions = <21 22>;
-    bindings = <&kp LA(LEFT)>;
-  };
-  forward_word {
-    timeout-ms = <50>;
-    key-positions = <27 28>;
-    bindings = <&kp LA(RIGHT)>;
-  };
-  backward_sentence {
-    timeout-ms = <50>;
-    key-positions = <21 23>;
-    bindings = <&kp HOME>;
-  };
-  forward_sentence {
-    timeout-ms = <50>;
-    key-positions = <26 28>;
-    bindings = <&kp END>;
-  };
-  previous_line {
-    timeout-ms = <50>;
-    key-positions = <13 22>;
-    bindings = <&kp UP>;
-  };
-  next_line {
-    timeout-ms = <50>;
-    key-positions = <16 27>;
-    bindings = <&kp DOWN>;
-  };
-  previous_paragraph {
-    timeout-ms = <50>;
-    key-positions = <11 22>;
-    bindings = <&kp LA(UP)>;
-  };
-  next_paragraph {
-    timeout-ms = <50>;
-    key-positions = <18 27>;
-    bindings = <&kp LA(DOWN)>;
-  };
-  sorcery_magic2 {
-    timeout-ms = <50>;
-    key-positions = <3 6>;
-    bindings = <&kp LS(NUBS)>;
-  };
-  tab_combo {
-    timeout-ms = <50>;
-    key-positions = <11 23>;
-    bindings = <&kp TAB>;
-  };
-  esc_combo {
-    timeout-ms = <50>;
-    key-positions = <1 3>;
-    bindings = <&kp ESC>;
-  };
+  combos {
+    compatible = "zmk,combos";
+    spc_combo {
+      timeout-ms = <50>;
+      key-positions = <11 12 13>;
+      bindings = <&kp SPACE>;
+    };
+    undo_combo {
+      timeout-ms = <50>;
+      key-positions = <1 31>;
+      bindings = <&kp LG(Z)>;
+    };
+    ret_combo {
+      timeout-ms = <50>;
+      key-positions = <16 17 18>;
+      bindings = <&kp RET>;
+    };
+    save_combo {
+      timeout-ms = <50>;
+      key-positions = <11 31>;
+      bindings = <&kp LG(S)>;
+    }; 
+    caps_word_combo {
+      timeout-ms = <50>;
+      key-positions = <31 32>;
+      bindings = <&caps_word>;
+    };
+    3thumb_left {
+      timeout-ms = <50>;
+      key-positions = <30 31>;
+      bindings = <&mo FUN_L>;
+    };
+    3thumb_right {
+      timeout-ms = <50>;
+      key-positions = <32 33>;
+      bindings = <&mo WIN_L>;
+    };  
+    ble_mo {
+      timeout-ms = <50>;
+      key-positions = <9 19 29>;
+      bindings = <&mo BLE_L>;
+    };
+    backward_char {
+      timeout-ms = <50>;
+      key-positions = <22 23>;
+      bindings = <&kp LEFT>;
+    };
+    forward_char {
+      timeout-ms = <50>;
+      key-positions = <26 27>;
+      bindings = <&kp RIGHT>;
+    };
+    backward_word {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      bindings = <&kp LA(LEFT)>;
+    };
+    forward_word {
+      timeout-ms = <50>;
+      key-positions = <27 28>;
+      bindings = <&kp LA(RIGHT)>;
+    };
+    backward_sentence {
+      timeout-ms = <50>;
+      key-positions = <21 23>;
+      bindings = <&kp HOME>;
+    };
+    forward_sentence {
+      timeout-ms = <50>;
+      key-positions = <26 28>;
+      bindings = <&kp END>;
+    };
+    previous_line {
+      timeout-ms = <50>;
+      key-positions = <13 22>;
+      bindings = <&kp UP>;
+    };
+    next_line {
+      timeout-ms = <50>;
+      key-positions = <16 27>;
+      bindings = <&kp DOWN>;
+    };
+    previous_paragraph {
+      timeout-ms = <50>;
+      key-positions = <11 22>;
+      bindings = <&kp LA(UP)>;
+    };
+    next_paragraph {
+      timeout-ms = <50>;
+      key-positions = <18 27>;
+      bindings = <&kp LA(DOWN)>;
+    };
+    sorcery_magic2 {
+      timeout-ms = <50>;
+      key-positions = <3 6>;
+      bindings = <&kp LS(NUBS)>;
+    };
+    tab_combo {
+      timeout-ms = <50>;
+      key-positions = <11 23>;
+      bindings = <&kp TAB>;
+    };
+    esc_combo {
+      timeout-ms = <50>;
+      key-positions = <1 3>;
+      bindings = <&kp ESC>;
+    };
 
-  ret_combo {
-    timeout-ms = <50>;
-    key-positions = <16 17 18>;
-    bindings = <&kp RET>;
-  };
-  bksp_word_combo {
-    timeout-ms = <50>;
-    key-positions = <16 18>;
-    bindings = <&kp LA(BKSP)>;
-  };
-  bksp_combo {
-    timeout-ms = <50>;
-    key-positions = <16 32>;
-    bindings = <&kp BKSP>;
-  };
-  del_word_combo {
-    timeout-ms = <50>;
-    key-positions = <11 13>;
-    bindings = <&kp LA(DEL)>;
-  };
-  del_combo {
-    timeout-ms = <50>;
-    key-positions = <13 31>;
-    bindings = <&kp DEL>;
-  };
-  page_up_combo {
-    timeout-ms = <50>;
-    key-positions = <23 31>;
-    bindings = <&kp PG_UP>;
-  };
-  page_down_combo {
-    timeout-ms = <50>;
-    key-positions = <26 32>;
-    bindings = <&kp PG_DN>;
-  };  
-  eisu_combo {
-    timeout-ms = <50>;
-    key-positions = <1 2 3>;
-    bindings = <&_EISU>;
-  };
-  kana_combo {
-    timeout-ms = <50>;
-    key-positions = <6 7 8>;
-    bindings = <&_KANA>;
-  };
-  hiragana_combo {
-    layers = <16 17 18 19>;
-    timeout-ms = <50>;
-    key-positions = <2 7>;
-    bindings = <&kp LC(J)>;
-  };
-  katakana_combo {
-    layers = <16 17 18 19>;
-    timeout-ms = <50>;
-    key-positions = <1 8>;
-    bindings = <&kp LC(K)>;
-  };
-  num_word_combo {
-    timeout-ms = <50>;
-    key-positions = <31 34>;
-    bindings = <&to NUM_W_L>;
-  };
-  up {
-    timeout-ms = <50>;
-    key-positions = <12 13>;
-    bindings = <&kp UP>;
-  };
-  down {
-    timeout-ms = <50>;
-    key-positions = <16 17>;
-    bindings = <&kp DOWN>;
-  };
-  up_paragraph {
-    timeout-ms = <50>;
-    key-positions = <11 12>;
-    bindings = <&kp LA(UP)>;
-  };
-  down_paragraph {
-    timeout-ms = <50>;
-    key-positions = <17 18>;
-    bindings = <&kp LA(DOWN)>;
-  };
-  num_sticky_combo {
-    timeout-ms = <50>;
-    key-positions = <12 17>;
-    bindings = <&sl NUM_L>;
-  };
-  nav_sticky_combo {
-    timeout-ms = <50>;
-    key-positions = <11 18>;
-    bindings = <&sl NAV_L>;
-  };
-  sym_sticky_combo {
-    timeout-ms = <50>;
-    key-positions = <10 19>;
-    bindings = <&sl SYM_L>;
-  };
-  selword_combo {
-    timeout-ms = <50>;
-    key-positions = <13 16>;
-    bindings = <&selw_sell>;
-  };
-  selword_rep_combo {
-    layers = <29>;
-    timeout-ms = <50>;
-    key-positions = <13 16>;
-    bindings = <&selword_f_rep>;
-  };
-  selline_rep_combo {
-    layers = <30>;
-    timeout-ms = <50>;
-    key-positions = <13 16>;
-    bindings = <&selline_f_rep>;
-  };
-  save_combo {
-    timeout-ms = <50>;
-    key-positions = <11 31>;
-    bindings = <&kp LG(S)>;
-  };
-  copy_combo {
-    timeout-ms = <50>;
-    key-positions = <1 2>;
-    bindings = <&kp LG(C)>;
-  };
-  paste_combo {
-    timeout-ms = <50>;
-    key-positions = <2 3>;
-    bindings = <&kp LG(V)>;
-  };
+    bksp_word_combo {
+      timeout-ms = <50>;
+      key-positions = <16 18>;
+      bindings = <&kp LA(BKSP)>;
+    };
+    bksp_combo {
+      timeout-ms = <50>;
+      key-positions = <16 32>;
+      bindings = <&kp BKSP>;
+    };
+    del_word_combo {
+      timeout-ms = <50>;
+      key-positions = <11 13>;
+      bindings = <&kp LA(DEL)>;
+    };
+    del_combo {
+      timeout-ms = <50>;
+      key-positions = <13 31>;
+      bindings = <&kp DEL>;
+    };
+    page_up_combo {
+      timeout-ms = <50>;
+      key-positions = <23 31>;
+      bindings = <&kp PG_UP>;
+    };
+    page_down_combo {
+      timeout-ms = <50>;
+      key-positions = <26 32>;
+      bindings = <&kp PG_DN>;
+    };  
+    eisu_combo {
+      timeout-ms = <50>;
+      key-positions = <1 2 3>;
+      bindings = <&_EISU>;
+    };
+    kana_combo {
+      timeout-ms = <50>;
+      key-positions = <6 7 8>;
+      bindings = <&_KANA>;
+    };
+    hiragana_combo {
+      layers = <16 17 18 19>;
+      timeout-ms = <50>;
+      key-positions = <2 7>;
+      bindings = <&kp LC(J)>;
+    };
+    katakana_combo {
+      layers = <16 17 18 19>;
+      timeout-ms = <50>;
+      key-positions = <1 8>;
+      bindings = <&kp LC(K)>;
+    };
+    num_word_combo {
+      timeout-ms = <50>;
+      key-positions = <31 34>;
+      bindings = <&to NUM_W_L>;
+    };
+    up {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp UP>;
+    };
+    down {
+      timeout-ms = <50>;
+      key-positions = <16 17>;
+      bindings = <&kp DOWN>;
+    };
+    up_paragraph {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      bindings = <&kp LA(UP)>;
+    };
+    down_paragraph {
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&kp LA(DOWN)>;
+    };
+    num_sticky_combo {
+      timeout-ms = <50>;
+      key-positions = <12 17>;
+      bindings = <&sl NUM_L>;
+    };
+    nav_sticky_combo {
+      timeout-ms = <50>;
+      key-positions = <11 18>;
+      bindings = <&sl NAV_L>;
+    };
+    sym_sticky_combo {
+      timeout-ms = <50>;
+      key-positions = <10 19>;
+      bindings = <&sl SYM_L>;
+    };
+    selword_combo {
+      timeout-ms = <50>;
+      key-positions = <13 16>;
+      bindings = <&selw_sell>;
+    };
+    selword_rep_combo {
+      layers = <29>;
+      timeout-ms = <50>;
+      key-positions = <13 16>;
+      bindings = <&selword_f_rep>;
+    };
+    selline_rep_combo {
+      layers = <30>;
+      timeout-ms = <50>;
+      key-positions = <13 16>;
+      bindings = <&selline_f_rep>;
+    };
 
-  select_all_combo {
-    timeout-ms = <50>;
-    key-positions = <18 32>;
-    bindings = <&kp LG(A)>;
-  };
-
-  spc_combo {
-    timeout-ms = <50>;
-    key-positions = <11 12 13>;
-    bindings = <&kp SPACE>;
-  };
-  undo_combo {
-    timeout-ms = <50>;
-    key-positions = <1 31>;
-    bindings = <&kp LG(Z)>;
-  };
+    copy_combo {
+      timeout-ms = <50>;
+      key-positions = <1 2>;
+      bindings = <&kp LG(C)>;
+    };
+    paste_combo {
+      timeout-ms = <50>;
+      key-positions = <2 3>;
+      bindings = <&kp LG(V)>;
+    };
+    select_all_combo {
+      timeout-ms = <50>;
+      key-positions = <18 32>;
+      bindings = <&kp LG(A)>;
+    };
 
     
- };
+  };
 };
 
 / {
