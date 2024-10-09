@@ -1566,7 +1566,6 @@ combos {
         &trans     &kp B     &key_repeat    &trans
         >;
     };    
-};
- 
   };
 };
+
