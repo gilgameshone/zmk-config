@@ -297,7 +297,7 @@
     undo_combo {
       timeout-ms = <39>;
       key-positions = <1 31>;
-      bindings = <&kp LG(S)>;
+      bindings = <&kp LG(Z)>;
     };
     select_all_combo {
       timeout-ms = <39>;
