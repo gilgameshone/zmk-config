@@ -72,7 +72,7 @@
     continue-list = <UNDERSCORE INT1 MINUS AMPS BACKSPACE>;
 };
 
-
+/ {
 combos {
   compatible = "zmk,combos";
   caps_word_combo {
@@ -304,6 +304,7 @@ combos {
     key-positions = <18 32>;
     bindings = <&kp LG(A)>;
   }; 
+ };
 };
 
   macros {
