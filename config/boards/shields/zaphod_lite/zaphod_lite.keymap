@@ -50,6 +50,11 @@
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
 
+#define copy LG(C)
+#define paste LG(V)
+#define undo LG(Z)
+
+
 // JIS
 
 #include "jis.h"
@@ -79,7 +84,7 @@
     undo_combo {
       timeout-ms = <50>;
       key-positions = <1 31>;
-      bindings = <&kp LG(Z)>;
+      bindings = <&undo>;
     };
     ret_combo {
       timeout-ms = <50>;
@@ -209,6 +214,7 @@
       bindings = <&kp DEL>;
     };
     spc_combo {
+      layers = <16 17 18 19>;
       timeout-ms = <30>;
       key-positions = <11 12 13>;
       bindings = <&kp SPACE>;
@@ -299,12 +305,12 @@
     copy_combo {
       timeout-ms = <50>;
       key-positions = <1 2>;
-      bindings = <&kp LG(C)>;
+      bindings = <&copy>;
     };
     paste_combo {
       timeout-ms = <50>;
       key-positions = <2 3>;
-      bindings = <&kp LG(V)>;
+      bindings = <&paste>;
     };
     select_all_combo {
       timeout-ms = <50>;
@@ -1307,6 +1313,25 @@
       #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    undo_redo: undo_redo {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&undo>, <&kp LS(LG(Z))>;
+      mods = <(MOD_LCTL|MOD_RCTL)>;
+    };
+    paste_without: paste_without {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&paste>, <&kp LS(LA(LG(V)))>;
+      mods = <(MOD_LALT|MOD_RALT)>;
+    };
+    copy_cut: copy_cut {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&copy>, <&kp LG(X)>;
+      mods = <(MOD_LCTL|MOD_RCTL)>;
     };
   };
 };
