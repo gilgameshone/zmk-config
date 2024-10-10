@@ -1170,6 +1170,21 @@
            , <&macro_tap &sl SRT_EXL_L>
            ;
      };
+    undo: undo {
+      compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+      bindings =  <&kp (LG(Z))>;
+    };
+    copy: copy {
+      compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+      bindings =  <&kp (LG(C))>;
+    };
+    paste: paste {
+      compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+      bindings =  <&kp (LG(V))>;
+    };
 };
 };
 / {
@@ -1311,21 +1326,7 @@
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    undo: undo {
-      compatible = "zmk,behavior";
-       #binding-cells = <0>;
-      bindings =  <&kp (LG(Z))>;
-    };
-    copy: copy {
-      compatible = "zmk,behavior";
-       #binding-cells = <0>;
-      bindings =  <&kp (LG(C))>;
-    };
-    paste: paste {
-      compatible = "zmk,behavior";
-       #binding-cells = <0>;
-      bindings =  <&kp (LG(V))>;
-    };
+
     undo_redo: undo_redo {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
