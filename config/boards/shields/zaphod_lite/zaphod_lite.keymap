@@ -20,9 +20,8 @@
 #define FUN_L 4
 #define NUM_W_L 5
 #define BLE_L 6
-#define WIN_L 7
-#define SRT_EXW_L 8
-#define SRT_EXL_L 9
+#define SRT_EXW_L 7
+#define SRT_EXL_L 8
 
 
 
@@ -77,11 +76,7 @@
       key-positions = <30 31>;
       bindings = <&mo FUN_L>;
     };
-    3thumb_right {
-      timeout-ms = <50>;
-      key-positions = <32 33>;
-      bindings = <&mo WIN_L>;
-    };  
+
     ble_mo {
       timeout-ms = <50>;
       key-positions = <9 19 29>;
@@ -562,15 +557,6 @@
         &trans       &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
         &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans      &trans      &trans     &trans     &trans 
         &trans          &trans       &trans           &trans
-        >;
-    };
-
-    win_layer {
-      bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &trans    &kp MEH(P)          &trans      &trans      &trans     &trans     &trans 
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &trans       &trans      &trans      &trans     &trans     &trans 
-        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)   &trans      &trans      &trans     &trans     &trans 
-        &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
     short_ext_word_layer {
