@@ -343,7 +343,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp SPACE>
-           , <&macro_tap &to SDY_L>
+           , <&macro_tap &to QWE_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp SPACE>
            ;
@@ -353,7 +353,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp RET>
-           , <&macro_tap &to SDY_L>
+           , <&macro_tap &to QWE_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp RET>
            ;
@@ -553,7 +553,7 @@
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &trans        &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
         &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
         &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
-        &to SDY_L     &nw_spc       &nw_ret      &kp JP_N0
+        &to QWE_L     &nw_spc       &nw_ret      &kp JP_N0
         >;
     };
     ble_layer {
