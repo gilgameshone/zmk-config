@@ -506,7 +506,7 @@
     qwerty_layer {
       bindings = <
         &kp Q        &kp W         &kp E          &kp R           &kp T    &kp Y    &kp U         &kp I         &kp O          &kp P
-        &hml LSHFT A &hml LALT S   &hml LGUI D    &hml LCTRL F    &kp G    &kp H    &hmr RCTRL J  &hmr RGUI K   &hmr RALT L    &hmr RSHFT semi
+        &hml LSHFT A &hml LALT S   &hml LGUI D    &hml LCTRL F    &kp G    &kp H    &hmr RCTRL J  &hmr RGUI K   &hmr RALT L    &hmr RSHFT JP_SEMI
         &kp Z        &kp X         &kp C          &kp V           &kp B    &kp N    &kp M         &kp JP_COMMA  &kp JP_DOT  &kp JP_SLASH
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
