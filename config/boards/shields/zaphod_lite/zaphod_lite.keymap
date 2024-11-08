@@ -1634,17 +1634,17 @@
     short_ext_word_mac_layer {
       bindings = <
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
-        &trans     &trans     &trans    &selword_f_mac_rep  &trans          &trans     &selword_f_mac_rep   &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans  &trans          &trans    &trans   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
-        &trans     &tog SRT_EXW_MAC_L     &key_repeat    &trans
+        &trans     &trans     &key_repeat    &trans
         >;
     };    
     short_ext_line_layer {
       bindings = <
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &trans    &selline_f_rep  &trans          &trans     &selline_f_rep   &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans  &trans          &trans     &trans   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &tog SRT_EXL_L     &key_repeat    &trans
+        &trans     &trans     &key_repeat    &trans
         >;
     };    
   };
