@@ -297,11 +297,11 @@
       key-positions = <10 19>;
       bindings = <&sl SYM_L>;
     };
-    selword {
+    selword_mac {
       timeout-ms = <50>;
       key-positions = <13 16>;
       layers = <0 16 22>;
-      bindings = <&selw_sell>;
+      bindings = <&selw_sell_mac>;
     };
     selword_rep_mac {
       layers = <29>;
@@ -1328,7 +1328,7 @@
       tapping-term-ms = <200>;
       bindings = <&mo>, <&sk>;
     };
-    selw_sell: selword_selline {
+    selw_sell_mac: selword_selline_mac {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&selword_f_mac>, <&selline_f>;
