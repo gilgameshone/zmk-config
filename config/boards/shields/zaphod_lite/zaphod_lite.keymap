@@ -37,15 +37,18 @@
 #define TR_NUM_L 20
 #define TR_SYM_L 21
 
-#define NAV_L 22
-#define NUM_L 23
-#define SYM_L 24
-#define FUN_L 25
-#define NUM_W_L 26
-#define BLE_L 27
-#define WIN_L 28
-#define SRT_EXW_L 29
-#define SRT_EXL_L 30
+#define QWE_MAC_L 22
+#define QWE_WIN_L 23
+
+#define NAV_L 24
+#define NUM_L 25
+#define SYM_L 26
+#define FUN_L 27
+#define NUM_W_L 28
+#define BLE_L 29
+#define WINMAN_L 30
+#define SRT_EXW_MAC_L 31
+#define SRT_EXL_L 32
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -78,9 +81,10 @@
   combos {
     compatible = "zmk,combos";
     
-    undo_combo {
+    undo_mac {
       timeout-ms = <50>;
       key-positions = <1 31>;
+      layers = <0, 16, 22>
       bindings = <&undo>;
     };
     ret_combo {
@@ -88,9 +92,10 @@
       key-positions = <16 17 18>;
       bindings = <&kp RET>;
     };
-    save_combo {
+    save_mac {
       timeout-ms = <50>;
       key-positions = <11 31>;
+      layers = <0, 16, 22>
       bindings = <&kp LG(S)>;
     }; 
     caps_word_combo {
@@ -106,7 +111,7 @@
     3thumb_right {
       timeout-ms = <50>;
       key-positions = <32 33>;
-      bindings = <&mo WIN_L>;
+      bindings = <&mo WINMAN_L>;
     };  
     ble_mo {
       timeout-ms = <50>;
@@ -123,14 +128,16 @@
       key-positions = <26 27>;
       bindings = <&kp RIGHT>;
     };
-    backward_word {
+    backward_word_mac {
       timeout-ms = <50>;
       key-positions = <21 22>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(LEFT)>;
     };
-    forward_word {
+    forward_word_mac {
       timeout-ms = <50>;
       key-positions = <27 28>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(RIGHT)>;
     };
     backward_sentence {
@@ -153,19 +160,22 @@
       key-positions = <16 27>;
       bindings = <&kp DOWN>;
     };
-    previous_paragraph {
+    previous_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 22>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(UP)>;
     };
-    next_paragraph {
+    next_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <18 27>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(DOWN)>;
     };
     sorcery_magic2 {
       timeout-ms = <50>;
       key-positions = <3 6>;
+      layers = <0, 16>
       bindings = <&kp LS(NUBS)>;
     };
     tab_combo {
@@ -179,9 +189,10 @@
       bindings = <&kp ESC>;
     };
 
-    bksp_word_combo {
+    bksp_word_combo_mac {
       timeout-ms = <50>;
       key-positions = <16 18>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(BKSP)>;
     };
     bksp_combo {
@@ -195,14 +206,16 @@
       key-positions = <12 13>;
       bindings = <&kp UP>;
     };
-    up_paragraph {
+    up_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 12>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(UP)>;
     };
-    del_word_combo {
+    del_word_mac {
       timeout-ms = <50>;
       key-positions = <11 13>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(DEL)>;
     };
     del_combo {
@@ -214,6 +227,7 @@
       layers = <16 17 18 19>;
       timeout-ms = <30>;
       key-positions = <11 12 13>;
+      layers = <16, 22>
       bindings = <&kp SPACE>;
     };
     
@@ -230,23 +244,27 @@
     eisu_combo {
       timeout-ms = <50>;
       key-positions = <1 2 3>;
+      layers = <0, 16>
       bindings = <&_EISU>;
     };
     kana_combo {
       timeout-ms = <50>;
       key-positions = <6 7 8>;
+      layers = <0, 16>
       bindings = <&_KANA>;
     };
-    hiragana_combo {
+    hiragana_mac {
       layers = <16 17 18 19>;
       timeout-ms = <50>;
       key-positions = <2 7>;
+      layers = <16, 22>
       bindings = <&kp LC(J)>;
     };
-    katakana_combo {
+    katakana_mac {
       layers = <16 17 18 19>;
       timeout-ms = <50>;
       key-positions = <1 8>;
+      layers = <16, 22>
       bindings = <&kp LC(K)>;
     };
     num_word_combo {
@@ -261,9 +279,10 @@
       bindings = <&kp DOWN>;
     };
     
-    down_paragraph {
+    down_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <17 18>;
+      layers = <0, 16, 22>
       bindings = <&kp LA(DOWN)>;
     };
     num_sticky_combo {
@@ -281,37 +300,43 @@
       key-positions = <10 19>;
       bindings = <&sl SYM_L>;
     };
-    selword_combo {
+    selword {
       timeout-ms = <50>;
       key-positions = <13 16>;
+      layers = <0, 16, 22>
       bindings = <&selw_sell>;
     };
-    selword_rep_combo {
+    selword_rep_mac {
       layers = <29>;
       timeout-ms = <50>;
       key-positions = <13 16>;
-      bindings = <&selword_f_rep>;
+      layers = <0, 16, 22>
+      bindings = <&selword_f_mac_rep>;
     };
-    selline_rep_combo {
+    selline_rep {
       layers = <30>;
       timeout-ms = <50>;
       key-positions = <13 16>;
+      layers = <0, 16, 22>
       bindings = <&selline_f_rep>;
     };
 
-    copy_combo {
+    copy_mac {
       timeout-ms = <50>;
       key-positions = <1 2>;
+      layers = <0, 16, 22>
       bindings = <&copy>;
     };
-    paste_combo {
+    paste_mac {
       timeout-ms = <50>;
       key-positions = <2 3>;
+      layers = <0, 16, 22>
       bindings = <&paste>;
     };
-    select_all_combo {
+    select_all_mac {
       timeout-ms = <50>;
       key-positions = <18 32>;
+      layers = <0, 16, 22>
       bindings = <&kp LG(A)>;
     };
 
@@ -1135,7 +1160,7 @@
            , <&macro_release &kp RET>
            ;
     };
-    selword_f: select_word_forwards {
+    selword_f_mac: select_word_mac_forwards {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
@@ -1145,7 +1170,7 @@
            , <&macro_tap &sl SRT_EXW_L>
            ;
     };
-    selword_f_rep: select_word_forwards_repeat {
+    selword_f_mac_rep: select_word_mac_forwards_repeat {
        compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
        bindings
@@ -1170,17 +1195,17 @@
            , <&macro_tap &sl SRT_EXL_L>
            ;
      };
-    undo: undo {
+    undo_mac: undo_mac {
       compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
       bindings =  <&kp (LG(Z))>;
     };
-    copy: copy {
+    copy_mac: copy_mac {
       compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
       bindings =  <&kp (LG(C))>;
     };
-    paste: paste {
+    paste_mac: paste_mac {
       compatible = "zmk,behavior-macro";
        #binding-cells = <0>;
       bindings =  <&kp (LG(V))>;
@@ -1287,14 +1312,6 @@
       bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
       mods = <(MOD_LSFT)>;
     };
-  nav_rep: nav_rep {
-      compatible = "zmk,behavior-hold-tap";
-      tapping_term_ms = <200>;
-      #binding-cells = <2>;
-      require-prior-idle-ms = <150>;
-      flavor = "tap-preferred";
-      bindings = <&mo>, <&key_repeat>;
-    };
    ck_pp: ck_pp {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
@@ -1330,19 +1347,19 @@
     undo_redo: undo_redo {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&undo>, <&kp LS(LG(Z))>;
+      bindings = <&undo_mac>, <&kp LS(LG(Z))>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
-    paste_without: paste_without {
+    paste_without_mac: paste_without {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&paste>, <&kp LS(LA(LG(V)))>;
+      bindings = <&paste_mac>, <&kp LS(LA(LG(V)))>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
     copy_cut: copy_cut {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&copy>, <&kp LG(X)>;
+      bindings = <&copy_mac>, <&kp LG(X)>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
   };
@@ -1535,13 +1552,30 @@
         >;
     };
 
+    qwerty_mac_layer {
+      bindings = <
+        &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
+        &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
+        &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
+        &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
+        >;
+    };
+
+    qwerty_win_layer {
+      bindings = <
+        &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
+        &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
+        &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
+        &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
+        >;
+    };
     
     nav_layer {
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))   &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &trans          &trans                &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &trans          &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
-        &kp ESC     &kp TAB          &trans     &trans
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp INT_HENKAN   &kp GLOBE     &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INT_MUHENKAN &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp ESC     &kp TAB          &trans     &trans 
         >;
     };
  
@@ -1556,18 +1590,18 @@
 
     sym_layer {
       bindings = <
-        &trans    &trans      &kp LG(C) &kp LG(V)   &kp LS(LA(LG(V)))        &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &trans    &kp LA(DEL)  &trans   &kp DEL     &kp LS(LA(LG(LC(Y))))    &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &kp CAPS  &defin       &gtran   &googl      &trans                   &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
+        &kp K_CMENU &trans             &kp LG(C)           &kp LG(V)  &kp LS(LA(LG(V)))      &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &trans      &kp LANG_KATAKANA  &kp LANG_HIRAGANA   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &kp CAPS    &defin             &gtran              &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
         >;
     };
 
     fun_layer {
       bindings = <
-        &trans          &trans         &trans      &trans     &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
+        &to SDY_L       &trans         &trans      &trans     &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
         &trans          &trans         &trans      &trans     &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
-        &trans          &trans         &trans      &trans     &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
+        &to QWE_MAC_L   &to QWE_WIN_L  &trans      &trans     &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
         &none      &none             &trans          &trans
         >;
     };
@@ -1576,7 +1610,7 @@
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
         &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &kp JP_MINUS  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
         &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
-        &to SDY_L     &nw_spc       &nw_ret      &kp JP_N0
+        &tog NUM_W_L     &nw_spc       &nw_ret      &kp JP_N0
         >;
     };
     ble_layer {
@@ -1596,10 +1630,10 @@
         &trans &kp MEH(SPC)    &trans        &trans
         >;
     };
-    short_ext_word_layer {
+    short_ext_word_mac_layer {
       bindings = <
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &trans    &selword_f_rep  &trans          &trans     &selword_f_rep   &trans    &trans    &trans 
+        &trans     &trans     &trans    &selword_f_mac_rep  &trans          &trans     &selword_f_mac_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
         &trans     &kp A     &key_repeat    &trans
         >;
