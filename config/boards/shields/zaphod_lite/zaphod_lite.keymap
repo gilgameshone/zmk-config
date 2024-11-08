@@ -1142,7 +1142,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp SPACE>
-           , <&macro_tap &to SDY_L>
+           , <&macro_tap &tog NUM_W_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp SPACE>
            ;
@@ -1152,7 +1152,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_press &kp RET>
-           , <&macro_tap &to SDY_L>
+           , <&macro_tap &tog NUM_W_L>
            , <&macro_pause_for_release>
            , <&macro_release &kp RET>
            ;
@@ -1636,7 +1636,7 @@
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
         &trans     &trans     &trans    &selword_f_mac_rep  &trans          &trans     &selword_f_mac_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
-        &trans     &kp A     &key_repeat    &trans
+        &trans     &tog SRT_EXW_MAC_L     &key_repeat    &trans
         >;
     };    
     short_ext_line_layer {
@@ -1644,7 +1644,7 @@
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
         &trans     &trans     &trans    &selline_f_rep  &trans          &trans     &selline_f_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &kp B     &key_repeat    &trans
+        &trans     &tog SRT_EXL_L     &key_repeat    &trans
         >;
     };    
   };
