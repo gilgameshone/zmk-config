@@ -85,7 +85,7 @@
       timeout-ms = <50>;
       key-positions = <1 31>;
       layers = <0 16 22>
-      bindings = <&undo>;
+      bindings = <&undo_mac>;
     };
     ret_combo {
       timeout-ms = <50>;
@@ -322,13 +322,13 @@
       timeout-ms = <50>;
       key-positions = <1 2>;
       layers = <0 16 22>
-      bindings = <&copy>;
+      bindings = <&copy_mac>;
     };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 3>;
       layers = <0 16 22>
-      bindings = <&paste>;
+      bindings = <&paste_mac>;
     };
     select_all_mac {
       timeout-ms = <50>;
