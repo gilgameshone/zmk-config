@@ -5,7 +5,7 @@
  * Copyright (c) 2021 Pete Johanson
  *
  * SPDX-License-Identifier: MIT
-*/
+ */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -64,17 +64,17 @@
 &lt { quick_tap_ms = <175>; };
 
 &sk {  // sticky-key config
-    release-after-ms = <1000>;  // release after 0.6s
-    quick-release;             // no double capitalization when rolling keys
+  release-after-ms = <1000>;  // release after 0.6s
+  quick-release;             // no double capitalization when rolling keys
 };
 
 &sl {  // sticky-layer config
-    release-after-ms = <5000>;  
-    quick-release;             // no double capitalization when rolling keys
+  release-after-ms = <5000>;  
+  quick-release;             // no double capitalization when rolling keys
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE INT1 MINUS AMPS BACKSPACE>;
+  continue-list = <UNDERSCORE INT1 MINUS AMPS BACKSPACE>;
 };
 
 / {
@@ -304,17 +304,15 @@
       bindings = <&selw_sell_mac>;
     };
     selword_rep_mac {
-      layers = <29>;
+      layers = <31>;
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0 16 22>;
       bindings = <&selword_f_mac_rep>;
     };
     selline_rep {
-      layers = <30>;
+      layers = <32>;
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0 16 22>;
       bindings = <&selline_f_rep>;
     };
 
@@ -346,7 +344,7 @@
   TJ_GI: tron_gi {
       display-name = "ぎ";
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -354,7 +352,7 @@
     };
   TJ_GE: tron_ge {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -362,7 +360,7 @@
     };
   TJ_GU: tron_gu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -370,7 +368,7 @@
     };
   TJ_DZI: tron_dzi {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_CHI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -378,7 +376,7 @@
     };
   TJ_VU: tron_vu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_U>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -386,7 +384,7 @@
     };
   TJ_JI: tron_ji {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SHI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -394,7 +392,7 @@
     };
   TJ_ZU: tron_zu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -402,7 +400,7 @@
     };
   TJ_DZU: tron_dzu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TSU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -410,7 +408,7 @@
     };
   TJ_BI: tron_bi {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HI>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -418,7 +416,7 @@
     };
   TJ_ZO: tron_zo {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -426,7 +424,7 @@
     };
   TJ_GO: tron_go {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -434,7 +432,7 @@
     };
   TJ_BA: tron_ba {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -442,7 +440,7 @@
     };
   TJ_BO: tron_bo {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -450,7 +448,7 @@
     };
   TJ_DA: tron_da {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -458,7 +456,7 @@
     };
   TJ_DO: tron_do {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TO>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -466,7 +464,7 @@
     };
   TJ_GA: tron_ga {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -474,7 +472,7 @@
     };
   TJ_DE: tron_de {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_TE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -482,7 +480,7 @@
     };
   TJ_BU: tron_bu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_FU>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -490,7 +488,7 @@
     };
   TJ_ZE: tron_ze {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -498,7 +496,7 @@
     };
   TJ_ZA: tron_za {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_SA>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -506,7 +504,7 @@
     };
   TJ_BE: tron_be {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HE>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -514,7 +512,7 @@
     };
   TJ_PA: tron_pa {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HA>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -522,7 +520,7 @@
     };
   TJ_PI: tron_pi {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HI>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -530,7 +528,7 @@
     };
   TJ_PU: tron_pu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_FU>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -538,7 +536,7 @@
     };
   TJ_PE: tron_pe {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HE>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -546,7 +544,7 @@
     };
   TJ_PO: tron_po {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HO>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -554,7 +552,7 @@
     };
   TJ_LKAGIKAKO: tron_lkagikako {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -563,168 +561,168 @@
     };
   TJ_RKAGIKAKO: tron_rkagikako {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_MU>
         , <&macro_release &kp LSHFT>
         ;
     };
-    TJS_QMARK: tron_question_mark {
+  TJS_QMARK: tron_question_mark {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_NAKAGURO>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_SLASH: tron_slash {
+  TJS_SLASH: tron_slash {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_ME>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_SEMI: tron_semi_colon {
+  TJS_SEMI: tron_semi_colon {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_RE>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_COLON: tron_colon {
+  TJS_COLON: tron_colon {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_KE>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N1: tron_1 {
+  TJS_N1: tron_1 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_NU>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N2: tron_2 {
+  TJS_N2: tron_2 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_FU>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N3: tron_3 {
+  TJS_N3: tron_3 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_A>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N4: tron_4 {
+  TJS_N4: tron_4 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_U>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N5: tron_5 {
+  TJS_N5: tron_5 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_E>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N6: tron_6 {
+  TJS_N6: tron_6 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_O>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N7: tron_7 {
+  TJS_N7: tron_7 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_YA>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N8: tron_8 {
+  TJS_N8: tron_8 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_YU>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N9: tron_9 {
+  TJS_N9: tron_9 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_YO>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_N0: tron_0 {
+  TJS_N0: tron_0 {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_WA>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_AT: tron_at {
+  TJS_AT: tron_at {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_DAKUTEN>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_MINUS: tron_minus {
+  TJS_MINUS: tron_minus {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HO>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_CARET: tron_circumflex {
+  TJS_CARET: tron_circumflex {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_HE>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_UNDER: tron_underscore {
+  TJS_UNDER: tron_underscore {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_RO>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_YEN: tron_yen {
+  TJS_YEN: tron_yen {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp TJ_CHOUONNPU>
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_EXL: tron_exclamation_mark {
+  TJS_EXL: tron_exclamation_mark {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_NU>
@@ -732,9 +730,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_DQT: tron_double_quote {
+  TJS_DQT: tron_double_quote {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_FU>
@@ -742,9 +740,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_HASH: tron_hash {
+  TJS_HASH: tron_hash {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_A>
@@ -752,9 +750,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_DLLR: tron_dollar {
+  TJS_DLLR: tron_dollar {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_U>
@@ -762,9 +760,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_PRNT: tron_percent {
+  TJS_PRNT: tron_percent {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_E>
@@ -772,9 +770,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_AMPS: tron_ampersand {
+  TJS_AMPS: tron_ampersand {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_O>
@@ -782,9 +780,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_SQT: tron_single_quote {
+  TJS_SQT: tron_single_quote {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_YA>
@@ -792,9 +790,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_LPAR: tron_left_parenthesis {
+  TJS_LPAR: tron_left_parenthesis {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_YU>
@@ -802,9 +800,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_RPAR: tron_right_parenthesis {
+  TJS_RPAR: tron_right_parenthesis {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_YO>
@@ -812,9 +810,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_EQUAL: tron_equal {
+  TJS_EQUAL: tron_equal {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_HO>
@@ -822,9 +820,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_TILDE: tron_tilde {
+  TJS_TILDE: tron_tilde {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_HE>
@@ -832,9 +830,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_PIPE: tron_pipe {
+  TJS_PIPE: tron_pipe {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_CHOUONNPU>
@@ -842,9 +840,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_GRAVE: tron_grave {
+  TJS_GRAVE: tron_grave {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_DAKUTEN>
@@ -852,9 +850,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_LBRC: tron_left_brace {
+  TJS_LBRC: tron_left_brace {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_HANDAKUTEN>
@@ -862,9 +860,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_RBRC: tron_right_brace {
+  TJS_RBRC: tron_right_brace {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_MU>
@@ -872,9 +870,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_PLUS: tron_plus {
+  TJS_PLUS: tron_plus {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_RE>
@@ -882,9 +880,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_ASTRK: tron_asterisk {
+  TJS_ASTRK: tron_asterisk {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_KE>
@@ -892,9 +890,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_LT: tron_less_than {
+  TJS_LT: tron_less_than {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_DOUTEN>
@@ -902,9 +900,9 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    TJS_GT: tron_greater_than {
+  TJS_GT: tron_greater_than {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_press &kp LSHFT>
         , <&macro_tap &kp TJ_KUTEN>
@@ -912,312 +910,316 @@
         , <&macro_tap &kp LC(L)>
         ;      
     };
-    _EISU: _eisu {
+  _EISU: _eisu {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp LANG2>
         , <&macro_tap &to SDY_L>
         ;
     };
-    _KANA: _kana {
+  _KANA: _kana {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings
         = <&macro_tap &kp LANG1>
         , <&macro_tap &to TRN_L>
         ;
     };
-    googl: googl {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-         = <&macro_tap &kp LG(C)>
-         , <&macro_tap &kp LG(SPACE)>
-         , <&macro_tap &kp G &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
-         ;
-    };
-    gtran: gtran {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp LG(C)>
-           , <&macro_tap &kp LG(SPACE)>
-           , <&macro_tap &kp T &kp SPACE> , <&macro_tap &kp LG(V) &kp RET>
-           ;
-    };
-    defin: defin {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp LG(C)>
-           , <&macro_tap &kp LG(SPACE)>
-           , <&macro_tap &kp D &kp SPACE> , <&macro_tap &kp LG(V)>
-           , <&macro_wait_time 50>
-           , <&kp RET>
-           ;
-    };
-    mg_x: mg_x {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp X>
-           , <&macro_tap &sl MG_X_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp X>
-           ;
-    };
-    mg_m: mg_m {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp M>
-           , <&macro_tap &sl MG_M_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp M>
-          ;
-    };  
-    mg_l: mg_l {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp L>
-           , <&macro_tap &sl MG_L_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp L>
-         ;
-    };
-    mg_u: mg_u {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp U>
-           , <&macro_tap &sl MG_U_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp U>
-           ;
-    };
-    mg_o: mg_o {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp O>
-           , <&macro_tap &sl MG_O_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp O>
-           ;
-    };
-    mg_t: mg_t {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp T>
-           , <&macro_tap &sl MG_T_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp T>
-           ;
-    };
-    mg_r: mg_r {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp R>
-           , <&macro_tap &sl MG_R_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp R>
-           ;
-    };
-    mg_d: mg_d {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp D>
-           , <&macro_tap &sl MG_D_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp D>
-           ;
-    };
-    mg_e: mg_e {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp E>
-           , <&macro_tap &sl MG_E_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp E>
-           ;
-    };
-    mg_a: mg_a {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp A>
-           , <&macro_tap &sl MG_A_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp A>
-           ;
-    };
-    mg_c: mg_c {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp C>
-           , <&macro_tap &sl MG_C_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp C>
-           ;
-    };
-    mg_g: mg_g {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp G>
-           , <&macro_tap &sl MG_G_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp G>
-           ;
-    };
-    mg_p: mg_p {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp P>
-           , <&macro_tap &sl MG_P_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp P>
-         ;
-    };
-    mg_y: mg_y {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp Y>
-           , <&macro_tap &sl MG_Y_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp Y>
-           ;
-    };
-    mg_v: mg_v {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp V>
-           , <&macro_tap &sl MG_V_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp V>
-           ;
-    };
-    mg_pp: mg_pp {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &key_repeat>
-           , <&macro_tap &sl MG_P_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &key_repeat>
-           ;
-    };
-    mg_dd: mg_dd {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &key_repeat>
-           , <&macro_tap &sl MG_D_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &key_repeat>
-           ;
-    };
-    mg_gg: mg_gg {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &key_repeat>
-           , <&macro_tap &sl MG_G_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &key_repeat>
-           ;
-    };
-    nw_spc: nw_spc {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp SPACE>
-           , <&macro_tap &tog NUM_W_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp SPACE>
-           ;
-    };
-    nw_ret: nw_ret {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_press &kp RET>
-           , <&macro_tap &tog NUM_W_L>
-           , <&macro_pause_for_release>
-           , <&macro_release &kp RET>
-           ;
-    };
-    selword_f_mac: select_word_mac_forwards {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp LA(RIGHT)>
-           , <&macro_tap &kp LA(LEFT)>
-           , <&macro_tap &kp LA(LS(RIGHT))>
-           , <&macro_pause_for_release>
-           , <&macro_tap &sl SRT_EXW_MAC_L>
-           ;
-    };
-    selword_f_mac_rep: select_word_mac_forwards_repeat {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp LA(LS(RIGHT))>
-           , <&macro_pause_for_release>
-           , <&macro_tap &sl SRT_EXW_MAC_L>
-           ;
-    };
-    selline_f: select_line_forwards {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings
-           = <&macro_tap &kp HOME &kp LS(END)>
-           , <&macro_pause_for_release>
-           , <&macro_tap &sl SRT_EXL_L>
-           ;
-    };
-    selline_f_rep: select_line_forwards_repeat {
-       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
-       bindings    
-           = <&macro_tap &kp LS(DOWN)>
-           , <&macro_tap &kp LS(END)>
-           , <&macro_pause_for_release>
-           , <&macro_tap &sl SRT_EXL_L>
-           ;
-     };
-    undo_mac: undo_mac {
+  googl: googl {
       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LG(C)>
+        , <&macro_tap &kp LG(SPACE)>
+        , <&macro_tap &kp G &kp SPACE>
+        , <&macro_tap &kp LG(V) &kp RET>
+        ;
+    };
+  gtran: gtran {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LG(C)>
+        , <&macro_tap &kp LG(SPACE)>
+        , <&macro_tap &kp T &kp SPACE>
+        , <&macro_tap &kp LG(V) &kp RET>
+        ;
+    };
+  defin: defin {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LG(C)>
+        , <&macro_tap &kp LG(SPACE)>
+        , <&macro_tap &kp D &kp SPACE>
+        , <&macro_tap &kp LG(V)>
+        , <&macro_wait_time 50>
+        , <&kp RET>
+        ;
+    };
+  mg_x: mg_x {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp X>
+        , <&macro_tap &sl MG_X_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp X>
+        ;
+    };
+  mg_m: mg_m {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp M>
+        , <&macro_tap &sl MG_M_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp M>
+        ;
+    };  
+  mg_l: mg_l {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp L>
+        , <&macro_tap &sl MG_L_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp L>
+        ;
+    };
+  mg_u: mg_u {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp U>
+        , <&macro_tap &sl MG_U_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp U>
+        ;
+    };
+  mg_o: mg_o {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp O>
+        , <&macro_tap &sl MG_O_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp O>
+        ;
+    };
+  mg_t: mg_t {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp T>
+        , <&macro_tap &sl MG_T_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp T>
+        ;
+    };
+  mg_r: mg_r {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp R>
+        , <&macro_tap &sl MG_R_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp R>
+        ;
+    };
+  mg_d: mg_d {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp D>
+        , <&macro_tap &sl MG_D_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp D>
+        ;
+    };
+  mg_e: mg_e {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp E>
+        , <&macro_tap &sl MG_E_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp E>
+        ;
+    };
+  mg_a: mg_a {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp A>
+        , <&macro_tap &sl MG_A_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp A>
+        ;
+    };
+  mg_c: mg_c {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp C>
+        , <&macro_tap &sl MG_C_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp C>
+        ;
+    };
+  mg_g: mg_g {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp G>
+        , <&macro_tap &sl MG_G_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp G>
+        ;
+    };
+  mg_p: mg_p {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp P>
+        , <&macro_tap &sl MG_P_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp P>
+        ;
+    };
+  mg_y: mg_y {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp Y>
+        , <&macro_tap &sl MG_Y_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp Y>
+        ;
+    };
+  mg_v: mg_v {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp V>
+        , <&macro_tap &sl MG_V_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp V>
+        ;
+    };
+  mg_pp: mg_pp {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &key_repeat>
+        , <&macro_tap &sl MG_P_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &key_repeat>
+        ;
+    };
+  mg_dd: mg_dd {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &key_repeat>
+        , <&macro_tap &sl MG_D_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &key_repeat>
+        ;
+    };
+  mg_gg: mg_gg {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &key_repeat>
+        , <&macro_tap &sl MG_G_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &key_repeat>
+        ;
+    };
+  nw_spc: nw_spc {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp SPACE>
+        , <&macro_tap &tog NUM_W_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp SPACE>
+        ;
+    };
+  nw_ret: nw_ret {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_press &kp RET>
+        , <&macro_tap &tog NUM_W_L>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp RET>
+        ;
+    };
+  selword_f_mac: select_word_mac_forwards {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LA(RIGHT)>
+        , <&macro_tap &kp LA(LEFT)>
+        , <&macro_tap &kp LA(LS(RIGHT))>
+        , <&macro_pause_for_release>
+        , <&macro_tap &sl SRT_EXW_MAC_L>
+        ;
+    };
+  selword_f_mac_rep: select_word_mac_forwards_repeat {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp LA(LS(RIGHT))>
+        , <&macro_pause_for_release>
+        , <&macro_tap &sl SRT_EXW_MAC_L>
+        ;
+    };
+  selline_f: select_line_forwards {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings
+        = <&macro_tap &kp HOME &kp LS(END)>
+        , <&macro_pause_for_release>
+        , <&macro_tap &sl SRT_EXL_L>
+        ;
+    };
+  selline_f_rep: select_line_forwards_repeat {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+      bindings    
+        = <&macro_tap &kp LS(DOWN)>
+        , <&macro_tap &kp LS(END)>
+        , <&macro_pause_for_release>
+        , <&macro_tap &sl SRT_EXL_L>
+        ;
+    };
+  undo_mac: undo_mac {
+      compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
       bindings =  <&kp (LG(Z))>;
     };
-    copy_mac: copy_mac {
+  copy_mac: copy_mac {
       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
+#binding-cells = <0>;
       bindings =  <&kp (LG(C))>;
     };
-    paste_mac: paste_mac {
+  paste_mac: paste_mac {
       compatible = "zmk,behavior-macro";
-       #binding-cells = <0>;
+#binding-cells = <0>;
       bindings =  <&kp (LG(V))>;
     };
-};
-};
+  };
+  
+  };
 / {
   behaviors {
   hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <240>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1225,7 +1227,7 @@
     };
   hmr: homerow_mods_right {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1234,7 +1236,7 @@
     };
   hml: homerow_mods_left {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1243,7 +1245,7 @@
     };
   hml_t: homerow_mods_left_t {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1252,7 +1254,7 @@
     };
   hml_r: homerow_mods_left_r {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1261,7 +1263,7 @@
     };
   hml_d: homerow_mods_left_d {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1270,7 +1272,7 @@
     };
   hml_g: homerow_mods_left_g {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1279,7 +1281,7 @@
     };
   hmr_e: homerow_mods_right_e {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1288,7 +1290,7 @@
     };
   hmr_a: homerow_mods_right_a {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
@@ -1297,74 +1299,74 @@
     };
   com_quo: comma_quot {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
       mods = <(MOD_LSFT)>;
     };
   dot_dbq: dot_doublequote {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&kp JP_DOT>, <&kp JP_DQT>;
       mods = <(MOD_LSFT)>;
     };
   min_qma: min_qma {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&kp JP_MINUS>, <&kp JP_QMARK>;
       mods = <(MOD_LSFT)>;
     };
-   ck_pp: ck_pp {
+  ck_pp: ck_pp {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&kp C_PP>, <&kp K_PP>;
       mods = <(MOD_LSFT)>;
     };
-   jpkp_minus: jpkp_minus {
+  jpkp_minus: jpkp_minus {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&kp JP_MINUS>, <&kp KP_MINUS>;
       mods = <(MOD_LSFT)>;
     };
-   ss_mo: ss_mo {
+  ss_mo: ss_mo {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+#binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
       bindings = <&mo>, <&sk>;
     };
-    selw_sell_mac: selword_selline_mac {
+  selw_sell_mac: selword_selline_mac {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&selword_f_mac>, <&selline_f>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    capsw_capsl: capsword_capslock {
+  capsw_capsl: capsword_capslock {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    undo_redo: undo_redo {
+  undo_redo: undo_redo {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&undo_mac>, <&kp LS(LG(Z))>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
-    paste_without_mac: paste_without {
+  paste_without_mac: paste_without {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&paste_mac>, <&kp LS(LA(LG(V)))>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
-    copy_cut: copy_cut {
+  copy_cut: copy_cut {
       compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
+#binding-cells = <0>;
       bindings = <&copy_mac>, <&kp LG(X)>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
   };
-};
+  };
 
 / {
   keymap {
@@ -1394,7 +1396,7 @@
         &trans          &trans       &trans           &trans
         >;
     };
-        mg_l_l {
+    mg_l_l {
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp R   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
@@ -1402,7 +1404,7 @@
         &trans          &trans       &trans           &trans
         >;
     };
-      mg_u_l {
+    mg_u_l {
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp E   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
@@ -1410,7 +1412,7 @@
         &trans          &trans       &trans           &trans
         >;
     };
-      mg_o_l {
+    mg_o_l {
       bindings = <
         &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
@@ -1535,7 +1537,7 @@
         >;
     };
 
-   tron_num_layer {
+    tron_num_layer {
       bindings = <
         &TJS_EXL    &TJ_LKAGIKAKO &TJ_RKAGIKAKO &TJS_COLON  &kp LC(F2)  &TJS_PLUS   &TJS_N7  &TJS_N8  &TJS_N9  &TJS_ASTRK
         &TJS_AMPS   &TJS_LPAR     &TJS_RPAR     &TJS_SEMI   &TJS_AT     &TJS_MINUS  &TJS_N4  &TJS_N5  &TJS_N6  &TJS_SLASH
@@ -1648,5 +1650,5 @@
         >;
     };    
   };
-};
+  };
 
