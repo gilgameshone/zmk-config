@@ -317,7 +317,7 @@
     num_word_combo {
       timeout-ms = <50>;
       key-positions = <31 34>;
-      bindings = <&to NUM_W_L>;
+      bindings = <&tog NUM_W_L>;
     };
 
     down {
@@ -1625,8 +1625,8 @@
 
     sym_layer {
       bindings = <
-        &kp K_CMENU &trans             &kp LG(C)           &kp LG(V)  &kp LS(LA(LG(V)))      &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &trans      &kp LANG_KATAKANA  &kp LANG_HIRAGANA   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &kp K_CMENU &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &kp LG(V)  &kp LS(LA(LG(V)))   &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &trans      &trans  &trans   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
         &kp CAPS    &defin             &gtran              &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
         >;
