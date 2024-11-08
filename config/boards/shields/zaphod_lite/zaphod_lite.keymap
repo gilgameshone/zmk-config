@@ -1109,7 +1109,7 @@
 #binding-cells = <0>;
       bindings
         = <&macro_press &key_repeat>
-        , <&macro_tap &sl MG_P_L>
+        , <&macro_tap &sl MG_D_L>
         , <&macro_pause_for_release>
         , <&macro_release &key_repeat>
         ;
@@ -1129,7 +1129,7 @@
 #binding-cells = <0>;
       bindings
         = <&macro_press &key_repeat>
-        , <&macro_tap &sl MG_G_L>
+        , <&macro_tap &sl MG_D_L>
         , <&macro_pause_for_release>
         , <&macro_release &key_repeat>
         ;
