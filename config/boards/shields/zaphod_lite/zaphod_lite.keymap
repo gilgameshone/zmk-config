@@ -84,7 +84,7 @@
     undo_mac {
       timeout-ms = <50>;
       key-positions = <1 31>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&undo>;
     };
     ret_combo {
@@ -95,7 +95,7 @@
     save_mac {
       timeout-ms = <50>;
       key-positions = <11 31>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LG(S)>;
     }; 
     caps_word_combo {
@@ -131,13 +131,13 @@
     backward_word_mac {
       timeout-ms = <50>;
       key-positions = <21 22>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(LEFT)>;
     };
     forward_word_mac {
       timeout-ms = <50>;
       key-positions = <27 28>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(RIGHT)>;
     };
     backward_sentence {
@@ -163,19 +163,19 @@
     previous_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 22>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(UP)>;
     };
     next_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <18 27>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(DOWN)>;
     };
     sorcery_magic2 {
       timeout-ms = <50>;
       key-positions = <3 6>;
-      layers = <0, 16>
+      layers = <0 16>
       bindings = <&kp LS(NUBS)>;
     };
     tab_combo {
@@ -192,7 +192,7 @@
     bksp_word_combo_mac {
       timeout-ms = <50>;
       key-positions = <16 18>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(BKSP)>;
     };
     bksp_combo {
@@ -209,13 +209,13 @@
     up_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 12>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(UP)>;
     };
     del_word_mac {
       timeout-ms = <50>;
       key-positions = <11 13>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(DEL)>;
     };
     del_combo {
@@ -224,10 +224,9 @@
       bindings = <&kp DEL>;
     };
     spc_combo {
-      layers = <16 17 18 19>;
+      layers = <16 17 18 19 22>;
       timeout-ms = <30>;
       key-positions = <11 12 13>;
-      layers = <16, 22>
       bindings = <&kp SPACE>;
     };
     
@@ -244,27 +243,25 @@
     eisu_combo {
       timeout-ms = <50>;
       key-positions = <1 2 3>;
-      layers = <0, 16>
+      layers = <0 16>
       bindings = <&_EISU>;
     };
     kana_combo {
       timeout-ms = <50>;
       key-positions = <6 7 8>;
-      layers = <0, 16>
+      layers = <0 16>
       bindings = <&_KANA>;
     };
     hiragana_mac {
-      layers = <16 17 18 19>;
+      layers = <16 17 18 19 22>;
       timeout-ms = <50>;
       key-positions = <2 7>;
-      layers = <16, 22>
       bindings = <&kp LC(J)>;
     };
     katakana_mac {
-      layers = <16 17 18 19>;
+      layers = <16 17 18 19 22>;
       timeout-ms = <50>;
       key-positions = <1 8>;
-      layers = <16, 22>
       bindings = <&kp LC(K)>;
     };
     num_word_combo {
@@ -282,7 +279,7 @@
     down_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <17 18>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LA(DOWN)>;
     };
     num_sticky_combo {
@@ -303,40 +300,40 @@
     selword {
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&selw_sell>;
     };
     selword_rep_mac {
       layers = <29>;
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&selword_f_mac_rep>;
     };
     selline_rep {
       layers = <30>;
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&selline_f_rep>;
     };
 
     copy_mac {
       timeout-ms = <50>;
       key-positions = <1 2>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&copy>;
     };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 3>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&paste>;
     };
     select_all_mac {
       timeout-ms = <50>;
       key-positions = <18 32>;
-      layers = <0, 16, 22>
+      layers = <0 16 22>
       bindings = <&kp LG(A)>;
     };
 
