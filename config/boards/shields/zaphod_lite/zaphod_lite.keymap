@@ -1331,7 +1331,7 @@
     selw_sell: selword_selline {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&selword_f>, <&selline_f>;
+      bindings = <&selword_f_mac>, <&selline_f>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     capsw_capsl: capsword_capslock {
