@@ -1164,7 +1164,7 @@
            = <&macro_tap &kp LA(RIGHT)>
            , <&macro_tap &kp LA(LEFT)>
            , <&macro_tap &kp LA(LS(RIGHT))>
-           , <&macro_tap &sl SRT_EXW_L>
+           , <&macro_tap &sl SRT_EXW_MAC_L>
            ;
     };
     selword_f_mac_rep: select_word_mac_forwards_repeat {
@@ -1172,7 +1172,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp LA(LS(RIGHT))>
-           , <&macro_tap &sl SRT_EXW_L>
+           , <&macro_tap &sl SRT_EXW_MAC_L>
            ;
     };
     selline_f: select_line_forwards {
