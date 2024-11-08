@@ -1569,9 +1569,9 @@
     
     nav_layer {
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))    &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp INT_HENKAN   &kp GLOBE     &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INT_MUHENKAN &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))     &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
+        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp INT_HENKAN    &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INT_MUHENKAN  &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans 
         >;
     };
@@ -1579,7 +1579,7 @@
     num_layer {
       bindings = <
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
-        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &jpkp_minus  &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
+        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_AT     &jpkp_minus   &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
         &kp JP_QMARK &kp JP_UNDER &kp JP_DQT    &kp JP_SQT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
         &trans     &trans       &kp RET      &kp JP_N0
         >;
@@ -1612,8 +1612,8 @@
     };
     ble_layer {
       bindings = <
-        &bt BT_CLR   &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
-        &trans       &trans        &trans       &trans       &trans         &trans      &trans      &trans     &trans     &trans
+        &bt BT_CLR   &trans        &trans       &trans       &sys_reset     &trans      &trans      &trans     &trans     &trans
+        &trans       &trans        &trans       &trans       &bootloader    &trans      &trans      &trans     &trans     &trans
         &bt BT_SEL 4 &bt BT_SEL 3  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &trans      &trans      &trans     &trans     &trans 
         &trans          &trans       &trans           &trans
         >;
@@ -1629,9 +1629,9 @@
     };
     short_ext_word_mac_layer {
       bindings = <
-        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
         &trans     &trans     &trans    &selword_f_mac_rep  &trans          &trans     &selword_f_mac_rep   &trans    &trans    &trans 
-        &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
+        &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
         &trans     &kp A     &key_repeat    &trans
         >;
     };    
