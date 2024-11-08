@@ -1164,6 +1164,7 @@
            = <&macro_tap &kp LA(RIGHT)>
            , <&macro_tap &kp LA(LEFT)>
            , <&macro_tap &kp LA(LS(RIGHT))>
+           , <&macro_pause_for_release>
            , <&macro_tap &sl SRT_EXW_MAC_L>
            ;
     };
@@ -1172,6 +1173,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp LA(LS(RIGHT))>
+           , <&macro_pause_for_release>
            , <&macro_tap &sl SRT_EXW_MAC_L>
            ;
     };
@@ -1180,6 +1182,7 @@
        #binding-cells = <0>;
        bindings
            = <&macro_tap &kp HOME &kp LS(END)>
+           , <&macro_pause_for_release>
            , <&macro_tap &sl SRT_EXL_L>
            ;
     };
@@ -1189,6 +1192,7 @@
        bindings    
            = <&macro_tap &kp LS(DOWN)>
            , <&macro_tap &kp LS(END)>
+           , <&macro_pause_for_release>
            , <&macro_tap &sl SRT_EXL_L>
            ;
      };
