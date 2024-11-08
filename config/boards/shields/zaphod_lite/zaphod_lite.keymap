@@ -83,6 +83,12 @@
       layers = <0 12 18>;
       bindings = <&undo_mac>;
     };
+    undo_win {
+      timeout-ms = <50>;
+      key-positions = <1 31>;
+      layers = <19>;
+      bindings = <&kp LC(Z)>;
+    };
     ret_combo {
       timeout-ms = <50>;
       key-positions = <16 17 18>;
@@ -93,6 +99,12 @@
       key-positions = <11 31>;
       layers = <0 12 18>;
       bindings = <&kp LG(S)>;
+    };
+    save_win {
+      timeout-ms = <50>;
+      key-positions = <11 31>;
+      layers = <19>;
+      bindings = <&kp LC(S)>;
     }; 
     caps_word_combo {
       timeout-ms = <50>;
@@ -130,11 +142,23 @@
       layers = <0 12 18>;
       bindings = <&kp LA(LEFT)>;
     };
+    backward_word_win {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      layers = <19>;
+      bindings = <&kp LC(LEFT)>;
+    };
     forward_word_mac {
       timeout-ms = <50>;
       key-positions = <27 28>;
       layers = <0 12 18>;
       bindings = <&kp LA(RIGHT)>;
+    };
+    forward_word_win {
+      timeout-ms = <50>;
+      key-positions = <27 28>;
+      layers = <19>;
+      bindings = <&kp LC(RIGHT)>;
     };
     backward_sentence {
       timeout-ms = <50>;
@@ -162,11 +186,23 @@
       layers = <0 12 18>;
       bindings = <&kp LA(UP)>;
     };
+    previous_paragraph_win {
+      timeout-ms = <50>;
+      key-positions = <11 22>;
+      layers = <19>;
+      bindings = <&kp LC(UP)>;
+    };
     next_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <18 27>;
       layers = <0 12 18>;
       bindings = <&kp LA(DOWN)>;
+    };
+    next_paragraph_win {
+      timeout-ms = <50>;
+      key-positions = <18 27>;
+      layers = <19>;
+      bindings = <&kp LC(DOWN)>;
     };
     sorcery_magic2 {
       timeout-ms = <50>;
@@ -191,6 +227,12 @@
       layers = <0 12 18>;
       bindings = <&kp LA(BKSP)>;
     };
+    bksp_word_combo_win {
+      timeout-ms = <50>;
+      key-positions = <16 18>;
+      layers = <19>;
+      bindings = <&kp LC(BKSP)>;
+    };
     bksp_combo {
       timeout-ms = <50>;
       key-positions = <16 32>;
@@ -208,11 +250,23 @@
       layers = <0 12 18>;
       bindings = <&kp LA(UP)>;
     };
+    up_paragraph_win {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      layers = <19>;
+      bindings = <&kp LC(UP)>;
+    };
     del_word_mac {
       timeout-ms = <50>;
       key-positions = <11 13>;
       layers = <0 12 18>;
       bindings = <&kp LA(DEL)>;
+    };
+    del_word_win {
+      timeout-ms = <50>;
+      key-positions = <11 13>;
+      layers = <19>;
+      bindings = <&kp LC(DEL)>;
     };
     del_combo {
       timeout-ms = <50>;
@@ -220,7 +274,7 @@
       bindings = <&kp DEL>;
     };
     spc_combo {
-      layers = <12 13 14 15 22>;
+      layers = <12 13 14 15 18 19>;
       timeout-ms = <30>;
       key-positions = <11 12 13>;
       bindings = <&kp SPACE>;
@@ -318,17 +372,35 @@
       layers = <0 12 18>;
       bindings = <&copy_mac>;
     };
+    copy_win {
+      timeout-ms = <50>;
+      key-positions = <1 2>;
+      layers = <19>;
+      bindings = <&kp LC(C)>;
+    };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 3>;
       layers = <0 12 18>;
       bindings = <&paste_mac>;
     };
+    paste_win {
+      timeout-ms = <50>;
+      key-positions = <2 3>;
+      layers = <19>;
+      bindings = <&kp LC(V)>;
+    };
     select_all_mac {
       timeout-ms = <50>;
       key-positions = <18 32>;
       layers = <0 12 18>;
       bindings = <&kp LG(A)>;
+    };
+    select_all_win {
+      timeout-ms = <50>;
+      key-positions = <18 32>;
+      layers = <19>;
+      bindings = <&kp LC(A)>;
     };
 
     
@@ -1161,7 +1233,6 @@
         = <&macro_tap &kp LA(RIGHT)>
         , <&macro_tap &kp LA(LEFT)>
         , <&macro_tap &kp LA(LS(RIGHT))>
-        , <&macro_pause_for_release>
         , <&macro_tap &sl SRT_EXW_MAC_L>
         ;
     };
@@ -1170,7 +1241,6 @@
 #binding-cells = <0>;
       bindings
         = <&macro_tap &kp LA(LS(RIGHT))>
-        , <&macro_pause_for_release>
         , <&macro_tap &sl SRT_EXW_MAC_L>
         ;
     };
@@ -1179,7 +1249,6 @@
 #binding-cells = <0>;
       bindings
         = <&macro_tap &kp HOME &kp LS(END)>
-        , <&macro_pause_for_release>
         , <&macro_tap &sl SRT_EXL_L>
         ;
     };
@@ -1189,7 +1258,6 @@
       bindings    
         = <&macro_tap &kp LS(DOWN)>
         , <&macro_tap &kp LS(END)>
-        , <&macro_pause_for_release>
         , <&macro_tap &sl SRT_EXL_L>
         ;
     };
@@ -1340,7 +1408,7 @@
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_LCTL|MOD_RCTL)>;
     };
 
   undo_redo: undo_redo {
@@ -1600,17 +1668,17 @@
     short_ext_word_mac_layer {
       bindings = <
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
-        &trans     &trans     &trans    &trans  &trans          &trans    &trans   &trans    &trans    &trans 
+        &trans     &trans     &trans    &selword_f_mac_rep   &trans          &trans    &selword_f_mac_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans              &trans          &trans     &trans               &trans    &trans    &trans 
-        &trans     &trans     &key_repeat    &trans
+        &trans     &trans     &selword_f_mac_rep    &trans
         >;
     };    
     short_ext_line_layer {
       bindings = <
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &trans    &trans  &trans          &trans     &trans   &trans    &trans    &trans 
+        &trans     &trans     &trans    &selline_f_rep  &trans          &trans     &selline_f_rep   &trans    &trans    &trans 
         &trans     &trans     &trans    &trans          &trans          &trans     &trans           &trans    &trans    &trans 
-        &trans     &trans     &key_repeat    &trans
+        &trans     &trans     &selline_f_rep    &trans
         >;
     };    
   };
