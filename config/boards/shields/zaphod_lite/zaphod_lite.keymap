@@ -1411,7 +1411,7 @@
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
 
-  undo_redo: undo_redo {
+  undo_redo_mac: undo_redo {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
       bindings = <&undo_mac>, <&kp LS(LG(Z))>;
@@ -1423,12 +1423,13 @@
       bindings = <&paste_mac>, <&kp LS(LA(LG(V)))>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
-  copy_cut: copy_cut {
+  copy_cut_mac: copy_cut {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
       bindings = <&copy_mac>, <&kp LG(X)>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
+    
   };
   };
 
@@ -1440,7 +1441,7 @@
       bindings = <
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &mg_v        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
+        &mg_v        &kp K         &lt  FUN_L J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &lt WINMAN_L com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
@@ -1626,7 +1627,7 @@
     sym_layer {
       bindings = <
         &kp K_CMENU &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &kp LG(V)  &kp LS(LA(LG(V)))   &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &trans      &trans  &trans   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &kp LS(CAPS)      &kp LANG2  &kp LANG1   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
         &kp CAPS    &defin             &gtran              &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans   &trans   &trans
         >;
