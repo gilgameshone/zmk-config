@@ -1361,6 +1361,13 @@
       bindings = <&kp>, <&mg_a>;
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
+    
+  com_quo: comma_quot {
+      compatible = "zmk,behavior-mod-morph";
+#binding-cells = <0>;
+      bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
+      mods = <(MOD_LSFT)>;
+    };
 
   hmr_com_quo: homerow_mods_right_comma_quote {
       compatible = "zmk,behavior-hold-tap";
@@ -1372,12 +1379,6 @@
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
     
-  com_quo: comma_quot {
-      compatible = "zmk,behavior-mod-morph";
-#binding-cells = <0>;
-      bindings = <&kp JP_COMMA>, <&kp JP_SQT>;
-      mods = <(MOD_LSFT)>;
-    };
   dot_dbq: dot_doublequote {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
