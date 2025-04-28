@@ -225,18 +225,18 @@
       timeout-ms = <50>;
       key-positions = <16 18>;
       layers = <0 12 18>;
-      bindings = <&kp LA(BKSP)>;
+      bindings = <&kp LA(BSPC)>;
     };
     bksp_word_combo_win {
       timeout-ms = <50>;
       key-positions = <16 18>;
       layers = <19>;
-      bindings = <&kp LC(BKSP)>;
+      bindings = <&kp LC(BSPC)>;
     };
     bksp_combo {
       timeout-ms = <50>;
       key-positions = <16 32>;
-      bindings = <&kp BKSP>;
+      bindings = <&kp BSPC>;
     };
     
     up {
@@ -1454,7 +1454,7 @@
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u                 &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E         &hmr_a RALT A  &hmr RSHFT I
         &mg_v        &kp K         &hml FUN_L J   &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &hmr_com_quo MEH_L 0  &dot_dbq       &min_qma
-        &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
+        &lt NUM_L BKSP   &lt SYM_L SPACE                                   &key_repeat  &ss_mo NAV_L LSHIFT
         >;
     };
     mg_x_l {
@@ -1551,7 +1551,7 @@
         &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
         &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
         &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
-        &lt TR_NUM_L BKSP  &sl TRR_L  &sl TRB_L    &trans
+        &lt TR_NUM_L BSPC  &sl TRR_L  &sl TRB_L    &trans
         >;
     };
 
@@ -1605,7 +1605,7 @@
         &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
         &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
         &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
-        &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
+        &lt NUM_L BSPC   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
 
@@ -1614,14 +1614,14 @@
         &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
         &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
         &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
-        &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
+        &lt NUM_L BSPC   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
     
     nav_layer {
       bindings = <
         &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))     &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LARW   &kp UARW   &kp DARW    &kp RARW    &kp INT_HENKAN    &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp LEFT   &kp UP   &kp DOWN    &kp RIGHT    &kp INT_HENKAN    &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INT_MUHENKAN  &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC     &kp TAB          &trans     &trans 
         >;
@@ -1675,7 +1675,7 @@
         &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)   &kp MEH(P)   &trans     &kp F21     &kp F22     &kp F23      &kp F24
         &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)   &kp MEH(F)   &trans     &kp F17     &kp F18     &kp F19      &kp F20
         &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)   &kp MEH(W)   &trans     &kp F13     &kp F14     &kp F15      &kp F16
-        &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &kp MEH(SPC)             &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS        &kp GLOBE
+        &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &kp MEH(SPACE)             &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS        &kp GLOBE
         >;
     };
     short_ext_word_mac_layer {
@@ -1696,4 +1696,3 @@
     };    
   };
   };
-
