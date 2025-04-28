@@ -3,3 +3,4 @@
 
 config SHIELD_ZAPHOD_LITE
    def_bool $(shields_list_contains,zaphod_lite)
+
