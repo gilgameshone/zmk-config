@@ -1363,7 +1363,7 @@
     };
 
       hmr_com_quo: homerow_mods_right_comma_quote {
-      compatible = "zmk,behavior-hold-tap";
+      compatible = "zmk,behavior-tap-dance";
 #binding-cells = <2>;
       tapping_term_ms = <200>;
       require-prior-idle-ms = <150>;
