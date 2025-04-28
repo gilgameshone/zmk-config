@@ -81,7 +81,7 @@
       timeout-ms = <50>;
       key-positions = <1 31>;
       layers = <0 12 18>;
-      bindings = <&undo_mac>;
+      bindings = <&undo_mac_b>;
     };
     undo_win {
       timeout-ms = <50>;
@@ -370,7 +370,7 @@
       timeout-ms = <50>;
       key-positions = <1 2>;
       layers = <0 12 18>;
-      bindings = <&copy_mac>;
+      bindings = <&copy_mac_b>;
     };
     copy_win {
       timeout-ms = <50>;
@@ -382,7 +382,7 @@
       timeout-ms = <50>;
       key-positions = <2 3>;
       layers = <0 12 18>;
-      bindings = <&paste_mac>;
+      bindings = <&paste_mac_b>;
     };
     paste_win {
       timeout-ms = <50>;
@@ -1261,17 +1261,17 @@
         , <&macro_tap &sl SRT_EXL_L>
         ;
     };
-  undo_mac: undo_mac {
+  undo_mac_b: undo_mac_b {
       compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
       bindings =  <&kp (LG(Z))>;
     };
-  copy_mac: copy_mac {
+  copy_mac_b: copy_mac_b {
       compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
       bindings =  <&kp (LG(C))>;
     };
-  paste_mac: paste_mac {
+  paste_mac_b: paste_mac_b {
       compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
       bindings =  <&kp (LG(V))>;
@@ -1426,19 +1426,19 @@
   undo_redo_mac: undo_redo {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
-      bindings = <&undo_mac>, <&kp LS(LG(Z))>;
+      bindings = <&undo_mac_b>, <&kp LS(LG(Z))>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
   paste_without_mac: paste_without {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
-      bindings = <&paste_mac>, <&kp LS(LA(LG(V)))>;
+      bindings = <&paste_mac_b>, <&kp LS(LA(LG(V)))>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
   copy_cut_mac: copy_cut {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
-      bindings = <&copy_mac>, <&kp LG(X)>;
+      bindings = <&copy_mac_b>, <&kp LG(X)>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
     
