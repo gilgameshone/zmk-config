@@ -1441,7 +1441,7 @@
       bindings = <
         &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u          &mg_o          &kp Q
         &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &mg_v        &kp K         & J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
+        &mg_v        &kp K         &kp J          &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &com_quo       &dot_dbq       &min_qma
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
@@ -1660,10 +1660,10 @@
 
     win_layer {
       bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &trans  &kp MEH(P)          &trans      &trans      &trans     &trans     &trans 
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)     &trans       &trans      &trans      &trans     &trans     &trans 
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)   &kp MEH(P)          &trans      &trans      &trans     &trans     &trans 
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)   &kp MEH(F)        &trans      &trans      &trans     &trans     &trans 
         &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)   &trans      &trans      &trans     &trans     &trans 
-        &trans &kp MEH(SPC)    &trans        &trans
+        &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &kp MEH(SPC)    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS        &kp GLOBE
         >;
     };
     short_ext_word_mac_layer {
