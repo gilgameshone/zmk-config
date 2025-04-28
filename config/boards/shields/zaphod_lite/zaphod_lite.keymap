@@ -1637,10 +1637,10 @@
 
     sym_layer {
       bindings = <
-        &kp K_CMENU &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &kp LG(V)  &kp LS(LA(LG(V)))   &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &kp LS(CAPS)      &kp LANG2  &kp LANG1   &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &kp CAPS    &defin             &gtran              &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
-        &trans   &trans   &trans   &trans
+        &kp K_CMENU   &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &kp LG(V)  &kp LS(LA(LG(V)))      &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &kp LS(CAPS)  &kp LANG2          &kp LANG1          &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &kp CAPS      &defin             &gtran             &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
+        &trans   &trans                                                                       &trans   &trans
         >;
     };
 
@@ -1649,7 +1649,7 @@
         &to SDY_L       &trans         &trans      &trans     &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
         &trans          &trans         &trans      &trans     &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
         &to QWE_MAC_L   &to QWE_WIN_L  &trans      &trans     &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
-        &none      &none             &trans          &trans
+        &none      K_APP             &kp KP_NLCK          &kp INS
         >;
     };
     num_word_layer {
@@ -1671,10 +1671,10 @@
 
     meh_layer {
       bindings = <
-        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)   &kp MEH(P)          &trans      &trans      &trans     &trans     &trans 
-        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)   &kp MEH(F)        &trans      &trans      &trans     &trans     &trans 
-        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)     &kp MEH(W)   &trans      &trans      &trans     &trans     &trans 
-        &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &kp MEH(SPC)    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS        &kp GLOBE
+        &kp MEH(X)   &kp MEH(M)  &kp MEH(L)   &kp MEH(C)   &kp MEH(P)   &trans     &kp F21     &kp F22     &kp F23      &kp F24
+        &kp MEH(S)   &kp MEH(T)  &kp MEH(R)   &kp MEH(D)   &kp MEH(F)   &trans     &kp F17     &kp F18     &kp F19      &kp F20
+        &kp MEH(V)   &kp MEH(K)  &kp MEH(J)   &kp MEH(G)   &kp MEH(W)   &trans     &kp F13     &kp F14     &kp F15      &kp F16
+        &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &kp MEH(SPC)             &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS        &kp GLOBE
         >;
     };
     short_ext_word_mac_layer {
