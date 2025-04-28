@@ -1362,7 +1362,7 @@
       hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
 
-      hmr_com_quo: homerow_mods_right_comma_quote {
+  hmr_com_quo: homerow_mods_right_comma_quote {
       compatible = "zmk,behavior-hold-tap";
 #binding-cells = <2>;
       tapping_term_ms = <200>;
@@ -1450,9 +1450,9 @@
 
     magic_sturdy_layer {
       bindings = <
-        &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u          &mg_o          &kp Q
-        &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &mg_v        &kp K         &hml FUN_L J   &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  hmr_com_quo MEH_L 0    &dot_dbq       &min_qma
+        &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &trans        &mg_u                 &mg_o          &kp Q
+        &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E         &hmr_a RALT A  &hmr RSHFT I
+        &mg_v        &kp K         &hml FUN_L J   &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &hmr_com_quo MEH_L 0  &dot_dbq       &min_qma
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
         >;
     };
