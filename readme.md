@@ -50,8 +50,8 @@ This layer has some realestate available. `aPst` here pastes without formatting.
 
 ```
  ╭─────────────────────────╮ ╭─────────────────────╮
- │            Cpy Pst aPst │ │  °   #   <   >   ^  │ 
- │      M-DEL     DEL Ynk  | |  ~   %   {   }   `  │ 
+ │                         │ │  °   #   <   >   ^  │ 
+ │      M-DEL Entr DEL Ynk | |  ~   %   {   }   `  │ 
  │ Caps def   gTr Ggl      │ │  §   ¥   $   £   €  │ 
  ╰───────────╮             │ │         ╭───────────╯
              ╰─────────────╯ ╰─────────╯
@@ -61,13 +61,15 @@ This layer has some realestate available. `aPst` here pastes without formatting.
 
 Nav has some available realestate, but the hold key to access it gets used heavily. `Rwd` uses Alfred to rewind the media player slightly. 
 ```
- ╭─────────────────────╮ ╭─────────────────────╮
- │ Und Cut Cpy Pst Rdo │ │ Ssel    Eis Kan     │ 
- │ ←   ↑   ↓   →       | |     Ctl Cmd Opt Sft │ 
- │ Hme PgD PgU End     │ │ Rwd Pse vDn vUp Mut │ 
- ╰─────────╮ ESC  TAB  │ │         ╭───────────╯
+ ╭─────────────────────╮ ╭───────────────────────╮
+ │                     │ │ Ssel  CTL CMD OPT SFT │ 
+ │ ←   ↑   ↓   →       | | Globe Ctl Cmd Opt Sft │ 
+ │ Hme PgD PgU End     │ │ Rwd   Pse vDn vUp Mut │ 
+ ╰─────────╮ ESC  TAB  │ │         ╭─────────────╯
            ╰───────────╯ ╰─────────╯
 ```
+CMD (and the like) are sticky modifiers. 
+
 ### Combos
 
 Combo use has proliferated to reduce thumb-holding strain. Probably best view visually. 
