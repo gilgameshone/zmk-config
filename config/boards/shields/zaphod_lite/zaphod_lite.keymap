@@ -402,8 +402,18 @@
       layers = <19>;
       bindings = <&kp LC(A)>;
     };
-
-    
+    cut_mac {
+      timeout-ms = <50>;
+      key-positions = <1 2 31>;
+      layers = <0 12 18>;
+      bindings = <&kp LG(X)>;
+    };
+    pastew_mac {
+      timeout-ms = <50>;
+      key-positions = <2 3 31>;
+      layers = <0 12 18>;
+      bindings = <&kp LS(LG(Z))>;
+    };
   };
 };
 
@@ -1620,10 +1630,10 @@
     
     nav_layer {
       bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))     &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LEFT   &kp UP   &kp DOWN    &kp RIGHT    &kp INT_HENKAN    &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END     &kp INT_MUHENKAN  &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
-        &kp ESC     &kp TAB          &trans     &trans 
+        &trans     &trans     &trans      &trans       &trans                &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
+        &kp LEFT   &kp UP     &kp DOWN    &kp RIGHT    &kp INT_HENKAN        &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END      &kp INT_MUHENKAN      &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &kp ESC    &kp TAB                                                   &trans     &trans 
         >;
     };
  
