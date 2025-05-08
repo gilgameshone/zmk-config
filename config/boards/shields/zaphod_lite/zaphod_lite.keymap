@@ -48,7 +48,7 @@
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
-
+#define HYPER(key) LS(LA(LG(LC(key))))
 
 
 // JIS
@@ -1629,9 +1629,9 @@
     
     nav_layer {
       bindings = <
-        &trans     &trans     &trans      &trans       &trans                &kp LS(LG(N5))        &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LEFT   &kp UP     &kp DOWN    &kp RIGHT    &kp INT_HENKAN        &kp GLOBE             &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
-        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END      &kp INT_MUHENKAN      &kp LS(LA(LG(LC(B)))) &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
+        &trans     &trans     &trans      &trans       &trans                &kp LS(LG(N5))  &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
+        &kp LEFT   &kp UP     &kp DOWN    &kp RIGHT    &kp INT_HENKAN        &kp GLOBE       &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp HOME   &kp PG_UP  &kp PG_DN   &kp END      &kp INT_MUHENKAN      &kp HYPER(B)    &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC    &kp TAB                                                   &trans     &trans 
         >;
     };
@@ -1647,18 +1647,18 @@
 
     sym_layer {
       bindings = <
-        &kp K_CMENU   &kp LANG_KATAKANA  &kp LANG_HIRAGANA  &kp LG(V)  &kp LS(LA(LG(V)))      &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &kp LS(CAPS)  &kp LANG2          &kp LANG1          &kp DEL    &kp LS(LA(LG(LC(Y))))  &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
-        &kp CAPS      &defin             &gtran             &googl     &kp INT_KANA           &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
+        &trans     &trans        &trans         &trans     &kp K_CMENU       &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &trans     &kp LA(DEL)   &kp KP_ENTER   &kp DEL    &kp HYPER(Y))     &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &kp CAPS   &defin        &gtran         &googl     &trans            &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans                                                                       &trans   &trans
         >;
     };
 
     fun_layer {
       bindings = <
-        &to SDY_L       &trans         &trans      &trans     &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
-        &trans          &trans         &trans      &trans     &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
-        &to QWE_MAC_L   &to QWE_WIN_L  &trans      &trans     &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
+        &trans   &trans         &trans   &trans         &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
+        &trans   &trans         &trans   &to QWE_MAC_L  &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
+        &trans   &to QWE_WIN_L  &trans   &to SDY_L      &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
         &none     &kp K_APP             &kp KP_NLCK          &kp INS
         >;
     };
