@@ -1648,7 +1648,7 @@
     sym_layer {
       bindings = <
         &trans     &trans        &trans         &trans     &kp K_CMENU       &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
-        &trans     &kp LA(DEL)   &kp KP_ENTER   &kp DEL    &kp HYPR(Y))     &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
+        &trans     &kp LA(DEL)   &kp KP_ENTER   &kp DEL    &kp HYPR(Y)       &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
         &kp CAPS   &defin        &gtran         &googl     &trans            &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans                                                                       &trans   &trans
         >;
