@@ -33,8 +33,7 @@
 #define TR_NUM_L 16
 #define TR_SYM_L 17
 
-#define QWE_MAC_L 18
-#define QWE_WIN_L 19
+
 
 #define NAV_L 20
 #define NUM_L 21
@@ -1624,23 +1623,7 @@
         >;
     };
 
-    qwerty_mac_layer {
-      bindings = <
-        &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
-        &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
-        &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
-        &lt NUM_L BSPC   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
-        >;
-    };
 
-    qwerty_win_layer {
-      bindings = <
-        &kp Q        &kp W       &kp E        &kp R         &kp T       &kp Y    &kp U         &kp I        &kp O        &kp P
-        &hml LSHFT A &hml LALT S &hml LGUI D  &hml LCTRL F  &kp G       &kp H    &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &hmr RSHFT SEMI
-        &kp Z        &kp X       &kp C        &kp V         &kp B       &kp N    &kp M         &kp COMMA    &kp DOT      &kp SLASH
-        &lt NUM_L BSPC   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
-        >;
-    };
     
     nav_layer {
       bindings = <
