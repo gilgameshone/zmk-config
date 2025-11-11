@@ -1654,9 +1654,9 @@
 
     fun_layer {
       bindings = <
-        &trans   &trans         &trans   &trans         &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
-        &trans   &trans         &trans   &to QWE_MAC_L  &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
-        &trans   &to QWE_WIN_L  &trans   &to SDY_L      &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
+        &trans   &trans    &trans   &trans       &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
+        &trans   &trans    &trans   &trans       &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
+        &trans   &trans    &trans   &to SDY_L    &trans         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
         &none     &kp K_APP             &kp KP_NLCK          &kp INS
         >;
     };
