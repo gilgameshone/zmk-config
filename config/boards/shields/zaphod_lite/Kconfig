@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: MIT
 
+CONFIG_ZMK_COMBO_MAX_PRESSED_COMBOS = 10
+
 if ZMK_DISPLAY
 
 menuconfig ZAPHOD_BONGO_CAT
