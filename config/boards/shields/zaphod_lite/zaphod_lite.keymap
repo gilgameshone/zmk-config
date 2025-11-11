@@ -35,15 +35,15 @@
 
 
 
-#define NAV_L 20
-#define NUM_L 21
-#define SYM_L 22
-#define FUN_L 23
-#define NUM_W_L 24
-#define BLE_L 25
-#define MEH_L 26
-#define SRT_EXW_MAC_L 27
-#define SRT_EXL_L 28
+#define NAV_L 18
+#define NUM_L 19
+#define SYM_L 20
+#define FUN_L 21
+#define NUM_W_L 22
+#define BLE_L 23
+#define MEH_L 24
+#define SRT_EXW_MAC_L 25
+#define SRT_EXL_L 26
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -137,14 +137,14 @@
     panic {
       timeout-ms = <50>;
       key-positions = <1 3>;
-      layers = <24>;
+      layers = <22>;
       bindings = <&to SDY_L>;
       require-prior-idle-ms = <180>;
     };
     numword_ret {
       timeout-ms = <50>;
       key-positions = <16 17 18>;
-      layers = <24>;
+      layers = <22>;
       require-prior-idle-ms = <180>;
       bindings = <&nw_ret>;
     }; 
@@ -164,14 +164,14 @@
     backward_word_mac {
       timeout-ms = <50>;
       key-positions = <21 22>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(LEFT)>;
       require-prior-idle-ms = <180>;
     };
     forward_word_mac {
       timeout-ms = <50>;
       key-positions = <27 28>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(RIGHT)>;
       require-prior-idle-ms = <180>;
     };
@@ -202,14 +202,14 @@
     previous_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 22>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(UP)>;
       require-prior-idle-ms = <180>;
     };
     next_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <18 27>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(DOWN)>;
       require-prior-idle-ms = <180>;
     };
@@ -222,7 +222,7 @@
     up_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <11 12>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(UP)>;
       require-prior-idle-ms = <180>;
     };
@@ -235,7 +235,7 @@
     down_paragraph_mac {
       timeout-ms = <50>;
       key-positions = <17 18>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(DOWN)>;
       require-prior-idle-ms = <180>;
     };
@@ -267,7 +267,7 @@
     bksp_word_combo_mac {
       timeout-ms = <50>;
       key-positions = <16 18>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(BSPC)>;
       require-prior-idle-ms = <180>;
     };
@@ -280,7 +280,7 @@
     del_word_mac {
       timeout-ms = <50>;
       key-positions = <11 13>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LA(DEL)>;
       require-prior-idle-ms = <180>;
     };
@@ -291,7 +291,7 @@
       require-prior-idle-ms = <180>;
     };
     spc_combo {
-      layers = <12 13 14 15 18 19>;
+      layers = <12 13 14 15 16 17>;
       timeout-ms = <30>;
       key-positions = <11 12 13>;
       bindings = <&kp SPACE>;
@@ -307,49 +307,49 @@
     undo_mac {
       timeout-ms = <50>;
       key-positions = <1 31>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&undo_mac_b>;
       require-prior-idle-ms = <180>;
     };
     save_mac {
       timeout-ms = <50>;
       key-positions = <11 31>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
     };
     copy_mac {
       timeout-ms = <50>;
       key-positions = <1 2>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&copy_mac_b>;
       require-prior-idle-ms = <180>;
     };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 3>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&paste_mac_b>;
       require-prior-idle-ms = <180>;
     };
     select_all_mac {
       timeout-ms = <50>;
       key-positions = <18 32>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LG(A)>;
       require-prior-idle-ms = <180>;
     };
     cut_mac {
       timeout-ms = <50>;
       key-positions = <1 2 31>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LG(X)>;
       require-prior-idle-ms = <180>;
     };
     pastew_mac {
       timeout-ms = <50>;
       key-positions = <2 3 31>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&kp LS(LG(Z))>;
       require-prior-idle-ms = <180>;
     };
@@ -369,14 +369,14 @@
       require-prior-idle-ms = <180>;
     };
     hiragana_mac {
-      layers = <12 13 14 15 22>;
+      layers = <12 13 14 15 216 17>;
       timeout-ms = <50>;
       key-positions = <2 7>;
       bindings = <&kp LC(J)>;
       require-prior-idle-ms = <180>;
     };
     katakana_mac {
-      layers = <12 13 14 15 22>;
+      layers = <12 13 14 15 16 17>;
       timeout-ms = <50>;
       key-positions = <1 8>;
       bindings = <&kp LC(K)>;
@@ -386,19 +386,19 @@
     selword_mac {
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0 12 18>;
+      layers = <0 12>;
       bindings = <&selw_sell_mac>;
       require-prior-idle-ms = <180>;
     };
     selword_rep_mac {
-      layers = <27>;
+      layers = <25>;
       timeout-ms = <50>;
       key-positions = <13 16>;
       bindings = <&selword_f_mac_rep>;
       require-prior-idle-ms = <180>;
     };
     selline_rep {
-      layers = <28>;
+      layers = <26>;
       timeout-ms = <50>;
       key-positions = <13 16>;
       bindings = <&selline_f_rep>;
@@ -1614,8 +1614,8 @@
     num_layer {
       bindings = <
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
-        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_HASH     &jpkp_minus   &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
-        &kp JP_QMARK &kp JP_UNDER &kp JP_PRNT   &kp JP_AT    &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
+        &kp JP_AMPS  &kp JP_LPAR  &kp JP_RPAR   &kp JP_SEMI   &kp JP_HASH   &jpkp_minus   &kp JP_N4  &kp JP_N5  &kp JP_N6  &kp JP_SLASH
+        &kp JP_QMARK &kp JP_UNDER &kp JP_PRNT   &kp JP_AT     &kp JP_PIPE   &kp JP_EQUAL  &kp JP_N1  &kp JP_N2  &kp JP_N3  &kp JP_DOT
         &trans     &trans       &kp RET      &kp JP_N0
         >;
     };
