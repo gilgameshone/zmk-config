@@ -136,14 +136,14 @@
     // Numword
     panic {
       timeout-ms = <50>;
-      key-positions = <1 3>;
+      key-positions = <0 10>;
       layers = <22>;
       bindings = <&to SDY_L>;
       require-prior-idle-ms = <180>;
     };
     numword_ret {
       timeout-ms = <50>;
-      key-positions = <16 17 18>;
+      key-positions = <18 28>;
       layers = <22>;
       require-prior-idle-ms = <180>;
       bindings = <&nw_ret>;
@@ -215,26 +215,26 @@
     };
     up {
       timeout-ms = <50>;
-      key-positions = <12 13>;
+      key-positions = <13 23>;
       bindings = <&kp UP>;
       require-prior-idle-ms = <180>;
     };
     up_paragraph_mac {
       timeout-ms = <50>;
-      key-positions = <11 12>;
+      key-positions = <12 22>;
       layers = <0 12>;
       bindings = <&kp LA(UP)>;
       require-prior-idle-ms = <180>;
     };
     down {
       timeout-ms = <50>;
-      key-positions = <16 17>;
+      key-positions = <16 26>;
       bindings = <&kp DOWN>;
       require-prior-idle-ms = <180>;
     };
     down_paragraph_mac {
       timeout-ms = <50>;
-      key-positions = <17 18>;
+      key-positions = <17 27>;
       layers = <0 12>;
       bindings = <&kp LA(DOWN)>;
       require-prior-idle-ms = <180>;
@@ -260,110 +260,90 @@
     };
     esc_combo {
       timeout-ms = <50>;
-      key-positions = <1 3>;
+      key-positions = <0 10>;
       bindings = <&kp ESC>;
       require-prior-idle-ms = <180>;
     };
     bksp_word_combo_mac {
       timeout-ms = <50>;
-      key-positions = <16 18>;
+      key-positions = <15 16>;
       layers = <0 12>;
       bindings = <&kp LA(BSPC)>;
       require-prior-idle-ms = <180>;
     };
-    bksp_combo {
-      timeout-ms = <50>;
-      key-positions = <16 32>;
-      bindings = <&kp BSPC>;
-      require-prior-idle-ms = <180>;
-    };
     del_word_mac {
       timeout-ms = <50>;
-      key-positions = <11 13>;
+      key-positions = <13 14>;
       layers = <0 12>;
       bindings = <&kp LA(DEL)>;
       require-prior-idle-ms = <180>;
     };
     del_combo {
       timeout-ms = <50>;
-      key-positions = <13 31>;
+      key-positions = <23 24>;
       bindings = <&kp DEL>;
       require-prior-idle-ms = <180>;
     };
     spc_combo {
       layers = <12 13 14 15 16 17>;
       timeout-ms = <30>;
-      key-positions = <11 12 13>;
+      key-positions = <11 21>;
       bindings = <&kp SPACE>;
       require-prior-idle-ms = <180>;
     };
     ret_combo {
       timeout-ms = <50>;
-      key-positions = <16 17 18>;
+      key-positions = <18 28>;
       bindings = <&kp RET>;
       require-prior-idle-ms = <180>;
     };
     // shortcuts
     undo_mac {
       timeout-ms = <50>;
-      key-positions = <1 31>;
+      key-positions = <0 1>;
       layers = <0 12>;
       bindings = <&undo_mac_b>;
       require-prior-idle-ms = <180>;
     };
     save_mac {
       timeout-ms = <50>;
-      key-positions = <11 31>;
+      key-positions = <10 20>;
       layers = <0 12>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
     };
     copy_mac {
       timeout-ms = <50>;
-      key-positions = <1 2>;
+      key-positions = <1 11>;
       layers = <0 12>;
       bindings = <&copy_mac_b>;
       require-prior-idle-ms = <180>;
     };
     paste_mac {
       timeout-ms = <50>;
-      key-positions = <2 3>;
+      key-positions = <2 12>;
       layers = <0 12>;
       bindings = <&paste_mac_b>;
       require-prior-idle-ms = <180>;
     };
     select_all_mac {
       timeout-ms = <50>;
-      key-positions = <18 32>;
+      key-positions = <19 29>;
       layers = <0 12>;
       bindings = <&kp LG(A)>;
-      require-prior-idle-ms = <180>;
-    };
-    cut_mac {
-      timeout-ms = <50>;
-      key-positions = <1 2 31>;
-      layers = <0 12>;
-      bindings = <&kp LG(X)>;
-      require-prior-idle-ms = <180>;
-    };
-    pastew_mac {
-      timeout-ms = <50>;
-      key-positions = <2 3 31>;
-      layers = <0 12>;
-      bindings = <&kp LS(LG(Z))>;
       require-prior-idle-ms = <180>;
     };
     // Japanese language
     eisu_combo {
       timeout-ms = <50>;
-      key-positions = <1 2 3>;
+      key-positions = <3 13>;
       layers = <0 12>;
       bindings = <&_EISU>;
       require-prior-idle-ms = <180>;
     };
     kana_combo {
       timeout-ms = <50>;
-      key-positions = <6 7 8>;
+      key-positions = <6 16>;
       layers = <0 12>;
       bindings = <&_KANA>;
       require-prior-idle-ms = <180>;
@@ -371,14 +351,14 @@
     hiragana_mac {
       layers = <12 13 14 15 16 17>;
       timeout-ms = <50>;
-      key-positions = <2 7>;
+      key-positions = <4 14>;
       bindings = <&kp LC(J)>;
       require-prior-idle-ms = <180>;
     };
     katakana_mac {
       layers = <12 13 14 15 16 17>;
       timeout-ms = <50>;
-      key-positions = <1 8>;
+      key-positions = <5 15>;
       bindings = <&kp LC(K)>;
       require-prior-idle-ms = <180>;
     };
