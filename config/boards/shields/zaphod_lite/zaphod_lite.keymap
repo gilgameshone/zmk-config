@@ -151,13 +151,13 @@
     // movement
     backward_char {
       timeout-ms = <50>;
-      key-positions = <22 23>;
+      key-positions = <23 24>;
       bindings = <&kp LEFT>;
       require-prior-idle-ms = <180>;
     };
     forward_char {
       timeout-ms = <50>;
-      key-positions = <26 27>;
+      key-positions = <25 26>;
       bindings = <&kp RIGHT>;
       require-prior-idle-ms = <180>;
     };
@@ -177,13 +177,13 @@
     };
     backward_sentence {
       timeout-ms = <50>;
-      key-positions = <21 23>;
+      key-positions = <14 24>;
       bindings = <&kp HOME>;
       require-prior-idle-ms = <180>;
     };
     forward_sentence {
       timeout-ms = <50>;
-      key-positions = <26 28>;
+      key-positions = <15 25>;
       bindings = <&kp END>;
       require-prior-idle-ms = <180>;
     };
@@ -199,44 +199,16 @@
       bindings = <&kp DOWN>;
       require-prior-idle-ms = <180>;
     };
-    previous_paragraph_mac {
-      timeout-ms = <50>;
-      key-positions = <11 22>;
-      layers = <0 12>;
-      bindings = <&kp LA(UP)>;
-      require-prior-idle-ms = <180>;
-    };
-    next_paragraph_mac {
-      timeout-ms = <50>;
-      key-positions = <18 27>;
-      layers = <0 12>;
-      bindings = <&kp LA(DOWN)>;
-      require-prior-idle-ms = <180>;
-    };
     up {
       timeout-ms = <50>;
       key-positions = <13 23>;
       bindings = <&kp UP>;
       require-prior-idle-ms = <180>;
     };
-    up_paragraph_mac {
-      timeout-ms = <50>;
-      key-positions = <12 22>;
-      layers = <0 12>;
-      bindings = <&kp LA(UP)>;
-      require-prior-idle-ms = <180>;
-    };
     down {
       timeout-ms = <50>;
       key-positions = <16 26>;
       bindings = <&kp DOWN>;
-      require-prior-idle-ms = <180>;
-    };
-    down_paragraph_mac {
-      timeout-ms = <50>;
-      key-positions = <17 27>;
-      layers = <0 12>;
-      bindings = <&kp LA(DOWN)>;
       require-prior-idle-ms = <180>;
     };
     page_up_combo {
@@ -254,7 +226,7 @@
     // controls    
     tab_combo {
       timeout-ms = <50>;
-      key-positions = <11 23>;
+      key-positions = <10 20>;
       bindings = <&kp TAB>;
       require-prior-idle-ms = <180>;
     };
@@ -278,12 +250,6 @@
       bindings = <&kp LA(DEL)>;
       require-prior-idle-ms = <180>;
     };
-    del_combo {
-      timeout-ms = <50>;
-      key-positions = <23 24>;
-      bindings = <&kp DEL>;
-      require-prior-idle-ms = <180>;
-    };
     spc_combo {
       layers = <12 13 14 15 16 17>;
       timeout-ms = <30>;
@@ -300,14 +266,14 @@
     // shortcuts
     undo_mac {
       timeout-ms = <50>;
-      key-positions = <0 1>;
+      key-positions = <3 4>;
       layers = <0 12>;
       bindings = <&undo_mac_b>;
       require-prior-idle-ms = <180>;
     };
     save_mac {
       timeout-ms = <50>;
-      key-positions = <10 20>;
+      key-positions = <8 18>;
       layers = <0 12>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
