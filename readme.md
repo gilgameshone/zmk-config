@@ -44,6 +44,9 @@ The second magic key `☆` (Sorcery) can be accessed by pressing `★` and `C` a
            ╰───────────╯ ╰─────────╯
 ```
 
+This layer can also be accessed by pressing `BKSP` and `SFT`, which turns on a numword layer that will cancel after space or return are pressed. 
+
+
 ### Sym (hold SPC)
 
 This layer has some realestate available. `aPst` here pastes without formatting. `Ynk` pulls from Alfred's kill list / clipboard. `Cpy` and `Pst` are duplicated here for use with one hand mouse use. 
@@ -74,15 +77,13 @@ CMD (and the like) are sticky modifiers.
 
 Combo use has proliferated to reduce thumb-holding strain. Probably best view visually. 
 
-Symetrical combos are:
+Combos are:
 Capsword,
 Eisu,
 Kana,
 Magic 2 (Sorcery),
 Hiragana,
 Katakana.
-
-One hand combos are: 
 Tab,
 Space,
 Esc,
@@ -134,12 +135,12 @@ and window manipulation.
 ### Purple ⇅
 
 ```
- ╭────────────────╮　╭───────────────╮
- │　ぴ　　　　　ぱ　ぽ │　│　　　　　　　　　│ 
- │　　　　　　　　　ぷ |　|　　　　　　　　　│ 
- │　　　　　　　　　ぺ │　│　　　　　　　　　│ 
- ╰─────────╮　⌫　⇅ │　│　⇅　　　╭───────╯
-           ╰──────╯　╰───────╯
+ ╭────────────────╮  ╭───────────────╮
+ │　ぴ　　　　　ぱ　ぽ │  │　　　　　　　　　│ 
+ │　　　　　　　　　ぷ |  |　　　　　　　　　│ 
+ │　　　　　　　　　ぺ │  │　　　　　　　　　│ 
+ ╰─────────╮　⌫　⇅ │  │　⇅　　　╭───────╯
+           ╰──────╯  ╰───────╯
 ```
 #### key position reference 
 ```
