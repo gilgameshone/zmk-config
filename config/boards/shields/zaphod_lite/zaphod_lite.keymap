@@ -163,14 +163,14 @@
     };
     backward_word_mac {
       timeout-ms = <50>;
-      key-positions = <21 22>;
+      key-positions = <12 22>;
       layers = <0 12>;
       bindings = <&kp LA(LEFT)>;
       require-prior-idle-ms = <180>;
     };
     forward_word_mac {
       timeout-ms = <50>;
-      key-positions = <27 28>;
+      key-positions = <17 27>;
       layers = <0 12>;
       bindings = <&kp LA(RIGHT)>;
       require-prior-idle-ms = <180>;
