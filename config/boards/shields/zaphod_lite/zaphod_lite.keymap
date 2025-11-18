@@ -1343,7 +1343,7 @@
       bindings = <&selword_f_mac>, <&selline_f>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-  selw_sela_mac: selword_selline_mac {
+  selw_sela_mac: selword_selall_mac {
       compatible = "zmk,behavior-mod-morph";
 #binding-cells = <0>;
       bindings = <&selword_f_mac>, <&kp LG(A)>;
@@ -1501,9 +1501,9 @@
 
     tron_purple_layer {
       bindings = <
-        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans    &trans  &trans        &trans
-        &kp LANG5     &trans   &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J)    &kp LC(JP_K)  &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &trans    &trans  &trans        &TJS_QMARK
+        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans       &trans          &trans        &trans
+        &kp LANG5  &trans   &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J) &kp LC(JP_K)    &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &trans       &trans          &trans        &TJS_QMARK
         &kp INT4 &trans &trans &kp INT5
         >;
     };
@@ -1531,7 +1531,7 @@
     nav_layer {
       bindings = <
         &trans     &copy_mac_b   &paste_mac_b   &kp LG(S)  &undo_mac_b   &kp LS(LG(N5))  &sk RCTRL   &sk RGUI      &sk RALT      &sk RSHFT
-        &kp LEFT   &kp UP     &kp DOWN    &kp RIGHT    &kp HYPR(F)       &kp LG(KC_W)     &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
+        &kp LEFT   &kp UP     &kp DOWN    &kp RIGHT    &kp HYPR(F)       &kp LG(W)     &kp RCTRL   &kp RGUI      &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN   &kp END      &kp LG(TAB)      &kp HYPR(B)    &ck_pp      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
         &kp ESC    &kp TAB                                                   &trans     &trans 
         >;
@@ -1548,7 +1548,7 @@
 
     sym_layer {
       bindings = <
-        &trans     &kp LS(LG(KC_G))  &kp LG(F)  &kp LG(G)   &kp K_CMENU       &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
+        &trans     &kp LS(LG(G))  &kp LG(F)  &kp LG(G)   &kp K_CMENU       &kp LS(LA(N8)) &kp JP_HASH  &kp JP_LT     &kp JP_GT     &kp JP_CARET
         &trans     &kp LA(DEL)   &kp KP_ENTER   &kp DEL    &kp HYPR(Y)       &kp JP_TILDE   &kp JP_PRNT  &kp JP_LBRLS  &kp JP_RBRLS  &kp JP_GRAVE
         &kp CAPS   &defin        &gtran         &googl     &trans            &kp NUBS       &kp JP_YEN   &kp JP_DLLR   &kp LA(N3)    &kp LS(LA(N2))
         &trans   &trans                                                                       &trans   &trans
