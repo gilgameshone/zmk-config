@@ -139,28 +139,14 @@
     // movement
     backward_char {
       timeout-ms = <50>;
-      key-positions = <23 24>;
+      key-positions = <13 23>;
       bindings = <&kp LEFT>;
       require-prior-idle-ms = <180>;
     };
     forward_char {
       timeout-ms = <50>;
-      key-positions = <25 26>;
-      bindings = <&kp RIGHT>;
-      require-prior-idle-ms = <180>;
-    };
-    backward_word_mac {
-      timeout-ms = <50>;
-      key-positions = <12 22>;
-      layers = <0 12>;
-      bindings = <&kp LA(LEFT)>;
-      require-prior-idle-ms = <180>;
-    };
-    forward_word_mac {
-      timeout-ms = <50>;
       key-positions = <17 27>;
-      layers = <0 12>;
-      bindings = <&kp LA(RIGHT)>;
+      bindings = <&kp RIGHT>;
       require-prior-idle-ms = <180>;
     };
     backward_sentence {
@@ -331,7 +317,18 @@
       bindings = <&selline_f_rep>;
       require-prior-idle-ms = <180>;
     };
-
+    squot {
+      timeout-ms = <50>;
+      key-positions = <7 17>;
+      bindings = <&kp LS(N2)>;
+      require-prior-idle-ms = <180>;
+    };
+    dquot {
+      timeout-ms = <50>;
+      key-positions = <9 19>;
+      bindings = <&kp LS(N7)>;
+      require-prior-idle-ms = <180>;
+    };
   };
 };
 
@@ -1504,7 +1501,7 @@
         &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans       &trans          &trans        &trans
         &kp LANG5  &trans   &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J) &kp LC(JP_K)    &kp LC(JP_L)  &kp LC(JP_SEMI)
         &trans     &trans   &trans   &trans   &TJ_PE          &trans   &trans       &trans          &trans        &TJS_QMARK
-        &kp INT4 &trans &trans &kp INT5
+        &kp INT5 &trans &trans &kp INT4
         >;
     };
 
