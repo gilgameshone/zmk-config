@@ -319,13 +319,13 @@
     squot {
       timeout-ms = <50>;
       key-positions = <7 17>;
-      bindings = <&kp LS(N2)>;
+      bindings = <&kp LS(N7)>;
       require-prior-idle-ms = <180>;
     };
     dquot {
       timeout-ms = <50>;
       key-positions = <9 19>;
-      bindings = <&kp LS(N7)>;
+      bindings = <&kp LS(N2)>;
       require-prior-idle-ms = <180>;
     };
   };
