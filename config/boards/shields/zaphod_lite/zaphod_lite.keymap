@@ -139,7 +139,7 @@
     // movement
     backward_char {
       timeout-ms = <50>;
-      key-positions = <13 23>;
+      key-positions = <12 22>;
       bindings = <&kp LEFT>;
       require-prior-idle-ms = <180>;
     };
@@ -1329,7 +1329,7 @@
   ss_mo: ss_mo {
       compatible = "zmk,behavior-hold-tap";
 #binding-cells = <2>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       tapping-term-ms = <300>;
       bindings = <&mo>, <&sk>;
     };
