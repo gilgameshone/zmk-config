@@ -4,7 +4,7 @@ A 34-key keyboard layout on ZMK firmware that uses layers, tap-hold keys, and ma
 
 ## Magic Sturdy mod
 
-The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `SHFT` on tap, a shift function that lasts for only one character. `Caps Word` can be accessed by tapping `SPC` and `REP` simultaneously. The repeat key, `REP`, helps to reduce single finger bigrams and improve typing comfort. 
+The base layer uses a modified Magic Sturdy for the alpha arrangement. The shifted characters are accessed by `⇧` on tap, a shift function that lasts for only one character. `Caps Word` can be accessed by tapping `␣` and `®` simultaneously. The repeat key, `®`, helps to reduce single finger bigrams and improve typing comfort. 
 
 ```
                 ╭───────☆───────╮
@@ -12,11 +12,16 @@ The base layer uses a modified Magic Sturdy for the alpha arrangement. The shift
  │  X   M   L   C   P  │ │  B   ★   U   O   Q  │ 
  │  S   T   R   D   Y  | |  F   N   E   A   I  │ 
  │  V   K   J   G   W  │ │  Z   H  ',  ".  ?-  │ 
- ╰─────────╮  BKSP SPC │ │ REP  SHFT ╭─────────╯
-           ╰───────────╯ ╰───────────╯
-                   ╰─CapsWord─╯
+ ╰───────────╮  ⌫  ␣  │ │  ®   ⇧  ╭───────────╯
+             ╰─────────╯ ╰─────────╯
+                   ╰CapsWord╯
 ```
-
+```
+® repeat
+⇧ one shot shift
+␣ space
+⌫ backspace
+```
 ## Magic keys "★"
 The magic key outputs the following when the previous key is pressed. It also reduces single finger bigrams and improves typing comfort.
 
@@ -54,7 +59,7 @@ This layer has some realestate available. `aPst` here pastes without formatting.
 ```
  ╭─────────────────────────╮ ╭─────────────────────╮
  │                         │ │  °   #   <   >   ^  │ 
- │      M-DEL Entr DEL Ynk | |  ~   %   {   }   `  │ 
+ │                 DEL Ynk | |  ~   %   {   }   `  │ 
  │ Caps def   gTr Ggl      │ │  §   ¥   $   £   €  │ 
  ╰───────────╮             │ │         ╭───────────╯
              ╰─────────────╯ ╰─────────╯
@@ -75,30 +80,46 @@ CMD (and the like) are sticky modifiers.
 
 ### Combos
 
-Combo use has proliferated to reduce thumb-holding strain. Probably best view visually. 
+Combo use has proliferated to reduce thumb-holding strain. Probably best view visually. Currently, I am experimenting with 'vertical' combos, one's that should have less of an impact when using rolling motions when typing. 
 
-Combos are:
-Capsword,
-Eisu,
-Kana,
-Magic 2 (Sorcery),
-Hiragana,
-Katakana.
-Tab,
-Space,
-Esc,
-Up,
-Left,
-Home,
-Backspace,
-Return,
-Down,
-Right,
-End.
+```
+xs = esc ⎋
+mt = copy ⌘C
+lr = paste ⌘V
+cd = eisu 英数
+py = hiragana ひらがな
+sv = tab ↹ 
+tk = space 
+rj = left ← 
+dg = up ↑
+dy = delete word forward ⌥ ⌦
+yw = home ⇱
+cp = undo ⌘Z
 
-Thumb combos simulate third thumb key (as it was not comfortable):
-Function keys, 
-and window manipulation.
+
+bf = katakana カタカナ
+★n = kana かな
+fn = backspace word ⌥ ⌫
+fz = end ⇲
+nh = down ↓
+e, = right →
+a. = return ⏎
+i- = select all ⌘a
+oa = save ⌘s
+ue = apostrophe '
+qi = double quotation mark "
+
+␣® = capsword
+⌫⇧ = numword
+
+★c = sorcery 
+dn = select word
+
+qi- = ble layer
+⌫␣ = fn layer 
+®⇧ = meh layer
+```
+
 
 
 ## Japanese JIS kana Tron arrangement
@@ -137,7 +158,7 @@ and window manipulation.
 ```
  ╭────────────────╮  ╭───────────────╮
  │　ぴ　　　　　ぱ　ぽ │  │　　　　　　　　　│ 
- │　　　　　　　　　ぷ |  |　　　　　　　　　│ 
+ │　全角　　　　　　ぷ |  |　　　　　　　　　│ 
  │　　　　　　　　　ぺ │  │　　　　　　　　　│ 
  ╰─────────╮　⌫　⇅ │  │　⇅　　　╭───────╯
            ╰──────╯  ╰───────╯
