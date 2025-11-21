@@ -241,7 +241,6 @@
     undo_mac {
       timeout-ms = <50>;
       key-positions = <3 4>;
-      layers = <0 12>;
       bindings = <&undo_mac_b>;
       require-prior-idle-ms = <180>;
     };
