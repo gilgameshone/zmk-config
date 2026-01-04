@@ -131,7 +131,7 @@
     };
     numword_ret {
       timeout-ms = <50>;
-      key-positions = <18 28>;
+      key-positions = <18 8>;
       layers = <22>;
       require-prior-idle-ms = <180>;
       bindings = <&nw_ret>;
@@ -233,7 +233,7 @@
     };
     ret_combo {
       timeout-ms = <50>;
-      key-positions = <18 28>;
+      key-positions = <18 8>;
       bindings = <&kp RET>;
       require-prior-idle-ms = <180>;
     };
@@ -246,7 +246,7 @@
     };
     save_mac {
       timeout-ms = <50>;
-      key-positions = <8 18>;
+      key-positions = <28 18>;
       layers = <0 12>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
