@@ -11,6 +11,6 @@ projects:
       import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
-      revision: v0.3 # Should match ZMK release.
+      revision: v0.3
   self:
     path: config
