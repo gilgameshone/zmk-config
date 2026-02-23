@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-projects:
+  projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
@@ -12,5 +12,5 @@ projects:
     - name: zmk-adaptive-key
       remote: urob
       revision: v0.3
-self:
-  path: config
+  self:
+    path: config
