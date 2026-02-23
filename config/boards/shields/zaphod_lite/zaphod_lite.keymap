@@ -13,37 +13,24 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define SDY_L 0
-#define MG_M_L 1
-#define MG_L_L 2
-#define MG_U_L 3
-#define MG_O_L 4
-#define MG_T_L 5
-#define MG_R_L 6
-#define MG_D_L 7
-#define MG_E_L 8
-#define MG_A_L 9
-#define MG_Y_L 10
-#define MG_V_L 11
 
-#define TRN_L 12
-#define TRB_L 13
-#define TRR_L 14
-#define TRP_L 15
+#define TRN_L 1
+#define TRB_L 2
+#define TRR_L 3
+#define TRP_L 4
 
-#define TR_NUM_L 16
-#define TR_SYM_L 17
+#define TR_NUM_L 5
+#define TR_SYM_L 6
 
-
-
-#define NAV_L 18
-#define NUM_L 19
-#define SYM_L 20
-#define FUN_L 21
-#define NUM_W_L 22
-#define BLE_L 23
-#define MEH_L 24
-#define SRT_EXW_MAC_L 25
-#define SRT_EXL_L 26
+#define NAV_L 7
+#define NUM_L 8
+#define SYM_L 9
+#define FUN_L 10
+#define NUM_W_L 11
+#define BLE_L 12
+#define MEH_L 13
+#define SRT_EXW_MAC_L 14
+#define SRT_EXL_L 15
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -117,7 +104,7 @@
     sorcery_magic2 {
       timeout-ms = <50>;
       key-positions = <3 6>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&kp LS(NUBS)>;
       require-prior-idle-ms = <180>;
     };
@@ -125,14 +112,14 @@
     panic {
       timeout-ms = <50>;
       key-positions = <0 10>;
-      layers = <22>;
+      layers = <11>;
       bindings = <&to SDY_L>;
       require-prior-idle-ms = <180>;
     };
     numword_ret {
       timeout-ms = <50>;
       key-positions = <18 8>;
-      layers = <22>;
+      layers = <11>;
       require-prior-idle-ms = <180>;
       bindings = <&nw_ret>;
     }; 
@@ -213,19 +200,19 @@
     bksp_word_combo_mac {
       timeout-ms = <50>;
       key-positions = <15 16>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&kp LA(BSPC)>;
       require-prior-idle-ms = <180>;
     };
     del_word_mac {
       timeout-ms = <50>;
       key-positions = <13 14>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&kp LA(DEL)>;
       require-prior-idle-ms = <180>;
     };
     spc_combo {
-      layers = <12 13 14 15 16 17>;
+      layers = <1 2 3 4 5 6>;
       timeout-ms = <30>;
       key-positions = <11 21>;
       bindings = <&kp SPACE>;
@@ -247,21 +234,21 @@
     save_mac {
       timeout-ms = <50>;
       key-positions = <28 18>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
     };
     copy_mac {
       timeout-ms = <50>;
       key-positions = <1 11>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&copy_mac_b>;
       require-prior-idle-ms = <180>;
     };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 12>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&paste_mac_b>;
       require-prior-idle-ms = <180>;
     };
@@ -269,26 +256,26 @@
     eisu_combo {
       timeout-ms = <50>;
       key-positions = <3 13>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&_EISU>;
       require-prior-idle-ms = <180>;
     };
     kana_combo {
       timeout-ms = <50>;
       key-positions = <6 16>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&_KANA>;
       require-prior-idle-ms = <180>;
     };
     hiragana_mac {
-      layers = <12 13 14 15 16 17>;
+      layers = <1 2 3 4 5 6>;
       timeout-ms = <50>;
       key-positions = <4 14>;
       bindings = <&kp LC(J)>;
       require-prior-idle-ms = <180>;
     };
     katakana_mac {
-      layers = <12 13 14 15 16 17>;
+      layers = <1 2 3 4 5 6>;
       timeout-ms = <50>;
       key-positions = <5 15>;
       bindings = <&kp LC(K)>;
@@ -298,19 +285,19 @@
     selword_mac {
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0 12>;
+      layers = <0 1>;
       bindings = <&selw_sell_mac>;
       require-prior-idle-ms = <180>;
     };
     selword_rep_mac {
-      layers = <25>;
+      layers = <14>;
       timeout-ms = <50>;
       key-positions = <13 16>;
       bindings = <&selword_f_mac_rep>;
       require-prior-idle-ms = <180>;
     };
     selline_rep {
-      layers = <26>;
+      layers = <15>;
       timeout-ms = <50>;
       key-positions = <13 16>;
       bindings = <&selline_f_rep>;
@@ -949,186 +936,7 @@
         , <&kp RET>
         ;
     };
-  mg_x: mg_x {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp X>
-        , <&macro_tap &sl MG_M_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp X>
-        ;
-    };
-  mg_m: mg_m {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp M>
-        , <&macro_tap &sl MG_M_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp M>
-        ;
-    };  
-  mg_l: mg_l {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp L>
-        , <&macro_tap &sl MG_L_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp L>
-        ;
-    };
-  mg_u: mg_u {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp U>
-        , <&macro_tap &sl MG_U_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp U>
-        ;
-    };
-  mg_o: mg_o {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp O>
-        , <&macro_tap &sl MG_O_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp O>
-        ;
-    };
-  mg_t: mg_t {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp T>
-        , <&macro_tap &sl MG_T_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp T>
-        ;
-    };
-  mg_r: mg_r {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp R>
-        , <&macro_tap &sl MG_R_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp R>
-        ;
-    };
-  mg_d: mg_d {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp D>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp D>
-        ;
-    };
-  mg_e: mg_e {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp E>
-        , <&macro_tap &sl MG_E_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp E>
-        ;
-    };
-  mg_a: mg_a {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp A>
-        , <&macro_tap &sl MG_A_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp A>
-        ;
-    };
-  mg_c: mg_c {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp C>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp C>
-        ;
-    };
-  mg_g: mg_g {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp G>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp G>
-        ;
-    };
-  mg_p: mg_p {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp P>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp P>
-        ;
-    };
-  mg_y: mg_y {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp Y>
-        , <&macro_tap &sl MG_Y_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp Y>
-        ;
-    };
-  mg_v: mg_v {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp V>
-        , <&macro_tap &sl MG_V_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp V>
-        ;
-    };
-  mg_pp: mg_pp {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &key_repeat>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &key_repeat>
-        ;
-    };
-  mg_dd: mg_dd {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &key_repeat>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &key_repeat>
-        ;
-    };
-  mg_gg: mg_gg {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &key_repeat>
-        , <&macro_tap &sl MG_D_L>
-        , <&macro_pause_for_release>
-        , <&macro_release &key_repeat>
-        ;
-    };
+
   nw_spc: nw_spc {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -1229,60 +1037,6 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
-    };
-  hml_t: homerow_mods_left_t {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_t>;
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
-    };
-  hml_r: homerow_mods_left_r {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_r>;
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
-    };
-  hml_d: homerow_mods_left_d {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_d>;
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
-    };
-  hml_g: homerow_mods_left_g {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_g>;
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; 
-    };
-  hmr_e: homerow_mods_right_e {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_e>;
-      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
-    };
-  hmr_a: homerow_mods_right_a {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      require-prior-idle-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&mg_a>;
-      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; 
     };
     
   com_quo: comma_quot {
@@ -1396,98 +1150,10 @@
 
     magic_sturdy_layer {
       bindings = <
-        &mg_x        &mg_m         &mg_l          &mg_c           &mg_p    &kp B  &m_m        &mg_u          &mg_o          &kp Q
-        &hml LSHFT S &hml_t LALT T &hml_r LGUI R  &hml_d LCTRL D  &mg_y    &kp F  &hmr RCTRL N  &hmr_e RGUI E  &hmr_a RALT A  &hmr RSHFT I
-        &mg_v        &kp K         &lt FUN_L J    &hml_g HYPER G  &kp W    &kp Z  &hmr HYPER H  &hmr_com_quo MEH_L 0  &dot_dbq       &min_qma
+        &kp x        &kp m       &kp l        &kp c          &kp p    &kp B  &m_m          &kp u                 &kp o        &kp Q
+        &hml LSHFT S &hml LALT T &hml LGUI R  &hml LCTRL D   &kp y    &kp F  &hmr RCTRL N  &hmr RGUI E           &hmr RALT A  &hmr RSHFT I
+        &kp v        &kp K       &lt FUN_L J  &hml_g HYPER G &kp W    &kp Z  &hmr HYPER H  &hmr_com_quo MEH_L 0  &dot_dbq     &min_qma
         &lt NUM_L BKSP   &lt SYM_L SPACE    &key_repeat &ss_mo NAV_L LSHIFT
-        >;
-    };
-    mg_x_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp T   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_l_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp R   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_u_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp E   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_o_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp A   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_t_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp M   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_r_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp L   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_d_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp Y   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &mg_dd
-        >;
-    };
-    mg_e_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp U   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_a_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp O   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_y_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp P   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
-        >;
-    };
-    mg_v_l {
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans   &trans  &kp S   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans 
-        &trans          &trans       &trans           &trans
         >;
     };
 
