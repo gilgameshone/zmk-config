@@ -13,24 +13,28 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define SDY_L 0
+#define QWE_G_L 1
 
-#define TRN_L 1
-#define TRB_L 2
-#define TRR_L 3
-#define TRP_L 4
+#define TRN_L 2
+#define TRB_L 3
+#define TRR_L 4
+#define TRP_L 5
 
-#define TR_NUM_L 5
-#define TR_SYM_L 6
+#define TR_NUM_L 6
+#define TR_SYM_L 7
 
-#define NAV_L 7
-#define NUM_L 8
-#define SYM_L 9
-#define FUN_L 10
-#define NUM_W_L 11
-#define BLE_L 12
-#define MEH_L 13
-#define SRT_EXW_MAC_L 14
-#define SRT_EXL_L 15
+#define NAV_L 8
+#define NUM_L 9
+#define SYM_L 10
+#define FUN_L 11
+
+#define NUM_G_L 12
+
+#define NUM_W_L 13
+#define BLE_L 14
+#define MEH_L 15
+#define SRT_EXW_MAC_L 16
+#define SRT_EXL_L 17
 
 #define HYPER LS(LA(LG(LCTL)))
 #define MEH(key) LS(LA(LC(key)))
@@ -94,6 +98,12 @@
       bindings = <&tog NUM_W_L>;
       require-prior-idle-ms = <180>;
     };
+    fun_alt_combo {
+      timeout-ms = <50>;
+      key-positions = <8 18 28>;
+      bindings = <&mo FUN_L>;
+      require-prior-idle-ms = <180>;
+    };
     // English
     caps_word_combo {
       timeout-ms = <50>;
@@ -104,7 +114,7 @@
     sorcery_magic2 {
       timeout-ms = <50>;
       key-positions = <3 6>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&kp LS(NUBS)>;
       require-prior-idle-ms = <180>;
     };
@@ -112,14 +122,14 @@
     panic {
       timeout-ms = <50>;
       key-positions = <0 10>;
-      layers = <11>;
+      layers = <13>;
       bindings = <&to SDY_L>;
       require-prior-idle-ms = <180>;
     };
     numword_ret {
       timeout-ms = <50>;
       key-positions = <18 8>;
-      layers = <11>;
+      layers = <13>;
       require-prior-idle-ms = <180>;
       bindings = <&nw_ret>;
     }; 
@@ -200,19 +210,19 @@
     bksp_word_combo_mac {
       timeout-ms = <50>;
       key-positions = <15 16>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&kp LA(BSPC)>;
       require-prior-idle-ms = <180>;
     };
     del_word_mac {
       timeout-ms = <50>;
       key-positions = <13 14>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&kp LA(DEL)>;
       require-prior-idle-ms = <180>;
     };
     spc_combo {
-      layers = <1 2 3 4 5 6>;
+      layers = <2 3 4 5 6 7>;
       timeout-ms = <30>;
       key-positions = <11 21>;
       bindings = <&kp SPACE>;
@@ -234,21 +244,21 @@
     save_mac {
       timeout-ms = <50>;
       key-positions = <28 18>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&kp LG(S)>;
       require-prior-idle-ms = <180>;
     };
     copy_mac {
       timeout-ms = <50>;
       key-positions = <1 11>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&copy_mac_b>;
       require-prior-idle-ms = <180>;
     };
     paste_mac {
       timeout-ms = <50>;
       key-positions = <2 12>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&paste_mac_b>;
       require-prior-idle-ms = <180>;
     };
@@ -256,14 +266,14 @@
     eisu_combo {
       timeout-ms = <50>;
       key-positions = <3 13>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&_EISU>;
       require-prior-idle-ms = <180>;
     };
     kana_combo {
       timeout-ms = <50>;
       key-positions = <6 16>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&_KANA>;
       require-prior-idle-ms = <180>;
     };
@@ -285,7 +295,7 @@
     selword_mac {
       timeout-ms = <50>;
       key-positions = <13 16>;
-      layers = <0 1>;
+      layers = <0 2>;
       bindings = <&selw_sell_mac>;
       require-prior-idle-ms = <180>;
     };
@@ -1157,6 +1167,15 @@
         >;
     };
 
+        qwerty_gaming_layer {
+      bindings = <
+        &kp T      &kp Q     &kp W    &kp E    &kp R         &kp Y    &kp U    &kp I     &kp O    &kp P
+        &kp LSHFT  &kp A     &kp S    &kp D    &kp F         &kp H    &kp J    &kp K     &kp L    &kp SEMI
+        &kp LCTRL  &kp Z     &kp X    &kp C    &kp V         &kp N    &kp M    &kp COMMA &kp DOT  &kp SLASH
+        &mo NUM_G &kp SPC         &kp RET &none
+        >;
+    };
+
     tron_base_layer {
       bindings = <
         &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
@@ -1242,12 +1261,23 @@
 
     fun_layer {
       bindings = <
-        &trans   &trans    &trans   &trans       &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
-        &trans   &trans    &trans   &trans       &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
-        &trans   &trans    &trans   &to SDY_L    &kp K_MENU         &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
+        &trans   &trans    &trans   &trans        &kp KP_NLCK    &kp PSCRN        &kp F9     &kp F10    &kp F11     &kp F12
+        &trans   &trans    &trans   &to QWE_G_L   &kp INS        &kp SLCK         &kp F5     &kp F6     &kp F7      &kp F8
+        &trans   &trans    &trans   &to SDY_L     &kp K_MENU     &kp PAUSE_BREAK  &kp F1     &kp F2     &kp F3      &kp F4
         &none     &kp K_APP             &kp KP_NLCK          &kp INS
         >;
     };
+
+     num_gaming_layer {
+      bindings = <
+        &kp ESC   &kp N7    &kp N8    &kp N9   &kp T     &trans    &kp F21    &kp F22    &kp F23    &kp F24
+        &kp TAB   &kp N4    &kp N5    &kp N6   &kp G     &trans    &kp F17    &kp F18    &kp F19    &kp F20
+        &kp N0    &kp N1    &kp N2    &kp N3   &kp B     &trans    &kp F13    &kp F14    &kp F15    &kp F16
+        &none     &none                                &none      &none 
+        >;
+    };
+
+        
     num_word_layer {
       bindings = <
         &kp JP_EXL   &kp JP_LBKT  &kp JP_RBKT   &kp JP_COLON  &kp LC(F2)    &kp JP_PLUS   &kp JP_N7  &kp JP_N8  &kp JP_N9  &kp JP_ASTRK
