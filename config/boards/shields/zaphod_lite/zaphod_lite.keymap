@@ -1234,7 +1234,7 @@
     
     nav_layer {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans           &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))  &trans        &trans  
+        &trans     &trans     &trans     &trans     &trans           &kp LS(LG(N4))  &kp LS(LG(N3))  &kp LS(LG(N5))  &trans        &trans  
         &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &kp HYPR(F)      &trans        &kp RCTRL       &kp RGUI        &kp RALT      &kp RSHFT
         &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &kp LG(TAB)      &kp HYPR(B)     &ck_pp          &kp C_VOL_DN    &kp C_VOL_UP  &kp C_MUTE
         &kp ESC    &kp TAB                                           &trans          &trans 
