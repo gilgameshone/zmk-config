@@ -42,7 +42,7 @@ The second magic key `☆` (Sorcery) can be accessed by pressing `★` and `C` a
 ### Num (hold BKSP)
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
- │  !   [   ]   : C-F2 │ │  +   7   8   9   *  │ 
+ │  !   [   ]   : INT1 │ │  +   7   8   9   *  │ 
  │  &   (   )   ;   #  | |  -   4   5   6   /  │ 
  │  ?   _   %   @   |  │ │  =   1   2   3   .  │ 
  ╰─────────╮           │ │ RET  0  ╭───────────╯
@@ -57,24 +57,24 @@ This layer can also be accessed by pressing `BKSP` and `SFT`, which turns on a n
 This layer has some realestate available. `aPst` here pastes without formatting. `Ynk` pulls from Alfred's kill list / clipboard. `Cpy` and `Pst` are duplicated here for use with one hand mouse use. 
 
 ```
- ╭─────────────────────────╮ ╭─────────────────────╮
- │                         │ │  °   #   <   >   ^  │ 
- │                 DEL Ynk | |  ~   %   {   }   `  │ 
- │ Caps def   gTr Ggl      │ │  §   ¥   $   £   €  │ 
- ╰───────────╮             │ │         ╭───────────╯
-             ╰─────────────╯ ╰─────────╯
+ ╭─────────────────────────────╮ ╭─────────────────────╮
+ │      fndPr find  fndNx      │ │  °   #   <   >   ^  │ 
+ │      DelA  KpEnt DEL   ynk  | |  ~   %   {   }   `  │ 
+ │ Caps def   gTr   Ggl        │ │  §   ¥   $   £   €  │ 
+ ╰───────────────╮             │ │         ╭───────────╯
+                 ╰─────────────╯ ╰─────────╯
 ```
 
 ### Nav (hold REP)
 
 Nav has some available realestate, but the hold key to access it gets used heavily. `Rwd` uses Alfred to rewind the media player slightly. 
 ```
- ╭─────────────────────╮ ╭───────────────────────╮
- │                     │ │ Ssel  CTL CMD OPT SFT │ 
- │ ←   ↑   ↓   →       | | Globe Ctl Cmd Opt Sft │ 
- │ Hme PgD PgU End     │ │ Rwd   Pse vDn vUp Mut │ 
- ╰─────────╮ ESC  TAB  │ │         ╭─────────────╯
-           ╰───────────╯ ╰─────────╯
+ ╭────────────────────────────────╮ ╭─────────────────────────────────╮
+ │                                │ │ srcnSel srcnSht srcnAlt         │ 
+ │ ←    ↑     ↓     →    files    | | closWin Ctl     Cmd     Opt Sft │ 
+ │ Hme  PgD   PgU   End  swtchapp │ │ Rwd     Pse     vDn     vUp Mut │ 
+ ╰───────────────────╮  ESC  TAB  │ │         ╭───────────────────────╯
+                     ╰────────────╯ ╰─────────╯
 ```
 CMD (and the like) are sticky modifiers. 
 
@@ -163,6 +163,31 @@ qi- = ble layer
  ╰─────────╮　⌫　⇅ │  │　⇅　　　╭───────╯
            ╰──────╯  ╰───────╯
 ```
+### Fun (hold ,)
+
+
+```
+ ╭─────────────────────────────╮ ╭─────────────────────╮
+ │                         NUM │ │ PSCR F9 F10 F11 F12 │ 
+ │                         INS | | SCRL F5 F6  F7  F8  │ 
+ │           MagicSturdy   APP │ │ PAUS F1 F2  F3  F4  │ 
+ ╰────────────────╮            │ │  NUM INS APP  ╭─────╯
+                  ╰────────────╯ ╰───────────────╯
+```
+
+
+### Meh (hold j or ,)
+
+
+```
+ ╭────────────╮ ╭──────────────────────╮
+ │ X 1 2 3 P  │ │ EJCT F21 F22 F23 F24 │ 
+ │ S 8 9 D F  | | CPNL F17 F18 F19 F20 │ 
+ │ V K J G W  │ │ LPAD F13 F14 F15 F16 │ 
+ ╰────╮  4 N  │ │ CPnL Globe  ╭────────╯
+      ╰───────╯ ╰─────────────╯
+```
+
 #### key position reference 
 ```
  ╭─────────────────────╮ ╭─────────────────────╮
