@@ -58,9 +58,9 @@ This layer has some realestate available. `aPst` here pastes without formatting.
 
 ```
  ╭─────────────────────────────╮ ╭─────────────────────╮
- │      fndPr find  fndNx      │ │  °   #   <   >   ^  │ 
+ │      fndPr find  fndNx app  │ │  °   #   <   >   ^  │ 
  │      DelA  KpEnt DEL   ynk  | |  ~   %   {   }   `  │ 
- │ Caps def   gTr   Ggl        │ │  §   ¥   $   £   €  │ 
+ │ Caps def   gTr   Ggl   LPad │ │  §   ¥   $   £   €  │ 
  ╰───────────────╮             │ │         ╭───────────╯
                  ╰─────────────╯ ╰─────────╯
 ```
@@ -69,12 +69,12 @@ This layer has some realestate available. `aPst` here pastes without formatting.
 
 Nav has some available realestate, but the hold key to access it gets used heavily. `Rwd` uses Alfred to rewind the media player slightly. 
 ```
- ╭────────────────────────────────╮ ╭─────────────────────────────────╮
- │                                │ │ srcnSel srcnSht srcnAlt         │ 
- │ ←    ↑     ↓     →    files    | | closWin Ctl     Cmd     Opt Sft │ 
- │ Hme  PgD   PgU   End  swtchapp │ │ Rwd     Pse     vDn     vUp Mut │ 
- ╰───────────────────╮  ESC  TAB  │ │         ╭───────────────────────╯
-                     ╰────────────╯ ╰─────────╯
+ ╭─────────────────────────────╮ ╭─────────────────────────────────╮
+ │                       C-F8  │ │ srcnSel srcnSht srcnAlt         │ 
+ │ ←    ↑     ↓     →    C-F2  | |         Ctl     Cmd     Opt Sft │ 
+ │ Hme  PgD   PgU   End        │ │ Rwd     Pse     vDn     vUp Mut │ 
+ ╰────────────────╮  ESC  TAB  │ │         ╭───────────────────────╯
+                  ╰────────────╯ ╰─────────╯
 ```
 CMD (and the like) are sticky modifiers. 
 
