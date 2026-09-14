@@ -12,7 +12,7 @@ The base layer uses a modified Magic Sturdy for the alpha arrangement. The shift
  │  X   M   L   C   P  │ │  B   ★   U   O   Q  │ 
  │  S   T   R   D   Y  | |  F   N   E   A   I  │ 
  │  V   K   J   G   W  │ │  Z   H  ',  ".  ?-  │ 
- ╰───────────╮  ⌫  ␣  │ │  ®   ⇧  ╭───────────╯
+ ╰───────────╮  ⌫   ␣  │ │  ®   ⇧  ╭───────────╯
              ╰─────────╯ ╰─────────╯
                    ╰CapsWord╯
 ```
