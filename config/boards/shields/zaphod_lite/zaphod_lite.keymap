@@ -1178,36 +1178,36 @@
 
     tron_base_layer {
       bindings = <
-        &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO     &kp TJ_KI  &kp TJ_NO  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
-        &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE   &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
-        &kp TJ_MA  &kp TJ_RI  &kp TJ_NI  &kp TJ_SA   &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
+        &kp TJ_RA  &kp TJ_RU  &kp TJ_KO  &kp TJ_HA  &kp TJ_XYO    &kp TJ_KI  &kp TJ_RI  &kp TJ_KU     &kp TJ_A     &kp TJ_RE
+        &kp TJ_TA  &kp TJ_TO  &kp TJ_KA  &kp TJ_TE  &kp TJ_MO     &kp TJ_WO  &kp TJ_I   &kp TJ_U      &kp TJ_SHI   &kp TJ_NN
+        &kp TJ_MA  &kp TJ_NI  &kp TJ_SA  &kp TJ_NO  &kp TJ_NA     &kp TJ_SU  &kp TJ_TSU &kp TJ_DOUTEN &kp TJ_KUTEN &kp TJ_XTSU
         &lt TR_NUM_L BSPC  &sl TRR_L  &sl TRB_L    &trans
         >;
     };
 
     tron_blue_layer {
       bindings = <
-        &TJ_BI     &TJ_ZO     &TJ_GO  &TJ_BA  &TJ_BO    &kp TJ_E   &kp TJ_KE  &kp TJ_ME         &kp TJ_MU &kp TJ_RO
-        &TJ_DA     &TJ_DO     &TJ_GA  &TJ_DE  &TJ_BU    &kp TJ_O   &kp TJ_CHI &kp TJ_CHOUONNPU  &kp TJ_MI &kp TJ_YA
-        &kp TJ_XE  &kp TJ_XO  &TJ_ZE  &TJ_ZA  &TJ_BE    &kp TJ_WA  &kp TJ_XI  &kp TJ_XA         &trans    &kp TJ_XU
+        &TJ_BI     &TJ_ZO    &TJ_GO  &TJ_BA  &TJ_BO    &kp TJ_E   &trans     &kp TJ_ME         &kp TJ_MU &kp TJ_RO
+        &TJ_DA     &TJ_DO    &TJ_GA  &TJ_DE  &TJ_BU    &kp TJ_O   &kp TJ_CHI &kp TJ_CHOUONNPU  &kp TJ_MI &kp TJ_YA
+        &trans     &TJ_GE    &TJ_ZA  &TJ_ZE  &TJ_BE    &kp TJ_WA  &trans     &trans            &trans    &trans 
         &trans &sl TRP_L &trans &trans
         >;
     };
 
     tron_red_layer {
       bindings = <
-        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &TJ_GE   &TJ_GU        &trans        &trans
+        &kp TJ_HI   &kp TJ_SO  &kp TJ_NAKAGURO &kp TJ_XYA  &kp TJ_HO    &TJ_GI    &trans   &TJ_GU        &trans        &trans
         &kp TJ_NU   &kp TJ_NE  &kp TJ_XYU      &kp TJ_YO   &kp TJ_FU    &kp TJ_O  &TJ_DZI  &TJ_VU        &TJ_JI        &trans
-        &kp TJ_XE   &kp TJ_XO  &kp TJ_SE       &kp TJ_YU   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &kp TJ_XU
+        &trans      &kp TJ_KE  &kp TJ_YU       &kp TJ_SE   &kp TJ_HE    &TJ_ZU    &TJ_DZU  &TJ_LKAGIKAKO &TJ_RKAGIKAKO &trans
         &trans &trans &sl TRP_L &trans
         >;
     };
 
     tron_purple_layer {
       bindings = <
-        &TJ_PI     &trans   &trans   &TJ_PA   &TJ_PO          &trans   &trans       &trans          &trans        &trans
-        &kp LANG5  &trans   &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J) &kp LC(JP_K)    &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &trans     &trans   &trans   &trans   &TJ_PE          &trans   &trans       &trans          &trans        &TJS_QMARK
+        &TJ_PI     &trans    &trans   &TJ_PA   &TJ_PO          &trans   &trans       &trans          &trans        &trans
+        &kp LANG5  &trans    &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J) &kp LC(JP_K)    &kp LC(JP_L)  &kp LC(JP_SEMI)
+        &kp TJ_XE  &kp TJ_XO &trans   &trans   &TJ_PE          &trans   &kp TJ_XI    &kp TJ_XA       &trans        &kp TJ_XU
         &kp INT5 &trans &trans &kp INT4
         >;
     };
