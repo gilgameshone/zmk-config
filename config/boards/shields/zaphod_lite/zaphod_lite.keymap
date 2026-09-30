@@ -1205,9 +1205,9 @@
 
     tron_purple_layer {
       bindings = <
-        &TJ_PI     &trans    &trans   &TJ_PA   &TJ_PO          &trans   &trans       &trans          &trans        &trans
-        &kp LANG5  &trans    &trans   &trans   &TJ_PU          &trans   &kp LC(JP_J) &kp LC(JP_K)    &kp LC(JP_L)  &kp LC(JP_SEMI)
-        &kp TJ_XE  &kp TJ_XO &trans   &trans   &TJ_PE          &trans   &kp TJ_XI    &kp TJ_XA       &trans        &kp TJ_XU
+        &TJ_PI     &trans    &trans   &TJ_PA   &TJ_PO          &kp TJ_XE  &trans        &trans         &kp  TJ_XA     &trans
+        &kp LANG5  &trans    &trans   &trans   &TJ_PU          &kp TJ_XO  &kp TJ_XI     &kp TJ_XU      &trans         &trans
+        &trans     &trans    &trans   &trans   &TJ_PE          &trans     &kp LC(JP_J)  &kp LC(JP_K)   &kp LC(JP_L)   &kp LC(JP_SEMI)
         &kp INT5 &trans &trans &kp INT4
         >;
     };
